@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin - Builds Genshin</title>
+		<meta name="title" content="Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin - Builds Genshin">
+		<meta name="description" content="Guía completa de Yoimiya en Genshin Impact, cubriendo armas, artefactos, equipos y consejos para maximizar su DPS como la mejor arquera Pyro del juego.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin - Builds Genshin">
+		<meta property="og:description" content="Guía completa de Yoimiya en Genshin Impact, cubriendo armas, artefactos, equipos y consejos para maximizar su DPS como la mejor arquera Pyro del juego.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/es/builds/guia-yoimiya">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-13T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin - Builds Genshin">
+		<meta property="twitter:description" content="Guía completa de Yoimiya en Genshin Impact, cubriendo armas, artefactos, equipos y consejos para maximizar su DPS como la mejor arquera Pyro del juego.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.6e9112ea.css" />
+<link rel="stylesheet" href="/_astro/index.6c32f8a6.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/es/">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/es/builds">Guías de personajes</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/es/">
+                    <img id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center" href="/es/">
+        <img id="logo-light" class="mr-4" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img id="logo-dark" class="hidden mr-4" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/es/">Inicio</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/es/builds">Guías de personajes</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			
+    <section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-13T00:00:00.000Z">Actualizado <b>13/7/2023</b> por <b>Builds Genshin</b></time>
+        <img src="/images/builds/yoimiya-build.webp" alt="Imagen de Yoimiya">
+        <article>
+            <h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ul>
+<li><a href="#fortalezas-de-yoimiya">Fortalezas de Yoimiya</a></li>
+<li><a href="#posibles-debilidades">Posibles debilidades</a></li>
+<li><a href="#armas-para-yoimiya">Armas para Yoimiya</a></li>
+<li><a href="#artefactos-para-yoimiya">Artefactos para Yoimiya</a></li>
+<li><a href="#posibles-equipos-para-yoimiya">Posibles equipos para Yoimiya</a></li>
+<li><a href="#armas-artefactos-y-equipos-recomendados">Armas, Artefactos y Equipos Recomendados</a></li>
+<li><a href="#gameplay-y-consejos">Gameplay y Consejos</a></li>
+<li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+<li><a href="#conclusiones">Conclusiones</a></li>
+</ul>
+<h2 id="introducción-a-yoimiya-build">Introducción a Yoimiya Build</h2>
+<p>Yoimiya es un personaje 5 estrellas de Pyro en Genshin Impact que se desempeña mejor como DPS. Ella depende de ataques normales para la mayor parte de su daño, por lo que construirla efectivamente es crucial para aprovechar al máximo su potencial. Esta guía profundiza en varias formas de construir a Yoimiya, cubriendo opciones de armas, artefactos, equipos y estrategias.</p>
+<h2 id="fortalezas-de-yoimiya">Fortalezas de Yoimiya</h2>
+<p>Yoimiya brilla contra un solo objetivo. Sus flechas de fuego concentran todo su daño en un oponente, lo que la convierte en una excelente opción contra jefes y enemigos elite. Además, sus ataques normales no se ven afectados por ICD, por lo que puede activar reacciones elementales con cada tiro.</p>
+<p>Otras fortalezas incluyen:</p>
+<ul>
+<li>Daño consistente contra enemigos solitarios</li>
+<li>No afectada por ICD en sus ataques normales</li>
+<li>Puede activar Overload, Vaporize, Melt fácilmente</li>
+<li>Buen soporte de party con su Burst</li>
+<li>Fácil de construir y jugar</li>
+</ul>
+<h2 id="posibles-debilidades">Posibles debilidades</h2>
+<p>A pesar de su alto potencial de daño, Yoimiya tiene algunas desventajas:</p>
+<ul>
+<li>Dependiente de ataques normales, vulnerables a interrupciones</li>
+<li>Daño de área limitado contra grupos</li>
+<li>Burst tiene un rango corto</li>
+<li>Problemas para golpear objetivos en movimiento</li>
+</ul>
+<p>Los jugadores deben considerar estas debilidades al formar un equipo para apoyarla y cubrir sus deficiencias.</p>
+<h2 id="armas-para-yoimiya">Armas para Yoimiya</h2>
+<p>Las armas pueden grandemente influenciar la efectividad de Yoimiya. Aquí algunas de las mejores opciones:</p>
+<h3 id="thundering-pulse-5-estrellas">Thundering Pulse (5 estrellas)</h3>
+<p><img src="/images/weapons/bows/Thundering_Pulse.webp" alt="Imagen Thundering Pulse"></p>
+<ul>
+<li>El arma signature de Yoimiya</li>
+<li>Aumenta ataque y daño crítico</li>
+<li>Mejora sus ataques normales y cargados</li>
+</ul>
+<p>Ideal para maximizar su daño como DPS principal. La opción 5 estrellas más fuerte.</p>
+<h3 id="rust-4-estrellas">Rust (4 estrellas)</h3>
+<p><img src="/images/weapons/bows/Rust.webp" alt="Imagen Rust"></p>
+<ul>
+<li>Aumenta daño de ataque normal</li>
+<li>Refuerza el enfoque de Yoimiya en ataques normales</li>
+<li>Más accesible que opciones 5 estrellas</li>
+</ul>
+<p>Una excelente opción 4 estrellas con beneficios dirigidos. Gran relación precio-calidad.</p>
+<h3 id="skyward-harp-5-estrellas">Skyward Harp (5 estrellas)</h3>
+<p><img src="/images/weapons/bows/Skyward_Harp.webp" alt="Imagen Skyward Harp"></p>
+<ul>
+<li>Alto ataque base</li>
+<li>Aumenta tasa crítica</li>
+<li>Daño adicional de remolino</li>
+</ul>
+<p>Poderoso arma estándar 5 estrellas. Útil si necesitas más tasa crítica.</p>
+<h3 id="slingshot-3-estrellas">Slingshot (3 estrellas)</h3>
+<p><img src="/images/weapons/bows/Slingshot.webp" alt="Imagen Slingshot"></p>
+<ul>
+<li>Aumenta daño contra enemigos cercanos</li>
+<li>Barata y fácil de refinar</li>
+<li>Buena opción temporal</li>
+</ul>
+<h3 id="hamayumi-4-estrellas">Hamayumi (4 estrellas)</h3>
+<p><img src="/images/weapons/bows/Hamayumi.webp" alt="Imagen Hamayumi"></p>
+<ul>
+<li>Aumenta daño normal y cargado</li>
+<li>Requiere energía Burst 100%</li>
+<li>Alternativa viable 4 estrellas</li>
+</ul>
+<p>Opciones viables dependiendo de recursos disponibles. Prioriza ataque normal.</p>
+<h2 id="artefactos-para-yoimiya">Artefactos para Yoimiya</h2>
+<p>Los artefactos también juegan un rol vital para sacar el máximo provecho de Yoimiya.</p>
+<h3 id="2-pieza-artefacto-de-gladiador--2-pieza-artefacto-de-shimenawa">2-pieza Artefacto de Gladiador + 2-pieza Artefacto de Shimenawa</h3>
+<p><img src="/images/artifacts/Gladiator_plus_Shimenawa.webp" alt="Imagen Gladiador y Reminiscencia de Shimenawa"></p>
+<ul>
+<li>Aumenta ataque y daño normal</li>
+<li>Bonos directos para su mayor fuente de daño</li>
+<li>Fácil de obtener y construir</li>
+</ul>
+<p>Un set sólido que refuerza su estilo centrado en ataques normales. Recomendado para la mayoría de builds.</p>
+<h3 id="4-pieza-artefacto-de-shimenawa">4-pieza Artefacto de Shimenawa</h3>
+<p><img src="/images/artifacts/shimenawa&#x27;s_reminiscence.webp" alt="Imagen Reminiscencia de Shimenawa"></p>
+<ul>
+<li>Aumenta daño normal y cargado</li>
+<li>Requiere no usar Burst</li>
+<li>Para enfoque puro en ataque normal</li>
+</ul>
+<p>Otro set enfocado en impulsar sus ataques normales al máximo. Pero reduce flexibilidad de usar su Burst.</p>
+<h3 id="4-pieza-artefacto-de-arcaico-petra">4-pieza Artefacto de Arcaico Petra</h3>
+<p><img src="/images/artifacts/Petra.webp" alt="Imagen Arcaico Petra"></p>
+<ul>
+<li>Daño aumentado contra enemigos afectados por Pyro</li>
+<li>Requiere aplicar Pyro con otro personaje</li>
+<li>Potencia su reacción Overload</li>
+</ul>
+<p>Set interesante si usas otro aplicador de Pyro. Buenos bonos ofensivos.</p>
+<p>Prioriza main stats de ATK% o EM / Pyro DMG / Crit Rate o DMG. Substats con ATK, EM, CRIT.</p>
+<h2 id="posibles-equipos-para-yoimiya">Posibles equipos para Yoimiya</h2>
+<p>Yoimiya se desempeña mejor con personajes que puedan activar reacciones como Vaporize o proporcionar buffs. Aquí algunas opciones sólidas de equipo:</p>
+<h3 id="equipo-overload">Equipo Overload</h3>
+<ul>
+<li>Yoimiya, <a href="/es/builds/guia-fischl">Fischl</a>, <a href="/es/builds/guia-beidou">Beidou</a>, <a href="/es/builds/guia-bennett">Bennett</a></li>
+<li>Fischl y Beidou proveen electro para Overload</li>
+<li>Bennett da ataque y curación</li>
+</ul>
+<p>Reacciones constantes de Overload. Buenos buffs y protección.</p>
+<h3 id="equipo-vaporize">Equipo Vaporize</h3>
+<ul>
+<li>Yoimiya, <a href="/es/builds/guia-xingqiu">Xingqiu</a>, <a href="/es/builds/guia-yun-jin">Yun Jin</a>, Bennett/<a href="/es/builds/guia-zhongli">Zhongli</a></li>
+<li>Xingqiu permite reacciones Vaporize</li>
+<li>Yun Jin buffea ataque normal</li>
+<li>Bennett o Zhongli para ataque y protección</li>
+</ul>
+<p>Vaporizes fuertes aprovechando Xingqiu. Yun Jin aumenta daño.</p>
+<h3 id="equipo-sunfire">Equipo Sunfire</h3>
+<ul>
+<li>Yoimiya, Bennett, <a href="/es/builds/guia-jean">Jean</a>/<a href="/es/builds/guia-sayu">Sayu</a>, flex spot</li>
+<li>Bennett y Jean/Sayu para Sunfire Overload</li>
+<li>Flexible última posición</li>
+</ul>
+<p>Sunfire permite Overload sin necesidad de electro. Curación y VV si Jean.</p>
+<p>Otros buenos personajes: <a href="/es/builds/guia-yelan">Yelan</a>, <a href="/es/builds/guia-kazuha">Kazuha</a>, Zhongli. Prioriza habilitadores de reacción y buffers de daño.</p>
+<h2 id="armas-artefactos-y-equipos-recomendados">Armas, Artefactos y Equipos Recomendados</h2>
+<p>Basado en las opciones cubiertas, aquí algunas combinaciones sólidas para una build efectiva:</p>
+<h3 id="build-5-estrellas">Build 5 estrellas</h3>
+<ul>
+<li><strong>Arma</strong>: Thundering Pulse</li>
+<li><strong>Artefactos</strong>: 2-pieza Artefacto de Gladiador + 2-pieza Artefacto de Shimenawa</li>
+<li><strong>Equipo</strong>: Yoimiya, Yelan, Fischl, Zhongli</li>
+</ul>
+<p>Enfoque máximo de daño usando su mejor arma signature y artefactos ofensivos. Reacciones electro con Zhongli para protección.</p>
+<h3 id="build-4-estrellas">Build 4 estrellas</h3>
+<ul>
+<li><strong>Arma</strong>: Rust</li>
+<li><strong>Artefactos</strong>: 4-pieza Artefacto de Shimenawa</li>
+<li><strong>Equipo</strong>: Yoimiya, Xingqiu, Bennett, <a href="/es/builds/guia-sucrose">Sucrose</a></li>
+</ul>
+<p>Build más accesible aprovechando el fuerte refuerzo de Rust. Vaporize habilitado por Xingqiu y Sucrose.</p>
+<h3 id="build-principiante">Build Principiante</h3>
+<ul>
+<li><strong>Arma</strong>: Slingshot</li>
+<li><strong>Artefactos</strong>: 2-pieza Artefacto de Gladiador + 2-pieza Artefacto de Berserker</li>
+<li><strong>Equipo</strong>: Yoimiya, Fischl, <a href="/es/builds/guia-barbara">Barbara</a>, <a href="/es/builds/guia-noelle">Noelle</a></li>
+</ul>
+<p>Opción barata para nuevos jugadores. Prioriza ataque y daño. Curación y protección de Barbara y Noelle.</p>
+<h2 id="gameplay-y-consejos">Gameplay y Consejos</h2>
+<p>Aquí algunos consejos para sacar el máximo del potencial de Yoimiya:</p>
+<ul>
+<li>Cancela el final de su cadena de ataques normales ya que es más lento. Cancela después del kick.</li>
+<li>Usa su Burst justo antes de su skill para máximo tiempo activo.</li>
+<li>Apunta bien para asegurar que todos los tiros conecten al oponente.</li>
+<li>Mantén distancia para evitar interrupciones al atacar.</li>
+<li>Agrega un escudo si tienes problemas con interrupciones.</li>
+<li>Activa su Burst incluso si no usas el set Shimenawa para buffear el equipo.</li>
+<li>Usa stamina food si tienes problemas para esquivar mientras atacas.</li>
+<li>Prioriza tasa crítica hasta al menos 50/100. Luego enfócate en ataque y daño Pyro.</li>
+</ul>
+<p>Con la práctica, aprenderás cómo posicionarte y moverte para contrarrestar sus debilidades naturales. ¡Diviértete incendiando enemigos con la shrine maiden!</p>
+<h2 id="preguntas-frecuentes">Preguntas Frecuentes</h2>
+<p>Aquí algunas de las preguntas más comunes sobre cómo construir y usar a Yoimiya:</p>
+<h3 id="cuáles-son-las-mejores-armas-4-estrellas-para-yoimiya">¿Cuáles son las mejores armas 4 estrellas para Yoimiya?</h3>
+<p>Rust, Viridescent Hunt, Hamayumi son excelentes opciones 4 estrellas. Rust probablemente sea la mejor opción.</p>
+<h3 id="qué-tal-es-yoimiya-con-el-set-artefacto-de-arcaico-petra">¿Qué tal es Yoimiya con el set Artefacto de Arcaico Petra?</h3>
+<p>Arcaico Petra puede funcionar bien en equipos con otro aplicador de Pyro. Pero Shimenawa o Gladiador son generalmente mejores.</p>
+<h3 id="debo-ignorar-su-burst-si-uso-el-set-shimenawa">¿Debo ignorar su Burst si uso el set Shimenawa?</h3>
+<p>No necesariamente. Su Burst ayuda al equipo. Debes balancear el uso para mantener los bonos Shimenawa.</p>
+<h3 id="cuáles-personajes-se-recomiendan-para-un-equipo-vaporize">¿Cuáles personajes se recomiendan para un equipo Vaporize?</h3>
+<p>Xingqiu es el habilitador ideal de Vaporize para Yoimiya. Otras buenas opciones son Yelan o Mona.</p>
+<h3 id="mi-yoimiya-muere-muy-rápido-en-el-campo-de-batalla-qué-puedo-hacer">Mi Yoimiya muere muy rápido en el campo de batalla. ¿Qué puedo hacer?</h3>
+<p>Agrega un escudo como Zhongli o Diona para mayor supervivencia. También puedes usar un curandero como Bennett o Jean.</p>
+<h3 id="qué-substats-debería-priorizar-para-artefactos">¿Qué substats debería priorizar para artefactos?</h3>
+<p>Enfócate en %ATK, Tasa crítica, Daño Pyro bonus. La recarga de energía también es útil.</p>
+<h2 id="conclusiones">Conclusiones</h2>
+<p>Yoimiya requiere una buena construcción y equipo para sobresalir como DPS. Sus opciones de armas y artefactos se enfocan mayormente en aumentar sus talentos naturales de daño basado en ataques normales Pyro. Equipos con habilitadores de reacción y buffers sirven mejor a su estilo de alta precisión y daño concentrado. Con la guía correcta para pulir su potencial único, Yoimiya puede convertirse en una poderosa fuerza ofensiva en tu party.</p>
+        </article>
+
+        <hr><section>
+                <h2>Entradas relacionadas</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/es/builds/guia-xingqiu"><img class="block my-[0]" src="/images/builds/xingqiu-build.webp" alt="Imagen de Xingqiu"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="unset hover:text-[#3e3355] transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-xingqiu">Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        13 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Hydro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/es/builds/guia-yun-jin"><img class="block my-[0]" src="/images/builds/yun-jin-build.webp" alt="Yun Jin image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="unset hover:text-[#3e3355] transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-yun-jin">Guía de Yun Jin: Libera su Potencial de Apoyo en Genshin Impact</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-14T00:00:00.000Z">
+                                        14 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Geo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <a id="scroll-top" href="#tabla-de-contenidos" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+        <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+        </svg>
+    </a>
+
+		</main>
+		<footer class="flex justify-center items-center shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/es/privacy">Política de privacidad</a>
+</footer>
+	</body></html>

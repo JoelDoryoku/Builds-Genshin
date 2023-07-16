@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos - Builds Genshin</title>
+		<meta name="title" content="Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta name="description" content="La guía definitiva para buildear el mejor Xingqiu en Genshin Impact: armas, artefactos, talentos, equipos y más optimizaciones para maximizar su potencial.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="og:description" content="La guía definitiva para buildear el mejor Xingqiu en Genshin Impact: armas, artefactos, talentos, equipos y más optimizaciones para maximizar su potencial.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/es/builds/guia-xingqiu">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-13T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="twitter:description" content="La guía definitiva para buildear el mejor Xingqiu en Genshin Impact: armas, artefactos, talentos, equipos y más optimizaciones para maximizar su potencial.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.6e9112ea.css" />
+<link rel="stylesheet" href="/_astro/index.6c32f8a6.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/es/">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/es/builds">Guías de personajes</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/es/">
+                    <img id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center" href="/es/">
+        <img id="logo-light" class="mr-4" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img id="logo-dark" class="hidden mr-4" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/es/">Inicio</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/es/builds">Guías de personajes</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			
+    <section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-13T00:00:00.000Z">Actualizado <b>13/7/2023</b> por <b>Builds Genshin</b></time>
+        <img src="/images/builds/xingqiu-build.webp" alt="Imagen de Xingqiu">
+        <article>
+            <h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ul>
+<li><a href="#armas-%C3%B3ptimas-para-xingqiu">Armas óptimas para Xingqiu</a></li>
+<li><a href="#los-mejores-artefactos-para-xingqiu">Los mejores artefactos para Xingqiu</a></li>
+<li><a href="#las-mejores-composiciones-de-equipo-de-xingqiu">Las mejores composiciones de equipo de Xingqiu</a></li>
+<li><a href="#maximizar-el-da%C3%B1o-y-el-resultado-de-soporte-de-xingqiu">Maximizar el daño y el resultado de soporte de Xingqiu</a></li>
+<li><a href="#gu%C3%ADa-de-prioridad-de-actualizaci%C3%B3n-de-talentos-de-xingqiu">Guía de prioridad de actualización de talentos de Xingqiu</a></li>
+<li><a href="#las-mejores-opciones-de-armas-f2p-para-xingqiu">Las mejores opciones de armas F2P para Xingqiu</a></li>
+<li><a href="#gu%C3%ADa-de-prioridad-de-mejora-de-constelaciones">Guía de prioridad de mejora de constelaciones</a></li>
+<li><a href="#respuestas-a-preguntas-frecuentes-sobre-xingqiu">Respuestas a preguntas frecuentes sobre Xingqiu</a></li>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
+</ul>
+<h2 id="introducción">Introducción</h2>
+<p>Xingqiu es uno de los personajes de apoyo más populares y versátiles en Genshin Impact. Con su poderosa aplicación de hydro, reducción de daño y capacidades de curación, puede encajar en muchas composiciones de equipo y permitir reacciones elementales fuertes. Esta guía integral cubrirá todo lo que necesita saber para construir el mejor Xingqiu para su estilo de juego y las necesidades del equipo.</p>
+<h2 id="armas-óptimas-para-xingqiu">Armas óptimas para Xingqiu</h2>
+<p>Elegir el arma adecuada para Xingqiu puede aumentar significativamente sus capacidades de apoyo. Aquí hay algunas de las mejores armas para él:</p>
+<h3 id="espada-sacrificial">Espada Sacrificial</h3>
+<p><img src="/images/weapons/swords/Sacrificial_Sword.webp" alt="Imagen Espada Sacrificial"></p>
+<p>La Espada Sacrificial es la mejor opción de arma de 4 estrellas de Xingqiu. Su efecto tiene un 40-80% de posibilidades de finalizar el tiempo de reutilización de su habilidad E y permitirle lanzarla de nuevo. Esto maximiza el tiempo de actividad de su aplicación hydro.</p>
+<h3 id="hoja-celeste">Hoja Celeste</h3>
+<p><img src="/images/weapons/swords/Skyward_Blade.webp" alt="Imagen Hoja Celeste"></p>
+<p>Esta 5 estrellas aumenta la Recarga de Energía y causa Daño de Área en los ataques normales. El aumento de ER impulsa el tiempo de actividad de Ráfaga de Xingqiu y el proc beneficia a sus espadas de lluvia.</p>
+<h3 id="the-alley-flash">The Alley Flash</h3>
+<p><img src="/images/weapons/swords/The_Alley_Flash.webp" alt="Imagen The Alley Flash"></p>
+<p>The Alley Flash otorga un gran impulso de ATK% y aumenta el DMG contra enemigos afectados por hydro. Esto mejora aún más el daño de la espada de lluvia de Xingqiu.</p>
+<h3 id="deseo-de-festering">Deseo de Festering</h3>
+<p><img src="/images/weapons/swords/Festering_Desire.webp" alt="Imagen Festering Desire"></p>
+<p>El exclusivo Deseo de Festering proporciona una gran subestadística de Recarga de Energía. Su habilidad aumenta el Daño de Habilidad Elemental, haciendo que el E de Xingqiu golpee más fuerte.</p>
+<h3 id="espada-favonius">Espada Favonius</h3>
+<p><img src="/images/weapons/swords/Favonius_Sword.webp" alt="Imagen Espada Favonius"></p>
+<p>Favonius Sword genera esferas de energía en golpes críticos. Esto ayuda a financiar la costosa explosión Q de Xingqiu. La estadística secundaria de Recarga de Energía también es útil.</p>
+<h3 id="iron-sting">Iron Sting</h3>
+<p><img src="/images/weapons/swords/Iron_Sting.webp" alt="Iron Sting Image"></p>
+<p>Iron Sting otorga EM, lo que aumenta el daño de reacción de vaporización y electro-cargado con las espadas de lluvia de Xingqiu. El pasivo también aumenta el DMG contra enemigos afectados por hydro o electro.</p>
+<h2 id="los-mejores-artefactos-para-xingqiu">Los mejores artefactos para Xingqiu</h2>
+<p>Cuando se trata de artefactos, hay dos opciones principales de conjunto para Xingqiu:</p>
+<h3 id="2-piezas-corazón-de-profundidad--2-piezas-noblesse">2 piezas Corazón de profundidad + 2 piezas Noblesse</h3>
+<p><img src="/images/artifacts/Heart_plus_Noblese.webp" alt="Imagen Corazón de profundidad y Noblesse"></p>
+<p>Esta combinación maximiza el daño al aumentar el daño hydro y el daño de ráfaga. Ofrece un buen equilibrio para potenciar los talentos de Xingqiu.</p>
+<h3 id="4-piezas-emblema-de-destino-cortado">4 piezas Emblema de destino cortado</h3>
+<p><img src="/images/artifacts/emblem_of_severed_fate.webp" alt="Imagen Emblema de destino cortado"></p>
+<p>El conjunto de 4 piezas Emblema aumenta el daño de ráfaga y la recarga de energía. Con suficiente ER subs, este conjunto permite un tiempo de actividad de Q extremadamente alto y daño con espada de lluvia.</p>
+<p>Para las estadísticas principales, priorice:</p>
+<ul>
+<li><strong>Arena</strong>: Recarga de energía o ATK%</li>
+<li><strong>Cáliz</strong>: Daño hydro</li>
+<li><strong>Círculo</strong>: Tasa crítica o Daño</li>
+</ul>
+<p>Concéntrese en subestadísticas como ATK%, Crit y Recarga de energía. También algo de EM es bueno para las reacciones.</p>
+<h2 id="las-mejores-composiciones-de-equipo-de-xingqiu">Las mejores composiciones de equipo de Xingqiu</h2>
+<p>Gracias a sus flexibles capacidades de apoyo, Xingqiu encaja bien en una variedad de composiciones de equipo. Aquí hay algunas de sus opciones de equipo más populares:</p>
+<h3 id="habilitador-de-dps-de-vaporización">Habilitador de DPS de vaporización</h3>
+<p>Emparejado con unidades de DPS pyro como Hu Tao, <a href="/es/builds/guia-yoimiya">Yoimiya</a>, Diluc, Klee o Yanfei, Xingqiu permite reacciones de vaporización consistentes que amplifican su daño pyro.</p>
+<h3 id="equipos-congelados">Equipos congelados</h3>
+<p>Combinado con unidades cryo como Ayaka, Kaeya o Ganyu, la aplicación hydro de Xingqiu permite enemigos congelados y el bono de tasa crítica de resonancia Cryo.</p>
+<h3 id="equipos-electro-cargados">Equipos Electro-cargados</h3>
+<p>Con electrós como Raiden, Fischl o Beidou, Xingqiu puede desencadenar la reacción electro-cargada para un daño hidro/electro generalizado.</p>
+<h3 id="doble-hydro-hu-tao">Doble Hydro Hu Tao</h3>
+<p>Agregar Yelan o Yelan más Xingqiu da a los equipos de Hu Tao un enorme aumento de la aplicación hydro para vaporizaciones más grandes.</p>
+<h3 id="equipos-paralizadores">Equipos paralizadores</h3>
+<p>Los equipos electrocargados con Fischl, Beidou y una unidad anemo como Sucrose o Kazuha pueden provocar un gran daño.</p>
+<h2 id="maximizar-el-daño-y-el-resultado-de-soporte-de-xingqiu">Maximizar el daño y el resultado de soporte de Xingqiu</h2>
+<p>Hay algunas formas clave de optimizar las capacidades de Xingqiu:</p>
+<ul>
+<li>
+<p>Suba de nivel su Habilidad elemental y el talento Ráfaga lo más alto posible. Estas son sus principales fuentes de daño y utilidad.</p>
+</li>
+<li>
+<p>Construya suficiente recarga de energía a través de artefactos para que su Q se pueda usar sin tiempo de inactividad. Alrededor de 180-200% es un buen objetivo.</p>
+</li>
+<li>
+<p>Use Espada Sacrificial si está disponible, o Hoja Celeste, para reducir el tiempo de reutilización y el reembolso de energía.</p>
+</li>
+<li>
+<p>Active su ráfaga justo antes de cambiar a su DPS en campo para maximizar su duración.</p>
+</li>
+<li>
+<p>Vaporice o Electro-cargue su Ráfaga en lugar de dejarla solo con daño por Tick.</p>
+</li>
+<li>
+<p>Use conjuntos de 4 piezas Emblema de destino cortado o Noblesse para daño de ráfaga y reembolso de energía.</p>
+</li>
+</ul>
+<p>Construir y maximizar adecuadamente el kit de Xingqiu lo convierte en uno de los mejores soportes y aplicadores hydro del juego.</p>
+<h2 id="guía-de-prioridad-de-actualización-de-talentos-de-xingqiu">Guía de prioridad de actualización de talentos de Xingqiu</h2>
+<p>Al actualizar los talentos de Xingqiu, concéntrese en subir de nivel estas habilidades en el siguiente orden de prioridad para obtener los mejores resultados:</p>
+<h3 id="nivel-1-ráfaga-elemental-q">Nivel 1: Ráfaga Elemental (Q)</h3>
+<p>La Ráfaga Elemental de Xingqiu, Guhua Sword: Fatal Rainscreen, es su talento más importante. Subirlo de nivel aumenta el daño de la espada de lluvia y la reducción del daño. Esto debe maximizarse primero.</p>
+<h3 id="nivel-2-habilidad-elemental-e">Nivel 2: Habilidad elemental (E)</h3>
+<p>Su Habilidad elemental, Guhua Sword: Fatal Rainscreen, genera espadas de lluvia e impulsa su aplicación hydro. Subirlo de nivel reduce el CD y aumenta el daño.</p>
+<h3 id="nivel-3-ataque-normal-na">Nivel 3: Ataque normal (NA)</h3>
+<p>Los ataques normales de Xingqiu se pueden dejar en un nivel más bajo, ya que hacen un daño mínimo y no son vitales para su kit. Aun así, subirlos de nivel ligeramente proporcionará un leve aumento de DPS.</p>
+<p>Priorizar su E y Q maximizará la aplicación de hydro de Xingqiu, la activación de reacciones y la reducción de daño para sus personajes en campo. ¡No pases por alto sus talentos!</p>
+<h2 id="las-mejores-opciones-de-armas-f2p-para-xingqiu">Las mejores opciones de armas F2P para Xingqiu</h2>
+<p>Como poderoso apoyo, Xingqiu aún puede proporcionar un inmenso valor sin armas 5 estrellas. Aquí hay algunas armas F2P accesibles que funcionan bien con él:</p>
+<h3 id="presagio-del-amanecer">Presagio del amanecer</h3>
+<p><img src="/images/weapons/swords/Harbinger_of_Dawn.webp" alt="Imagen Presagio del amanecer"></p>
+<p>Presagio del amanecer es su mejor opción de 3 estrellas. Su subestadística de daño crítico alto y el buff de daño de HP bajo se alinean perfectamente con el kit de Xingqiu.</p>
+<h3 id="deseo-de-festering-1">Deseo de festering</h3>
+<p><img src="/images/weapons/swords/Festering_Desire.webp" alt="Imagen Deseo de festering"></p>
+<p>Esta espada de evento ofrece Recarga de Energía y refuerza el daño de Habilidad Elemental. Cubre dos áreas clave para Xingqiu a la vez.</p>
+<h3 id="espada-favonius-1">Espada Favonius</h3>
+<p><img src="/images/weapons/swords/Favonius_Sword.webp" alt="Imagen Espada Favonius"></p>
+<p>Favonius Sword genera partículas de energía al golpear críticos. Esto ayuda a reembolsar el alto costo de su explosión Q.</p>
+<h3 id="la-espada-negra">La Espada Negra</h3>
+<p><img src="/images/weapons/swords/The_Black_Sword.webp" alt="Imagen La Espada Negra"></p>
+<p>La Espada Negra de Pase de Batalla proporciona curación, ATK y Daño de Ataque Normal, todo bastante útil para Xingqiu.</p>
+<h3 id="iron-sting-1">Iron Sting</h3>
+<p><img src="/images/weapons/swords/Iron_Sting.webp" alt="Imagen Iron Sting"></p>
+<p>Iron Sting otorgable otorga EM para reacciones de vaporización y electro-cargadas más fuertes. El buff de DMG pasivo también lo beneficia.</p>
+<p>Aunque no son tan fuertes como las opciones 5 estrellas, estas armas F2P son alternativas fantásticas mientras mejoran las fortalezas de Xingqiu.</p>
+<h2 id="guía-de-prioridad-de-mejora-de-constelaciones">Guía de prioridad de mejora de constelaciones</h2>
+<p>Las constelaciones de Xingqiu aumentan significativamente sus capacidades. Este es el orden de prioridad recomendado para desbloquear sus constelaciones:</p>
+<h3 id="c2-autumn-showers-sweep">C2: Autumn Showers Sweep</h3>
+<p>Reduce la RES Hydro de los enemigos golpeados por la Q de Xingqiu. Esto amplifica su daño de ráfaga.</p>
+<h3 id="c3-corriente-de-agotamiento">C3: Corriente de agotamiento</h3>
+<p>Aumenta el Nivel de Guhua Sword: Fatal Rainscreen en 3. Esto aumenta directamente su daño Q.</p>
+<h3 id="c1-rompiendo-olas">C1: Rompiendo olas</h3>
+<p>Agrega 3 niveles a Guhua Sword: Fatal Rainscreen. Nuevamente, mejorando directamente su Q.</p>
+<h3 id="c4-abrazo-de-la-lluvia">C4: Abrazo de la lluvia</h3>
+<p>Extiende la duración de la poderosa reducción de daño de Xingqiu después de que finaliza su ráfaga.</p>
+<h3 id="c5-plaga-de-lluvia">C5: Plaga de lluvia</h3>
+<p>Agrega reducción de resistencia hydro y CC menor a su Habilidad Elemental.</p>
+<h3 id="c6-flujo-del-regreso">C6: Flujo del regreso</h3>
+<p>Restablece el CD de su E cuando termina Q, permitiendo un tiempo de actividad de aplicación hydro cercano al 100%.</p>
+<p>Concéntrese primero en C1-C3 para amplificar el daño de su ráfaga antes de las constelaciones de utilidad.</p>
+<h2 id="respuestas-a-preguntas-frecuentes-sobre-xingqiu">Respuestas a preguntas frecuentes sobre Xingqiu</h2>
+<p>Aquí hay respuestas a algunas preguntas comunes sobre la construcción y el uso de Xingqiu:</p>
+<h3 id="qué-estadísticas-principales-debo-priorizar-en-los-artefactos-de-xingqiu">¿Qué estadísticas principales debo priorizar en los artefactos de Xingqiu?</h3>
+<p>Concéntrese en arena de recarga de energía o ATK%, cáliz hydro DMG y círculo de tasa crítica o DMG. También algo de EM de subestadísticas es bueno.</p>
+<h3 id="es-bueno-xingqiu-en-c0">¿Es bueno Xingqiu en C0?</h3>
+<p>Sí, Xingqiu sigue siendo un support de primer nivel en C0. Sus constelaciones posteriores lo hacen mucho más fuerte.</p>
+<h3 id="qué-nivel-de-talento-es-suficiente-para-xingqiu">¿Qué nivel de talento es suficiente para Xingqiu?</h3>
+<p>El objetivo es conseguir su Q al menos al Nivel 8, siendo el Nivel 9 o 10 ideal. Nivel 6+ en su E también se recomienda.</p>
+<h3 id="xingqiu-necesita-mucha-recarga-de-energía">¿Xingqiu necesita mucha recarga de energía?</h3>
+<p>Quiere 180-200% ER de artefactos para que su ráfaga se pueda lanzar sin tiempo de inactividad. Armas como Espada Sacrificial también ayudan.</p>
+<h3 id="es-bueno-el-4-piezas-noblesse-en-xingqiu">¿Es bueno el 4 piezas Noblesse en Xingqiu?</h3>
+<p>Sí, el conjunto de 4 piezas Noblesse aumenta el potencial de aumento de ráfaga. 2 piezas Noblesse + 2 piezas Corazón de profundidad también es fuerte.</p>
+<h3 id="cuánto-hp-necesita-xingqiu">¿Cuánto HP necesita Xingqiu?</h3>
+<p>Alrededor de 20k HP es suficiente. Concéntrese primero en las estadísticas ofensivas antes de construir HP adicional.</p>
+<p>¡Con la construcción correcta, Xingqiu puede encajar en muchas composiciones de equipo y permitir reacciones de vaporización y electro-carga fuertes!</p>
+<h2 id="conclusión">Conclusión</h2>
+<p>En resumen, construir a Xingqiu como un habilitador hydro requiere maximizar el tiempo de actividad de su Ráfaga Elemental a través de subestadísticas de recarga de energía y armas. Espada Sacrificial, conjuntos de artefactos Emblem / Noblesse y tasa crítica / daño hydro aumentan su producción de daño.</p>
+<p>Utilizarlo en equipos de vaporización con personajes DPS pyro o composiciones electrocargadas permite el máximo potencial de sus poderosas espadas de agua. Dar prioridad a sus talentos E y Q es una prioridad, y obtener constelaciones clave puede elevar sus capacidades. Con la configuración adecuada, Xingqiu sigue siendo una de las mejores unidades de apoyo en Genshin Impact.</p>
+        </article>
+
+        <hr><section>
+                <h2>Entradas relacionadas</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/es/builds/guia-yoimiya"><img class="block my-[0]" src="/images/builds/yoimiya-build.webp" alt="Imagen de Yoimiya"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="unset hover:text-[#3e3355] transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-yoimiya">Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        13 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>DPS</code><code>Pyro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <a id="scroll-top" href="#tabla-de-contenidos" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+        <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+        </svg>
+    </a>
+
+		</main>
+		<footer class="flex justify-center items-center shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/es/privacy">Política de privacidad</a>
+</footer>
+	</body></html>

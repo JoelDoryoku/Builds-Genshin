@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams - Builds Genshin</title>
+		<meta name="title" content="Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams - Builds Genshin">
+		<meta name="description" content="The ultimate Genshin Impact guide to building Zhongli covers his best weapons, artifacts, stats, talents, teams, and roles to maximize his damage and shields.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams - Builds Genshin">
+		<meta property="og:description" content="The ultimate Genshin Impact guide to building Zhongli covers his best weapons, artifacts, stats, talents, teams, and roles to maximize his damage and shields.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/en/builds/zhongli-build">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-15T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams - Builds Genshin">
+		<meta property="twitter:description" content="The ultimate Genshin Impact guide to building Zhongli covers his best weapons, artifacts, stats, talents, teams, and roles to maximize his damage and shields.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.6e9112ea.css" />
+<link rel="stylesheet" href="/_astro/index.6c32f8a6.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/en/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/en/builds">Character Builds</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/en/">
+                    <img id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center" href="/en/">
+        <img id="logo-light" class="mr-4" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img id="logo-dark" class="hidden mr-4" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/en/">Home</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/en/builds">Character Builds</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			
+    <section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-15T00:00:00.000Z">Updated <b>7/15/2023</b> by <b>Builds Genshin</b></time>
+        <img src="/images/builds/Zhongli.webp" alt="Zhongli image">
+        <article>
+            <h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#how-to-build-zhongli-as-a-shield-support">How to Build Zhongli as a Shield Support</a>
+<ul>
+<li><a href="#best-weapons-for-shield-support-zhongli">Best Weapons for Shield Support Zhongli</a></li>
+<li><a href="#best-artifacts-for-shield-support-zhongli">Best Artifacts for Shield Support Zhongli</a></li>
+<li><a href="#stats-to-prioritize-for-shield-support-zhongli">Stats to Prioritize for Shield Support Zhongli</a></li>
+<li><a href="#talent-priority-for-shield-support-zhongli">Talent Priority for Shield Support Zhongli</a></li>
+<li><a href="#best-teammates-for-shield-support-zhongli">Best Teammates for Shield Support Zhongli</a></li>
+</ul>
+</li>
+<li><a href="#how-to-build-zhongli-as-a-main-dps-carry">How to Build Zhongli as a Main DPS Carry</a>
+<ul>
+<li><a href="#best-weapons-for-dps-zhongli">Best Weapons for DPS Zhongli</a></li>
+<li><a href="#best-artifacts-for-dps-zhongli">Best Artifacts for DPS Zhongli</a></li>
+<li><a href="#stats-to-prioritize-for-dps-zhongli">Stats to Prioritize for DPS Zhongli</a></li>
+<li><a href="#talent-priority-for-dps-zhongli">Talent Priority for DPS Zhongli</a></li>
+<li><a href="#best-teammates-for-dps-zhongli">Best Teammates for DPS Zhongli</a></li>
+</ul>
+</li>
+<li><a href="#zhongli-constellations-and-how-they-affect-his-builds">Zhongli Constellations and How They Affect His Builds</a></li>
+<li><a href="#answering-key-questions-on-building-zhongli">Answering Key Questions on Building Zhongli</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Zhongli is one of the most popular and powerful characters in Genshin Impact. As an Archon and adeptus, Zhongli brings unmatched utility through his strong shields, crowd control, resistance shreds, and Geo constructs. He can be an invaluable teammate in many team compositions, from boosting your main DPS to enabling sheer survivability.</p>
+<p>This comprehensive guide will cover everything you need to know to build the best Zhongli for your playstyle and party setup. We’ll go over optimal weapons, artifacts, stats to prioritize, party roles, synergies, constellations, and more!</p>
+<h2 id="how-to-build-zhongli-as-a-shield-support">How to Build Zhongli as a Shield Support</h2>
+<p>Zhongli’s claim to fame is his incredibly strong shields, unmatched in the game. His elemental skill, Dominus Lapidis, summons a powerful jade shield that absorbs damage based on Zhongli’s max HP.</p>
+<p>Building Zhongli as a shield support revolves around maximizing his HP to create the sturdiest shields possible. This build also enhances his burst damage which scales off HP.</p>
+<h3 id="best-weapons-for-shield-support-zhongli">Best Weapons for Shield Support Zhongli</h3>
+<h4 id="staff-of-homa">Staff of Homa</h4>
+<p><img src="/images/weapons/lances/Staff_of_Homa.webp" alt="Staff of Homa Image"></p>
+<p>Zhongli’s signature 5-star weapon. At R1 it grants 20% HP and a damage buff based on max HP. Amazing for stronger shields and burst.</p>
+<h4 id="vortex-vanquisher">Vortex Vanquisher</h4>
+<p><img src="/images/weapons/lances/Vortex_Vanquisher.webp" alt="Vortex Vanquisher Image"></p>
+<p>5-star polearm that grants ATK% and shield strength based on Zhongli’s max HP. Boosts shield absorption.</p>
+<h4 id="black-tassel">Black Tassel</h4>
+<p><img src="/images/weapons/lances/Black_Tassel.webp" alt="Black Tassel Image"></p>
+<p>3-star option that has an HP% substat. Great for early shield boosts on a budget.</p>
+<h4 id="favonius-lance">Favonius Lance</h4>
+<p><img src="/images/weapons/lances/Favonius_Lance.webp" alt="Favonius Lance Image"></p>
+<p>Generates energy to fuel Zhongli’s expensive burst.</p>
+<h3 id="best-artifacts-for-shield-support-zhongli">Best Artifacts for Shield Support Zhongli</h3>
+<h4 id="2-pc-tenacity-of-the-millelith--2-pc-archaic-petra">2-pc Tenacity of the Millelith + 2-pc Archaic Petra</h4>
+<p><img src="/images/artifacts/Millelith_and_Petra.webp" alt="Tenacity of the Millelith &#x26; Archaic Petra Image"></p>
+<p>Standard shield build for the HP% and damage bonuses.</p>
+<h4 id="4-pc-tenacity-of-the-millelith">4-pc Tenacity of the Millelith</h4>
+<p><img src="/images/artifacts/Item_Flower_of_Accolades.webp" alt="Tenacity of the Millelith Image"></p>
+<p>Boosts shield strength and provides an ATK buff to nearby allies. Great utility set.</p>
+<h4 id="4-pc-archaic-petra">4-pc Archaic Petra</h4>
+<p><img src="/images/artifacts/Petra.webp" alt="Archaic Petra Image"></p>
+<p>Increases damage against enemies affected by Geo. Good for boosting Zhongli’s personal damage.</p>
+<h3 id="stats-to-prioritize-for-shield-support-zhongli">Stats to Prioritize for Shield Support Zhongli</h3>
+<ul>
+<li>
+<p><strong>HP%</strong> - All HP% main stats on sands/goblet/circlet. HP substats on all artifacts.</p>
+</li>
+<li>
+<p><strong>Energy Recharge</strong> - Ensures Zhongli’s burst is readily available. Shoot for 130%-150%.</p>
+</li>
+<li>
+<p><strong>Crit Rate/DMG</strong> - Improves burst and skill damage since they scale with HP. Good substats, not priorities.</p>
+</li>
+<li>
+<p><strong>Flat HP</strong> - More HP means thicker shields. Take HP main stats on flower/feather.</p>
+</li>
+</ul>
+<h3 id="talent-priority-for-shield-support-zhongli">Talent Priority for Shield Support Zhongli</h3>
+<ul>
+<li>
+<p>Level <strong>Elemental Burst</strong> > Elemental Skill > Normal Attacks</p>
+</li>
+<li>
+<p>Burst is expensive but offers CC and resistance shreds to buff team. Max this first.</p>
+</li>
+<li>
+<p>Skill gives stronger shields. Level this next.</p>
+</li>
+<li>
+<p>Normal attacks are low priority but still boost pillar pulses.</p>
+</li>
+</ul>
+<h3 id="best-teammates-for-shield-support-zhongli">Best Teammates for Shield Support Zhongli</h3>
+<ul>
+<li>
+<p><strong>Pyro DPS</strong> - Zhongli shreds pyro resistance with his burst. Great with Hu Tao, <a href="/en/builds/yoimiya-build">Yoimiya</a>, Diluc, etc.</p>
+</li>
+<li>
+<p><strong>Cryo DPS</strong> - Freeze comps love Zhongli’s beefy shields. Pairs well with Ayaka, Ganyu, etc.</p>
+</li>
+<li>
+<p><strong>Geo Character</strong> - Resonance provides stronger shields. Albedo, Gorou, Traveler work well.</p>
+</li>
+<li>
+<p><strong>Off-field Sub DPS</strong> - Zhongli enables greedy DPS by protecting them. Works with Xingqiu, Fischl, Beidou, etc.</p>
+</li>
+</ul>
+<h2 id="how-to-build-zhongli-as-a-main-dps-carry">How to Build Zhongli as a Main DPS Carry</h2>
+<p>While not as popular, Zhongli can dish out impressive damage as an on-field DPS when built physically or with Geo. He has unique advantages compared to other carries.</p>
+<p>Zhongli’s shields give him strong survivability and interruption resistance when attacking. His elemental burst can petrify to group enemies, enabling him to AoE them down. His normal attack combos are smooth and integrate well with supports.</p>
+<p>Let’s look at how to maximize Zhongli’s damage potential as a main DPS.</p>
+<h3 id="best-weapons-for-dps-zhongli">Best Weapons for DPS Zhongli</h3>
+<h4 id="staff-of-homa-1">Staff of Homa</h4>
+<p><img src="/images/weapons/lances/Staff_of_Homa.webp" alt="Staff of Homa Image"></p>
+<p>His signature weapon is also best-in-slot for DPS due to the crit damage.</p>
+<h4 id="crescent-pike">Crescent Pike</h4>
+<p><img src="/images/weapons/lances/Crescent_Pike.webp" alt="Crescent Pike Image"></p>
+<p>F2P physical spear that enhances normal attack damage.</p>
+<h4 id="primordial-jade-winged-spear">Primordial Jade Winged Spear</h4>
+<p><img src="/images/weapons/lances/Primordial_Jade_Winged-Spear.webp" alt="Primordial Jade Winged Spear Image"></p>
+<p>5-star with high base ATK and DMG bonus.</p>
+<h4 id="vortex-vanquisher-1">Vortex Vanquisher</h4>
+<p><img src="/images/weapons/lances/Vortex_Vanquisher.webp" alt="Vortex Vanquisher Image"></p>
+<p>ATK% substat and damage against shielded enemies.</p>
+<h4 id="lithic-spear">Lithic Spear</h4>
+<p><img src="/images/weapons/lances/Lithic_Spear.webp" alt="Lithic Spear Image"></p>
+<p>Good for mono-Geo teams. ATK% and Geo DMG bonus.</p>
+<h3 id="best-artifacts-for-dps-zhongli">Best Artifacts for DPS Zhongli</h3>
+<h4 id="2-pc-gladiator--2-pc-archaic-petra">2-pc Gladiator + 2-pc Archaic Petra</h4>
+<p><img src="/images/artifacts/Gladiator_and_Petra.webp" alt="Gladiator and Petra Image"></p>
+<p>Standard physical/Geo DPS build. Provides ATK% and Geo DMG.</p>
+<h4 id="2-pc-gladiator--2-pc-shimenawa">2-pc Gladiator + 2-pc Shimenawa</h4>
+<p><img src="/images/artifacts/Gladiator_plus_Shimenawa.webp" alt="Gladiator and Shimenawa Image"></p>
+<p>Strong ATK% bonuses with added normal/charged attack damage.</p>
+<h4 id="4-pc-bolide">4-pc Bolide</h4>
+<p><img src="/images/artifacts/bolide.webp" alt="Bolide Image"></p>
+<p>Makes the most of Zhongli’s shields by increasing normal and charged attack damage when shielded. Great set if running him as the solo Geo on-field carry.</p>
+<h3 id="stats-to-prioritize-for-dps-zhongli">Stats to Prioritize for DPS Zhongli</h3>
+<ul>
+<li>
+<p><strong>ATK%</strong> - Geo damage scales off ATK so this takes priority for sands/goblet choices.</p>
+</li>
+<li>
+<p><strong>Crit Rate &#x26; Damage</strong> - Ensure a 1:2 ratio for reliable crits. Aim for 50% rate minimum.</p>
+</li>
+<li>
+<p><strong>Energy Recharge</strong> - Burst is still important for CC and geo constructs. Some ER subs help.</p>
+</li>
+<li>
+<p><strong>Geo Damage</strong> - Boosts skill and burst. Take geo goblet if available.</p>
+</li>
+</ul>
+<h3 id="talent-priority-for-dps-zhongli">Talent Priority for DPS Zhongli</h3>
+<ul>
+<li>
+<p>Level <strong>Normal Attacks</strong> > Burst > Skill</p>
+</li>
+<li>
+<p>Normal attacks make up the bulk of his field time damage. Max this first.</p>
+</li>
+<li>
+<p>Burst remains valuable for CC and some extra damage. Level this next.</p>
+</li>
+<li>
+<p>Skill can be left at a lower level. Mostly used for shields while attacking.</p>
+</li>
+</ul>
+<h3 id="best-teammates-for-dps-zhongli">Best Teammates for DPS Zhongli</h3>
+<ul>
+<li>
+<p><strong>Geo Batteries</strong> - Ningguang, Geo Traveler provide energy for Zhongli’s expensive burst.</p>
+</li>
+<li>
+<p><strong>Off-field Sub DPS</strong> - Fischl, Xiangling, Xingqiu deal extra damage simultaneously.</p>
+</li>
+<li>
+<p><strong>Pyro Characters</strong> - Benefit from Zhongli’s pyro resistance shred. Hu Tao, Xiangling work well.</p>
+</li>
+<li>
+<p><strong>Cryo Supports</strong> - Enable freeze, superconduct reactions. Kaeya, Rosaria, Diona recommended.</p>
+</li>
+</ul>
+<h2 id="zhongli-constellations-and-how-they-affect-his-builds">Zhongli Constellations and How They Affect His Builds</h2>
+<p>Zhongli’s constellations provide some nice boosts but are not necessary to make him a powerful character in Genshin Impact. Here is how each constellation affects Zhongli’s builds:</p>
+<p><strong>C1 - Dominance of Stone</strong></p>
+<ul>
+<li>Gives Zhongli’s stele additional bonus damage based on his max HP. This makes HP builds slightly stronger.</li>
+</ul>
+<p><strong>C2 - Arcanum of Crystal</strong></p>
+<ul>
+<li>Significant boost by increasing the duration of Zhongli’s elemental burst petrification effect. Great for both shield and DPS builds.</li>
+</ul>
+<p><strong>C4 - Rain of Stone</strong></p>
+<ul>
+<li>Adds AoE geo damage when Zhongli’s burst petrifies enemies. Enhances his burst nuke potential.</li>
+</ul>
+<p><strong>C5 - Divine Piercing</strong></p>
+<ul>
+<li>Slight boost to Zhongli’s damage against enemies affected by geo or petrified. Nice for DPS builds.</li>
+</ul>
+<p><strong>C6 - Celestial Equilibrium</strong></p>
+<ul>
+<li>After using burst, Zhongli gains bonus elemental/physical damage for a duration. Big spike for carry potential.</li>
+</ul>
+<p>In summary, key constellations like C2 and C6 can meaningfully improve Zhongli’s capabilities in certain builds. But he remains a great character at C0. Constellations are not needed to make good use of Zhongli.</p>
+<h2 id="answering-key-questions-on-building-zhongli">Answering Key Questions on Building Zhongli</h2>
+<p>Let’s wrap up with answers to some frequently asked questions about building Zhongli:</p>
+<h3 id="what-are-zhonglis-strengths-and-weaknesses">What are Zhongli’s strengths and weaknesses?</h3>
+<h4 id="strengths">Strengths</h4>
+<ul>
+<li>
+<p>Extremely strong shields</p>
+</li>
+<li>
+<p>Provides 20% universal and geo resistance shred</p>
+</li>
+<li>
+<p>Petrify CC on burst for 4s (+2s at C2)</p>
+</li>
+<li>
+<p>Smooth animations and high poise when attacking</p>
+</li>
+<li>
+<p>Versatile in many team comps</p>
+</li>
+</ul>
+<h4 id="weaknesses">Weaknesses</h4>
+<ul>
+<li>
+<p>Struggles against corrosion due to reliance on shields</p>
+</li>
+<li>
+<p>Provides no amplification reactions like melt, vaporize</p>
+</li>
+<li>
+<p>Expensive 80 energy burst cost</p>
+</li>
+</ul>
+<h3 id="what-main-stats-should-i-use-for-zhongli-artifacts">What main stats should I use for Zhongli artifacts?</h3>
+<p>For support, prioritize HP% sands, geo goblet, crit circlet.</p>
+<p>For DPS, use ATK% sands, geo goblet, crit circlet.</p>
+<h3 id="what-talent-leveling-priority-should-i-use-for-zhongli">What talent leveling priority should I use for Zhongli?</h3>
+<p>Shield support - Burst > Skill > Normal Attack</p>
+<p>DPS Carry - Normal Attack > Burst > Skill</p>
+<h3 id="what-weapons-work-well-for-zhongli-besides-his-signature-weapon">What weapons work well for Zhongli besides his signature weapon?</h3>
+<ul>
+<li>
+<p>F2P - Black Tassel, Crescent Pike</p>
+</li>
+<li>
+<p>4-Stars - Favonius Lance, Deathmatch</p>
+</li>
+<li>
+<p>5-Stars - Vortex Vanquisher, Primordial Jade Spear</p>
+</li>
+</ul>
+<h3 id="is-c2-zhongli-worth-wishing-for">Is C2 Zhongli worth wishing for?</h3>
+<p>C2 extends his petrify CC duration which is a big boost. But C0 already performs great. Evaluate your primos and team needs.</p>
+<h3 id="can-zhongli-work-as-a-phys-dps-what-about-hybrid-build">Can Zhongli work as a phys DPS? What about hybrid build?</h3>
+<p>Yes, physical Zhongli with Crescent Pike can work well. Hybrid builds tend to underperform - better to focus on one role.</p>
+<h3 id="should-i-triple-crown-zhonglis-talents">Should I triple crown Zhongli’s talents?</h3>
+<p>Only if you use him as an on-field DPS carry. For support, crowning his burst is sufficient.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>That sums up this extensive guide on optimizing Zhongli in Genshin Impact! He’s extremely versatile - able to shield your teams impenetrably or deal big geo damage himself. Build him according to the role you need filled in your party. Prioritize HP% for shield support or ATK% for DPS Zhongli. Target his elemental burst or normal attacks first when leveling talents. Equip Homa if you have it or Black Tassel/Crescent Pike as F2P options. And make sure to team him with characters that amplify his strengths. Follow this guide and Zhongli will serve you well! Let me know if you have any other Zhongli build questions.</p>
+        </article>
+
+        <hr><section>
+                <h2>Related Posts</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/en/builds/yoimiya-build"><img class="block my-[0]" src="/images/builds/yoimiya-build.webp" alt="Yoimiya image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="unset hover:text-[#3e3355] transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/yoimiya-build">Yoimiya Build Guide: Maximize Damage for Genshin&#39;s Best Pyro Archer</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        Jul 13, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>DPS</code><code>Pyro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <a id="scroll-top" href="#table-of-contents" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+        <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+        </svg>
+    </a>
+
+		</main>
+		<footer class="flex justify-center items-center shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/en/privacy">Privacy Policy</a>
+</footer>
+	</body></html>

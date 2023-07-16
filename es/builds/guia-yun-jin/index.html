@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Guía de Yun Jin: Libera su Potencial de Apoyo en Genshin Impact - Builds Genshin</title>
+		<meta name="title" content="Guía de Yun Jin: Libera su Potencial de Apoyo en Genshin Impact - Builds Genshin">
+		<meta name="description" content="Guía de Genshin Impact para buildear la mejor Yun Jin support. Maximiza su potencial único de buff de ataque normal con consejos sobre artefactos, armas y más.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Guía de Yun Jin: Libera su Potencial de Apoyo en Genshin Impact - Builds Genshin">
+		<meta property="og:description" content="Guía de Genshin Impact para buildear la mejor Yun Jin support. Maximiza su potencial único de buff de ataque normal con consejos sobre artefactos, armas y más.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/es/builds/guia-yun-jin">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-14T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Guía de Yun Jin: Libera su Potencial de Apoyo en Genshin Impact - Builds Genshin">
+		<meta property="twitter:description" content="Guía de Genshin Impact para buildear la mejor Yun Jin support. Maximiza su potencial único de buff de ataque normal con consejos sobre artefactos, armas y más.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.6e9112ea.css" />
+<link rel="stylesheet" href="/_astro/index.6c32f8a6.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/es/">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/es/builds">Guías de personajes</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/es/">
+                    <img id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center" href="/es/">
+        <img id="logo-light" class="mr-4" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img id="logo-dark" class="hidden mr-4" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/es/">Inicio</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/es/builds">Guías de personajes</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			
+    <section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Guía de Yun Jin: Libera su Potencial de Apoyo en Genshin Impact
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-14T00:00:00.000Z">Actualizado <b>14/7/2023</b> por <b>Builds Genshin</b></time>
+        <img src="/images/builds/yun-jin-build.webp" alt="Yun Jin image">
+        <article>
+            <h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ul>
+<li><a href="#resumen-del-kit-y-rol-de-yun-jin">Resumen del Kit y Rol de Yun Jin</a></li>
+<li><a href="#las-mejores-armas-para-yun-jin-de-apoyo">Las Mejores Armas para Yun Jin de Apoyo</a></li>
+<li><a href="#artefactos-para-yun-jin">Artefactos para Yun Jin</a></li>
+<li><a href="#los-mejores-equipos-para-yun-jin">Los Mejores Equipos para Yun Jin</a></li>
+<li><a href="#las-mejores-constelaciones-para-yun-jin">Las Mejores Constelaciones para Yun Jin</a></li>
+<li><a href="#prioridad-de-talento-y-ascensi%C3%B3n">Prioridad de Talento y Ascensión</a></li>
+<li><a href="#es-viable-c6-yun-jin-como-dps-en-campo">¿Es viable C6 Yun Jin como DPS en campo?</a></li>
+<li><a href="#es-yun-jin-una-buena-inversi%C3%B3n-para-jugadores-f2p">¿Es Yun Jin una Buena Inversión para Jugadores F2P?</a></li>
+<li><a href="#pensamientos-finales-sobre-el-valor-de-yun-jin">Pensamientos Finales sobre el Valor de Yun Jin</a></li>
+<li><a href="#en-resumen-c%C3%B3mo-construir-la-mejor-yun-jin">En Resumen: Cómo Construir la Mejor Yun Jin</a></li>
+<li><a href="#preguntas-frecuentes-sobre-yun-jin">Preguntas Frecuentes sobre Yun Jin</a></li>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
+</ul>
+<h2 id="introducción">Introducción</h2>
+<p>Yun Jin es un poderoso personaje de apoyo Dendro en Genshin Impact que sobresale buffeando el daño de ataques normales. Con la construcción, artefactos y composición de equipo adecuados, Yun Jin puede elevar a tu DPS principal a nuevas alturas. Esta guía integral cubrirá todo lo que necesitas saber para construir el mejor apoyo Yun Jin para tu cuenta.</p>
+<h2 id="resumen-del-kit-y-rol-de-yun-jin">Resumen del Kit y Rol de Yun Jin</h2>
+<h3 id="extraordinaria-buffeadora-de-ataques-normales">Extraordinaria Buffeadora de Ataques Normales</h3>
+<p>Todo el kit de Yun Jin se enfoca en buffear el daño de ataques normales. Su habilidad elemental proporciona un buff de daño apilable para los ataques normales, mientras que su estallido otorga un enorme bono de daño plano durante su duración. Esto la convierte en una excelente opción de apoyo para personajes que dependen en gran medida de cadenas de ataques normales como Yoimiya, Ayato y Noelle.</p>
+<h3 id="apoyo-de-escala-de-def">Apoyo de Escala de DEF</h3>
+<p>De manera única, Yun Jin escala principalmente DEF en lugar de ATK tanto para el daño como para la potencia de buffs. Esto significa que enfocarse en las estadísticas principales y secundarias de DEF% es óptimo para maximizar su potencial. El conjunto de artefactos Husk of Opulent Dreams se sincroniza perfectamente con esta escala de DEF.</p>
+<h3 id="generación-de-partículas-y-necesidades-de-energía">Generación de Partículas y Necesidades de Energía</h3>
+<p>Si bien la habilidad de Yun Jin genera algunas partículas elementales, su estallido de costo de energía 80 significa que necesita una batería para financiarlo constantemente. Baterías como Fischl y Bennett son grandes compañeros de equipo para Yun Jin para mantener activo su estallido. Construir algo de Recarga de Energía en Yun Jin también ayuda a aumentar el tiempo de actividad.</p>
+<h2 id="las-mejores-armas-para-yun-jin-de-apoyo">Las Mejores Armas para Yun Jin de Apoyo</h2>
+<p>Las mejores armas de Yun Jin mejoran su DEF, necesidades de ER o poder de buffeo de equipo. Aquí hay opciones principales para equipar para ella.</p>
+<h3 id="favonius-lance">Favonius Lance</h3>
+<p><img src="/images/weapons/lances/Favonius_Lance.webp" alt="Imagen Favonius Lance"></p>
+<ul>
+<li>La alta ER y la generación de partículas de Favonius Lance resuelven las necesidades de energía de Yun Jin.</li>
+<li>El pasivo genera partículas blancas para cargar su estallido más rápido.</li>
+<li>Una excelente opción gratuita o de inicio.</li>
+</ul>
+<h3 id="lanza-de-homa">Lanza de Homa</h3>
+<p><img src="/images/weapons/lances/Staff_of_Homa.webp" alt="Imagen Staff of Homa"></p>
+<ul>
+<li>Otorga un enorme aumento de DEF% que escala su habilidad, estallido y daño personal.</li>
+<li>El pasivo otorga un bono de DMG% bastante grande cuando está por debajo del 50% de HP.</li>
+<li>BiS para buffear las capacidades generales de Yun Jin.</li>
+</ul>
+<h3 id="white-tassel">White Tassel</h3>
+<p><img src="/images/weapons/lances/White_Tassel.webp" alt="Imagen White Tassel"></p>
+<ul>
+<li>La opción barata de 3 estrellas que proporciona un impulso al DMG% de ataque normal.</li>
+<li>Bueno para cuentas de inicio del juego que carecen de armas de 4 y 5 estrellas.</li>
+<li>Se puede refinar a niveles más altos fácilmente.</li>
+</ul>
+<h2 id="artefactos-para-yun-jin">Artefactos para Yun Jin</h2>
+<p>El conjunto Husk of Opulent Dreams está hecho a medida para Yun Jin. Junto con las estadísticas principales de DEF%, se recomienda apilar ER en las subestadísticas.</p>
+<h3 id="husk-of-opulent-dreams-4pc">Husk of Opulent Dreams (4pc)</h3>
+<p><img src="/images/artifacts/Husk.webp" alt="Imagen Husk of Opulent Dreams"></p>
+<ul>
+<li>Buffea DEF y DMG% Geo después de golpear a los enemigos con Habilidad Elemental.</li>
+<li>Perfecto para el kit y la escala de DEF de Yun Jin.</li>
+<li>Cultiva el dominio de Husk/Clam para optimizar este conjunto.</li>
+</ul>
+<h3 id="husk-of-opulent-dreams-2pc--reminiscencia-de-esfuerzo-destrozado-2pc">Husk of Opulent Dreams (2pc) + Reminiscencia de Esfuerzo Destrozado (2pc)</h3>
+<p><img src="/images/artifacts/Husk_and_Emblem.webp" alt="Imagen Husk of Opulent Dreams and Emblem of Severed Fate"></p>
+<ul>
+<li>Mezclar el bono de DEF% de 2pc Husk con 2pc Reminiscencia de ER% es una buena alternativa.</li>
+<li>Le otorga escalado de DEF y resuelve las necesidades de energía.</li>
+<li>Puede funcionar con piezas Husk subóptimas hasta cultivar un 4pc.</li>
+</ul>
+<h3 id="estadísticas-principales">Estadísticas Principales</h3>
+<p>Arena DEF% / Cáliz Geo DMG% / Círculo DEF% o CRIT</p>
+<h3 id="subestadísticas">Subestadísticas</h3>
+<p>DEF% > ER% > CRIT > ATK%</p>
+<h2 id="los-mejores-equipos-para-yun-jin">Los Mejores Equipos para Yun Jin</h2>
+<p>Yun Jin encaja en equipos centrados en fortalecer a los personajes DPS de ataque normal. Aquí hay algunas de sus mejores composiciones de equipo.</p>
+<h3 id="yoimiya--yun-jin--yelan--bennett">Yoimiya + Yun Jin + Yelan + Bennett</h3>
+<ul>
+<li>El explosivo daño de ataque normal de <a href="/es/builds/guia-yoimiya">Yoimiya</a> se amplifica aún más con el buff de Yun Jin.</li>
+<li>Yelan añade un daño sustancial a través de su burst y reacciones.</li>
+<li>Bennett proporciona curación, buffs de ATK y resonancia Pyro.</li>
+</ul>
+<h3 id="ayato--yun-jin--fischl--diona">Ayato + Yun Jin + Fischl + Diona</h3>
+<ul>
+<li>Yun Jin empodera el estilo de juego de ataques normales de Ayato, su compañero Inazuma.</li>
+<li>Fischl genera energía y permite reacciones Electro-cargadas.</li>
+<li>Diona escudos, cura y proporciona el bono de crítico de resonancia Cryo.</li>
+</ul>
+<h3 id="noelle--yun-jin--fischl--flex">Noelle + Yun Jin + Fischl + Flex</h3>
+<ul>
+<li>Los ataques normales de barrido de Noelle se vuelven más mortíferos con los buffs de Yun Jin.</li>
+<li>Fischl genera energía para sus estallidos de alto costo.</li>
+<li>La ranura Flex puede ser Bennett, Zhongli o un personaje Anemo.</li>
+</ul>
+<h3 id="razor--yun-jin--diona--flex">Razor + Yun Jin + Diona + Flex</h3>
+<ul>
+<li>El DPS físico Razor obtiene un gran impulso del buff de ataque normal de Yun Jin.</li>
+<li>Diona proporciona curación, escudos y resonancia Cryo crítico.</li>
+<li>La ranura Flex puede contener Bennett, Fischl o un personaje Anemo como Sucrose.</li>
+</ul>
+<h2 id="las-mejores-constelaciones-para-yun-jin">Las Mejores Constelaciones para Yun Jin</h2>
+<p>En C0, Yun Jin ya es una gran apoyo. Obtener duplicados desbloquea algunas mejoras agradables para su kit. Aquí están sus constelaciones más impactantes:</p>
+<h3 id="c2-bamboo-dragons-cascade">C2: Bamboo Dragon’s Cascade</h3>
+<ul>
+<li>Aumenta el buff de DEF obtenido al usar su estallido a los miembros del equipo en un 50%.</li>
+<li>Su mayor powerspike para la capacidad de buff.</li>
+</ul>
+<h3 id="c4-dragon-storm">C4: Dragon Storm</h3>
+<ul>
+<li>Aumenta la duración de su estallido en 3s, lo que extiende su buff.</li>
+<li>Proporciona más flexibilidad en las rotaciones para buffear a todos los miembros del equipo.</li>
+</ul>
+<h3 id="c6-dragons-ode">C6: Dragon’s Ode</h3>
+<ul>
+<li>Otorga un buff de DEF del 50% durante 12s después de usar su estallido.</li>
+<li>Amplifica aún más su daño personal y la fuerza del buff.</li>
+</ul>
+<h2 id="prioridad-de-talento-y-ascensión">Prioridad de Talento y Ascensión</h2>
+<p>Aquí está el orden recomendado para subir los talentos de Yun Jin y ascenderla:</p>
+<h3 id="talentos">Talentos</h3>
+<p>Estallido > Habilidad</p>
+<p>Su estallido de buff es vital, por lo que maximizarlo primero aumenta el bono de ataque del buff. Suba su habilidad después para más acumulaciones de defensa. Deje los ataques normales sin subir de nivel.</p>
+<h3 id="ascensiones">Ascensiones</h3>
+<p>1ro > 2do > 3ro</p>
+<p>Ascender a Yun Jin para desbloquear su pasivo A4 que convierte DEF en daño de estallido adicional es impactante. Llévela al menos a 60/70 para niveles clave de talentos.</p>
+<h2 id="es-viable-c6-yun-jin-como-dps-en-campo">¿Es viable C6 Yun Jin como DPS en campo?</h2>
+<p>En C6, Yun Jin obtiene un buff significativo de DEF y DMG% de ataque normal después de usar su estallido. Esto la hace capaz de ser una DPS en campo en lugar de solo apoyo fuera de campo. Sin embargo, debe invertir mucho en su talento de ataque normal, proporción crítica y tiempo en campo para que esto funcione.</p>
+<p>Puede ser una construcción alternativa divertida, pero la Yun Jin de apoyo contribuirá más a la mayoría de las composiciones de equipo. La Yun Jin DPS en campo también enfrenta una dura competencia de personajes DPS más dedicados que la superan en daño.</p>
+<h2 id="es-yun-jin-una-buena-inversión-para-jugadores-f2p">¿Es Yun Jin una Buena Inversión para Jugadores F2P?</h2>
+<p>Para los jugadores gratuitos, Yun Jin es una excelente inversión a largo plazo. Aquí está por qué brilla como amigable para jugadores de bajo gasto:</p>
+<ul>
+<li>No necesita una gran inversión para contribuir en roles de apoyo</li>
+<li>Favonius Lance y el conjunto 4pc Husk la hacen muy amigable para F2P</li>
+<li>No necesita constelaciones para funcionar de manera efectiva</li>
+<li>Encaja flexible en composiciones de equipo de bajo costo con portadores 4 estrellas</li>
+<li>Alto valor simplemente al subir su talento de estallido incluso a baja ascensión</li>
+</ul>
+<p>Yun Jin puede catapultar el daño de tus unidades DPS construidas tan pronto como la consigas al nivel. Centrarse en su estallido y DEF la convierte en un apoyo barato pero de alto impacto para criar con el tiempo.</p>
+<h2 id="pensamientos-finales-sobre-el-valor-de-yun-jin">Pensamientos Finales sobre el Valor de Yun Jin</h2>
+<p>Yun Jin cumple excelentemente su rol como apoyo especializado para personajes de ataque normal. Con los artefactos, armas y equipos adecuados, libera el potencial total de portadores como Yoimiya, Ayato, Noelle y Razor.</p>
+<p>Aunque nicho, las capacidades de buff de Yun Jin no tienen igual en Genshin Impact. Su escalado de DEF, generación de partículas sólida y opciones de equipo versátiles la hacen accesible tanto para ballenas como para F2P. Si utilizas estilos de juego de spam de ataques normales, Yun Jin merece un lugar como una opción de apoyo recurrente.</p>
+<h2 id="en-resumen-cómo-construir-la-mejor-yun-jin">En Resumen: Cómo Construir la Mejor Yun Jin</h2>
+<ul>
+<li>Apila DEF% y algo de ER% para maximizar el poder de buffeo</li>
+<li>El conjunto 4pc Husk of Opulent Dreams es ideal para la escala de DEF</li>
+<li>Sube Estallido > Habilidad y llévala al mínimo 60/70</li>
+<li>Favonius Lance resuelve sus necesidades de energía con presupuesto</li>
+<li>Asóciala con portadores de ataque normal como Yoimiya y Ayato</li>
+<li>Mantén casi el 100% de tiempo de uso de estallido para amplificar el daño DPS</li>
+</ul>
+<p>Construir a Yun Jin como buffer especializado le permite convertirse en un jugador de equipo invaluable. Con inversión en sus capacidades únicas de escalado de DEF, Yun Jin desbloquea una impresionante fuerza como apoyo. Siguiendo esta guía, puedes liberar el potencial completo de Yun Jin para buffear tus equipos.</p>
+<h2 id="preguntas-frecuentes-sobre-yun-jin">Preguntas Frecuentes sobre Yun Jin</h2>
+<h3 id="yun-jin-es-un-personaje-dps-o-de-apoyo">¿Yun Jin es un personaje DPS o de apoyo?</h3>
+<p>Yun Jin está diseñada como apoyo enfocada en buffear el daño de ataque normal en lugar de ser una DPS principal en campo. Su kit escala DEF para mejorar sus buffs de habilidad y estallido. Si bien se la puede jugar como DPS, especialmente en C6, está mucho mejor optimizada como buffer fuera de campo.</p>
+<h3 id="qué-talento-deberías-subir-primero-para-yun-jin">¿Qué talento deberías subir primero para Yun Jin?</h3>
+<p>Se recomienda subir primero el talento de Estallido Elemental de Yun Jin, ya que mejora directamente el bono de ataque del buff. Luego, puede subir su habilidad para obtener más poder de acumulación de defensa. Deje su talento de ataque normal solo.</p>
+<h3 id="qué-artefactos-usa-yun-jin">¿Qué artefactos usa Yun Jin?</h3>
+<p>El conjunto 4pc Husk of Opulent Dreams es el mejor conjunto de artefactos para Yun Jin. Mejora su DEF que escala su poder de buff. Las estadísticas principales deben ser Arena DEF%, Cáliz Geo DMG% y Círculo DEF% o CRIT. Las subestadísticas deben enfatizar DEF% y Recarga de Energía.</p>
+<h3 id="cuál-es-la-mejor-arma-4-estrellas-para-yun-jin">¿Cuál es la mejor arma 4 estrellas para Yun Jin?</h3>
+<p>Favonius Lance es la mejor arma 4 estrellas para Yun Jin. Resuelve su requisito de energía mientras también proporciona un impulso de ATK base para escalar el buff de ataque de su estallido. Otras opciones son Blackcliff Pole para crítico o Deathmatch para DEF.</p>
+<h3 id="cuánto-er-necesita-yun-jin">¿Cuánto ER necesita Yun Jin?</h3>
+<p>Apunte a 120-140% ER para financiar cómodamente el estallido de Yun Jin con costo de 80 energías. Esto asegura el máximo tiempo de uso del buff. Las fuentes clave son subestadísticas, un arma ER como Favonius Lance y baterías como Fischl o Bennett.</p>
+<h3 id="qué-equipos-funcionan-bien-con-yun-jin">¿Qué equipos funcionan bien con Yun Jin?</h3>
+<p>Yun Jin se adapta mejor con portadores de ataque normal como Yoimiya, Ayato, Noelle, Razor y Chongyun. Buenos compañeros de equipo proporcionan partículas de energía, elementos sinérgicos para reacciones y buffs ofensivos o utilidad. Algunos ejemplos son Fischl, Zhongli, Bennett y personajes Anemo.</p>
+<h2 id="conclusión">Conclusión</h2>
+<p>Yun Jin es un apoyo único que puede llevar a tu DPS dependiente de ataques normales a nuevas alturas. Optimizar su escalado de DEF y poder de buff debería ser la prioridad. Su flexibilidad como buffer plug-and-play con alto tiempo de actividad la convierte en una excelente inversión. Siguiendo esta guía, puedes liberar el potencial completo de Yun Jin para buffear tus equipos.</p>
+        </article>
+
+        <hr><section>
+                <h2>Entradas relacionadas</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/es/builds/guia-yoimiya"><img class="block my-[0]" src="/images/builds/yoimiya-build.webp" alt="Imagen de Yoimiya"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="unset hover:text-[#3e3355] transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-yoimiya">Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        13 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>DPS</code><code>Pyro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <a id="scroll-top" href="#tabla-de-contenidos" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+        <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+        </svg>
+    </a>
+
+		</main>
+		<footer class="flex justify-center items-center shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/es/privacy">Política de privacidad</a>
+</footer>
+	</body></html>
