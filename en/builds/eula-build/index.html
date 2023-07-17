@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/en/builds/eula-build/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Ultimate Eula Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin</title>
+		<meta name="title" content="Ultimate Eula Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta name="description" content="Everything you need to know about building the cryo claymore DPS Eula in Genshin Impact; Best weapons, artifacts, talent priorities, team comps, and strategies.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Ultimate Eula Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta property="og:description" content="Everything you need to know about building the cryo claymore DPS Eula in Genshin Impact; Best weapons, artifacts, talent priorities, team comps, and strategies.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/en/builds/eula-build/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-17T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Ultimate Eula Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta property="twitter:description" content="Everything you need to know about building the cryo claymore DPS Eula in Genshin Impact; Best weapons, artifacts, talent priorities, team comps, and strategies.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/en/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/en/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/en/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/en/">Home</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			
+    <section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Ultimate Eula Build Guide: Best Weapons, Artifacts and Team Comps
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-17T00:00:00.000Z">Updated <b>7/17/2023</b> by <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/eula-build.webp" alt="Eula image">
+        <article>
+            <h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction-to-eula-in-genshin-impact">Introduction to Eula in Genshin Impact</a></li>
+<li><a href="#best-weapons-for-eula">Best Weapons for Eula</a>
+<ul>
+<li><a href="#5-star-weapons">5-Star Weapons</a></li>
+<li><a href="#4-star-weapons">4-Star Weapons</a></li>
+<li><a href="#best-f2p-weapon-for-eula">Best F2P Weapon for Eula</a></li>
+</ul>
+</li>
+<li><a href="#artifacts-for-eula">Artifacts for Eula</a></li>
+<li><a href="#best-teams-for-eula">Best Teams for Eula</a></li>
+<li><a href="#talent-level-priority">Talent Level Priority</a></li>
+<li><a href="#eula-constellations">Eula Constellations</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+<h2 id="introduction-to-eula-in-genshin-impact">Introduction to Eula in Genshin Impact</h2>
+<p>Eula is a powerful Cryo claymore character in Genshin Impact. She is a 5-star character capable of dealing massive physical damage. Eula’s abilities allow her to stack up damage with her Elemental Skill and unleash it all at once with her Elemental Burst for huge burst damage numbers.</p>
+<p>Properly building Eula can help maximize her damage output. This guide will go over recommendations for weapons, artifacts, and talent levels to make the most of Eula’s potential.</p>
+<h3 id="eulas-strengths">Eula’s Strengths</h3>
+<p>Some of Eula’s greatest strengths that make her a top-tier DPS include:</p>
+<ul>
+<li>Extremely high multipliers on her Burst for huge nuke damage</li>
+<li>Access to Superconduct reaction with Cryo to reduce enemy Physical RES</li>
+<li>Fast and wide-reaching attacks thanks to her claymore</li>
+<li>High scaling on Normal Attacks for strong regular combo damage</li>
+</ul>
+<h3 id="what-makes-eula-a-strong-physical-dps">What Makes Eula a Strong Physical DPS?</h3>
+<p>Eula is one of the best Physical DMG carry characters for a few reasons:</p>
+<ul>
+<li>Her Burst scales off her ATK and Physical DMG Bonus</li>
+<li>Holding her Skill consumes her Resolve stacks for more Burst damage</li>
+<li>Passive talent increases Physical DMG Bonus after using Burst</li>
+<li>Ascension 4 talent gives 30% Physical RES shred after Burst</li>
+</ul>
+<p>Building for Physical DMG allows Eula’s Burst nuke to reach its highest potential.</p>
+<h2 id="best-weapons-for-eula">Best Weapons for Eula</h2>
+<p>These are the recommended weapons for Eula:</p>
+<h3 id="5-star-weapons">5-Star Weapons</h3>
+<h4 id="song-of-broken-pines-signature-weapon">Song of Broken Pines (Signature Weapon)</h4>
+<p><img src="/images/weapons/greatswords/Song_of_Broken_Pines.webp" alt="Song of Broken Pines Image"></p>
+<p>Increases Physical DMG and ATK. Its passive grants ATK, Attack Speed, and increases the power of Normal and Charged Attacks after using an Elemental Burst.</p>
+<h4 id="wolfs-gravestone">Wolf’s Gravestone</h4>
+<p><img src="/images/weapons/greatswords/Wolf&#x27;s_Gravestone.webp" alt="Wolf&#x27;s Gravestone Image"></p>
+<p>Gives ATK% substat and passive that increases ATK further against low HP enemies. Its ATK focused-stats complement Eula’s high Burst scaling.</p>
+<h4 id="skyward-pride">Skyward Pride</h4>
+<p><img src="/images/weapons/greatswords/Skyward_Pride.webp" alt="Skyward Pride Image"></p>
+<p>Has Energy Recharge substat to fuel Burst and a vacuum blade passive that triggers on Normal and Charged attacks.</p>
+<h3 id="4-star-weapons">4-Star Weapons</h3>
+<h4 id="serpent-spine-battle-pass">Serpent Spine (Battle Pass)</h4>
+<p><img src="/images/weapons/greatswords/Serpent_Spine.webp" alt="Serpent Spine Image"></p>
+<p>Provides CRIT Rate substat and increases DMG through its passive stacks. Consistent critical hits empower Eula’s Burst.</p>
+<h4 id="snow-tombed-starsilver">Snow-Tombed Starsilver</h4>
+<p><img src="/images/weapons/greatswords/Snow-Tombed_Starsilver.webp" alt="Snow-Tombed Starsilver Image"></p>
+<p>Increases Physical DMG and has a chance to form an icy orb after hitting an enemy. Well-suited for Eula’s Physical focus.</p>
+<h4 id="prototype-archaic">Prototype Archaic</h4>
+<p><img src="/images/weapons/greatswords/Prototype_Archaic.webp" alt="Prototype Archaic Image"></p>
+<p>Has ATK% substat. Passive increases DMG against enemies hit. Solid F2P option.</p>
+<h4 id="luxurious-sea-lord-event-only">Luxurious Sea-Lord (Event Only)</h4>
+<p><img src="/images/weapons/greatswords/Luxurious_Sea-Lord.webp" alt="Luxurious Sea-Lord Image"></p>
+<p>Gives ATK% and DMG buffs. Can work in a pinch if lacking other options.</p>
+<h3 id="best-f2p-weapon-for-eula">Best F2P Weapon for Eula</h3>
+<p>For a completely free-to-play option, <a href="#snow-tombed-starsilver"><strong>Snow-Tombed Starsilver</strong></a> is Eula’s best weapon. Its Physical DMG stat aligns perfectly with her kit.</p>
+<p><a href="#prototype-archaic"><strong>Prototype Archaic</strong></a> can work as well since Eula still benefits greatly from ATK% scaling due to her high multipliers.</p>
+<h2 id="artifacts-for-eula">Artifacts for Eula</h2>
+<p>Prioritize the <strong>Pale Flame</strong> artifact set for Eula. The <strong>4-piece set</strong> bonus increases her Physical DMG by 25% and gives 9% ATK at max stacks.</p>
+<p>If lacking enough Pale Flame pieces, pairing <strong>2-piece Pale Flame</strong> with <strong>2-piece Bloodstained Chivalry</strong> can work as an interim option.</p>
+<p>For main stats focus on:</p>
+<ul>
+<li><strong>Sands of Eon</strong> - ATK%</li>
+<li><strong>Goblet</strong> - Physical DMG Bonus</li>
+<li><strong>Circlet</strong> - CRIT Rate or CRIT DMG</li>
+</ul>
+<p>Aim for a 1:2 ratio of CRIT Rate to CRIT DMG in your substats. Some Energy Recharge is also helpful to charge her 80 energy Burst faster.</p>
+<h2 id="best-teams-for-eula">Best Teams for Eula</h2>
+<h3 id="freeze-team">Freeze Team</h3>
+<ul>
+<li><strong>Eula</strong> - Main DPS</li>
+<li><strong>Cryo battery (Diona, Rosaria, Kaeya)</strong> - Generating Cryo particles for Eula</li>
+<li><strong>Hydro applicator (<a href="/en/builds/xingqiu-build/"><strong>Xingqiu</strong></a>, Mona)</strong> - Enabling Freeze reaction</li>
+<li><strong>Flex (Mika, <a href="/en/builds/zhongli-build/"><strong>Zhongli</strong></a>, Fischl, Beidou)</strong> - Off-field damage and utility</li>
+</ul>
+<p>This team claws back energy for Eula’s Burst and takes advantage of Superconduct and Frozen for Physical RES shreds.</p>
+<h3 id="superconduct-team">Superconduct Team</h3>
+<ul>
+<li><strong>Eula</strong> - Main DPS</li>
+<li><strong>Electro applicator (Fischl, Raiden Shogun)</strong> - Triggering Superconduct</li>
+<li><strong>Cryo battery</strong></li>
+<li><strong>Shielder/Healer (Zhongli, Diona)</strong></li>
+</ul>
+<p>Focuses on Superconduct’s 40% Physical RES reduction to amplify Eula’s damage. Flexible last slot for shields/heals.</p>
+<h3 id="double-geo-team">Double Geo Team</h3>
+<ul>
+<li><strong>Eula</strong></li>
+<li><strong>Electro (Fischl, Beidou)</strong></li>
+<li><strong>Geo (Zhongli, Albedo)</strong></li>
+<li><strong>Geo (Zhongli, Albedo)</strong></li>
+</ul>
+<p>Geo resonances provide extra DMG and resistance to interruption. Last slot can be a utility character of your choice.</p>
+<h2 id="talent-level-priority">Talent Level Priority</h2>
+<p>Prioritize leveling Eula’s talents in this order:</p>
+<ol>
+<li>Elemental Burst</li>
+<li>Normal Attack</li>
+<li>Elemental Skill</li>
+</ol>
+<p>Her Burst is where the majority of her damage comes from, so maximizing its levels first is ideal. Skipping Eula’s Normal Attacks will gimp her regular combo and Charged Attack damage in between Bursts.</p>
+<p>Getting her Skill to 6 is sufficient, before moving back to further improve Burst > Normal Attacks.</p>
+<h2 id="eula-constellations">Eula Constellations</h2>
+<p>Here are some of Eula’s most notable constellations:</p>
+<p>C1 - Grimheart’s duration extended by 6s. Allows more uptime on the ATK Spd and Physical RES shred buff.</p>
+<p>C2 - Tap Skill CD decreased and energy regen increased. Better uptime on Resolve stacks.</p>
+<p>C4 - Normal Attack SPD increased by 30% against enemies with lower 50% HP. Boosts her raw autos.</p>
+<p>C6 - Lightfall Swords initial slash deals 100% of the Burst’s damage. Essentially doubles her nuke.</p>
+<p>Constellations 2 and 6 offer powerful damage spikes. But Eula still performs well at C0.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-artifacts-should-i-use-for-support-eula">What artifacts should I use for support Eula?</h3>
+<p>For a quickswap burst support Eula, use a 2-piece Pale Flame + 2-piece Noblesse Oblige set. Prioritize Energy Recharge in substats.</p>
+<h3 id="what-team-comps-work-well-with-eula-besides-superconduct">What team comps work well with Eula besides Superconduct?</h3>
+<p>Eula teams focused on boosting her Burst damage through buffers like Bennett, Sara, and Thrilling Tales of Dragon Slayers work well. Anemo characters with Viridescent Venerer can also shred Physical RES.</p>
+<h3 id="is-serpent-spine-better-than-snow-tombed-for-eula">Is Serpent Spine better than Snow-Tombed for Eula?</h3>
+<p>Serpent Spine edges out Snow-Tombed if you can keep its stacks up consistently. However, Snow-Tombed is much easier to acquire and use as a pure F2P option.</p>
+<h3 id="should-i-go-for-c2-or-song-of-broken-pines-if-i-can-only-get-one">Should I go for C2 or Song of Broken Pines if I can only get one?</h3>
+<p>Song of Broken Pines has more value long-term as Eula’s signature weapon over a single constellation. Especially if you lack 5-star weapons.</p>
+<h3 id="what-talent-level-is-enough-for-eulas-skill">What talent level is enough for Eula’s Skill?</h3>
+<p>Eula’s Skill can remain at level 6 or 7 as long as you heavily invest in her Burst and Normal Attacks. The Resolve stacks matter more than the Skill’s damage.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With the right build, Eula can unleash the full potential of her massive Burst nuke and become an absolute powerhouse Physical DPS. Properly gearing her with Pale Flame artifacts, CRIT stats, and Physical DMG weapons like Song of Broken Pines, Serpent Spine, or Snow-Tombed Starsilver will allow her to dominate enemies.</p>
+<p>Make sure to use Superconduct and cryo batteries in her team compositions. Prioritize leveling her Burst talent first and foremost. Putting together the right supporting roster alongside maxing out Eula’s own damage will let you demolish all foes in your path.</p>
+<p>Eula remains one of the top meta Physical carries. Investing in building her can bring huge rewards in combat. With the strategies outlined in this guide, you’ll have the best Eula build ready to crush any challenge!</p>
+        </article>
+
+        <hr><section>
+                <h2>Related Posts</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/en/builds/zhongli-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/Zhongli.webp" alt="Zhongli image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/zhongli-build/">Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-15T00:00:00.000Z">
+                                        Jul 15, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Geo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/en/builds/xingqiu-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/xingqiu-build.webp" alt="Xingqiu image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/xingqiu-build/">Ultimate Xingqiu Build Guide: Best Weapons, Artifacts and Team Comps</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        Jul 13, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Hydro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <a id="scroll-top" href="#table-of-contents" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+        <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+        </svg>
+    </a>
+
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/en/privacy">Privacy Policy</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contact</a>
+</footer>
+	</body></html>
