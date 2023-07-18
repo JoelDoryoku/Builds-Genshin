@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="es">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/es/builds/guia-klee/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Guía definitiva de Klee: Las mejores armas, artefactos y equipos - Builds Genshin</title>
+		<meta name="title" content="Guía definitiva de Klee: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta name="description" content="Aprende cómo buildear a la mejor Klee en Genshin Impact. Esta guía cubre sus mejores armas, artefactos, equipos, prioridades de talento, constelaciones y más.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Guía definitiva de Klee: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="og:description" content="Aprende cómo buildear a la mejor Klee en Genshin Impact. Esta guía cubre sus mejores armas, artefactos, equipos, prioridades de talento, constelaciones y más.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/es/builds/guia-klee/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-18T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Guía definitiva de Klee: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="twitter:description" content="Aprende cómo buildear a la mejor Klee en Genshin Impact. Esta guía cubre sus mejores armas, artefactos, equipos, prioridades de talento, constelaciones y más.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/es/">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/es/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/es/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/es/">Inicio</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			
+    <section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Guía definitiva de Klee: Las mejores armas, artefactos y equipos
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-18T00:00:00.000Z">Actualizado <b>18/7/2023</b> por <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/klee-build.webp" alt="Klee image">
+        <article>
+            <h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ul>
+<li><a href="#descripci%C3%B3n-general-del-kit-de-klee">Descripción general del kit de Klee</a></li>
+<li><a href="#las-mejores-armas-para-klee">Las mejores armas para Klee</a></li>
+<li><a href="#los-mejores-artefactos-para-klee">Los mejores Artefactos para Klee</a></li>
+<li><a href="#los-mejores-equipos-para-klee">Los mejores equipos para Klee</a></li>
+<li><a href="#prioridad-de-talento">Prioridad de Talento</a></li>
+<li><a href="#constelaciones">Constelaciones</a></li>
+<li><a href="#build-f2p--bajo-gasto">Build F2P / Bajo Gasto</a></li>
+<li><a href="#build-de-alta-inversi%C3%B3n--ballena">Build de Alta Inversión / Ballena</a></li>
+<li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
+</ul>
+<h2 id="introducción-a-klee-en-genshin-impact">Introducción a Klee en Genshin Impact</h2>
+<p>Klee es un explosivo personaje Pyro de 5 estrellas en Genshin Impact. Como uno de los personajes que más daño Pyro hace en el juego, Klee puede causar una cantidad insana de daño cuando está bien desarrollada. Esta guía completa cubrirá todo lo que necesitas saber para crear la mejor Klee en Genshin Impact.</p>
+<h2 id="descripción-general-del-kit-de-klee">Descripción general del kit de Klee</h2>
+<p>Aquí hay una breve descripción de las habilidades de Klee:</p>
+<ul>
+<li><strong>Ataque Normal - ¡Pum!:</strong> Realiza hasta 4 ataques explosivos consecutivos que infligen Daño Pyro AoE.</li>
+<li><strong>Ataque Cargado - Chispa Explosiva:</strong> Consume Stamina para infligir Daño Pyro AoE después de un breve tiempo de invocación.</li>
+<li><strong>Habilidad Elemental - Jumpy Dumpty:</strong> Arroja un conejito explosivo que inflige Daño Pyro AoE y permanece en el campo. Golpearlo nuevamente causa una explosión. Tiene 2 cargas.</li>
+<li><strong>Ráfaga Elemental - Chispas Saltarinas:</strong> Invoca un campo ardiente que aplica Pyro constantemente a los enemigos dentro. También lanza bombas guiadas que explotan para infligir Daño Pyro AoE.</li>
+</ul>
+<p>El kit de Klee gira en torno a infligir la mayor cantidad de daño Pyro posible a través de sus habilidades y ataques normales/cargados. Ella sobresale en desencadenar reacciones elementales como Vaporizar y Derretir. Su estilo de juego consiste en preparar y detonar constantemente sus minas de Jumpy Dumpty para grandes ráfagas de daño.</p>
+<h2 id="las-mejores-armas-para-klee">Las mejores armas para Klee</h2>
+<p>Las mejores armas de Klee aumentan su Daño Pyro y estadísticas CRIT. Aquí están las principales opciones:</p>
+<h3 id="plegaria-perdida-a-los-vientos-sagrados">Plegaria Perdida a los Vientos Sagrados</h3>
+<p><img src="/images/weapons/catalyst/Lost_Prayer_to_the_Sacred_Winds.webp" alt="Lost Prayer to the Sacred Winds Image"></p>
+<ul>
+<li>Catalizador 5 estrellas</li>
+<li>Aumenta la Velocidad de Movimiento en 10%. Gana 8% de Bono de Daño Elemental cada 4s. Máximo de 4 acumulaciones.</li>
+<li>El bono de daño acumulativo de Plegaria Perdida proporciona un enorme impulso al daño Pyro de Klee. La velocidad de movimiento también la ayuda a evitar ataques.</li>
+</ul>
+<h3 id="atlas-del-cielo">Atlas del Cielo</h3>
+<p><img src="/images/weapons/catalyst/Skyward_Atlas.webp" alt="Skyward Atlas Image"></p>
+<ul>
+<li>Catalizador 5 estrellas</li>
+<li>Aumenta el Bono de Daño Elemental en 12%. Los ataques normales tienen un 50% de probabilidad de buscar enemigos e infligir 160% de ATK como Daño. El efecto solo puede ocurrir una vez cada 30s.</li>
+<li>Atlas del Cielo aumenta el Daño Elemental y tiene un efecto de control de multitudes útil que atrae a los enemigos.</li>
+</ul>
+<h3 id="polvo-de-memoria">Polvo de Memoria</h3>
+<p><img src="/images/weapons/catalyst/Memory_of_Dust.webp" alt="Memory of Dust Image"></p>
+<ul>
+<li>Catalizador 5 estrellas</li>
+<li>Aumenta el ATK en 20%. Obtiene una carga de Corazón Perenne durante 5s al usar una Habilidad Elemental, máximo 2 cargas. Cada carga aumenta la Fuerza del Escudo en 20% y el ATK en 20%. Protegido, gana 18% de ATK.</li>
+<li>Los buffos de ATK y Fuerza de Escudo de Polvo de Memoria son muy fuertes para el daño y la supervivencia de Klee.</li>
+</ul>
+<h3 id="perla-solar">Perla Solar</h3>
+<p><img src="/images/weapons/catalyst/Solar_Pearl.webp" alt="Solar Pearl Image"></p>
+<ul>
+<li>Catalizador 4 estrellas</li>
+<li>Los golpes de Ataque Normal aumentan el Daño de Habilidad Elemental y Ráfaga Elemental en 20% durante 6s. Los golpes de Habilidad Elemental o Ráfaga aumentan el Daño de Ataque Normal en 20% durante 6s.</li>
+<li>Perla Solar es la mejor opción de 4 estrellas de Klee. Aumenta significativamente el daño de su habilidad y ráfaga.</li>
+</ul>
+<h3 id="la-viola">La Viola</h3>
+<p><img src="/images/weapons/catalyst/The_Widsith.webp" alt="The Widsith Image"></p>
+<ul>
+<li>Catalizador 4 estrellas</li>
+<li>Posibilidad de obtener un efecto de canción temática aleatoria durante 10s al atacar: ATK aumentado en 60%; Daño Elemental aumentado en 48%; Velocidad de ATK aumentada en 32%.</li>
+<li>Los buffos aleatorios de La Viola pueden aumentar enormemente el daño de Klee cuando están activos.</li>
+</ul>
+<h2 id="los-mejores-artefactos-para-klee">Los mejores Artefactos para Klee</h2>
+<p>Los mejores conjuntos de artefactos de Klee son Llama de Bruja Carmesí y Caminante Lava. Concéntrate en Daño Pyro, Tasa CRIT y Daño CRIT para las estadísticas principales y secundarias.</p>
+<h3 id="llama-de-bruja-carmesí">Llama de Bruja Carmesí</h3>
+<p><img src="/images/artifacts/crimson_witch_of_flames.webp" alt="Crimson Witch of Flames Image"></p>
+<ul>
+<li><strong>Bono de conjunto de 2 piezas:</strong> +15% de Daño Pyro</li>
+<li><strong>Bono de conjunto de 4 piezas:</strong> Aumenta el daño Sobrecargado y Ardiente en 40%. Aumenta el daño de Vaporizar y Derretir en 15%. Usar Habilidad Elemental aumenta los efectos del conjunto de 2 piezas en 50% durante 10s. Máximo de 3 acumulaciones.</li>
+<li>Este es el mejor conjunto de Klee. Aumenta directamente su daño Pyro de manera significativa.</li>
+</ul>
+<h3 id="caminante-lava">Caminante Lava</h3>
+<p><img src="/images/artifacts/lavawalker.webp" alt="Lavawalker Image"></p>
+<ul>
+<li><strong>Bono de conjunto de 2 piezas:</strong> RES Pyro aumentada en 40%</li>
+<li><strong>Bono de conjunto de 4 piezas:</strong> Aumenta el Daño contra enemigos que están ardiendo o afectados por Pyro en 35%.</li>
+<li>Caminante Lava proporciona un aumento de daño considerable en equipos donde Klee puede aplicar Pyro constantemente.</li>
+</ul>
+<h3 id="compañía-de-caminantes">Compañía de Caminantes</h3>
+<p><img src="/images/artifacts/wanderer&#x27;s_troupe.webp" alt="Wanderer&#x27;s Troupe Image"></p>
+<ul>
+<li><strong>Bono de conjunto de 2 piezas:</strong> Aumenta la Maestría Elemental en 80</li>
+<li><strong>Bono de conjunto de 4 piezas:</strong> Aumenta el Daño de Ataque Cargado en 35% si el personaje usa un Catalizador.</li>
+<li>Una opción presupuestaria decente que mejora los poderosos ataques cargados de Klee.</li>
+</ul>
+<h2 id="los-mejores-equipos-para-klee">Los mejores equipos para Klee</h2>
+<p>Klee sobresale en composiciones de equipo que le permiten desencadenar Vaporizar para un gran daño Pyro. Algunos de los mejores equipos incluyen:</p>
+<h3 id="equipo-de-vaporizar">Equipo de Vaporizar</h3>
+<ul>
+<li>Klee</li>
+<li><a href="/es/builds/guia-xingqiu/">Xingqiu</a></li>
+<li>Sucrose</li>
+<li>Bennett</li>
+</ul>
+<p>Este equipo se enfoca en vaporizar constantemente los ataques de Klee usando la Ráfaga Elemental de Xingqiu y el control de multitudes y buffs de EM de Sucrose. Bennett proporciona curación y un enorme buff de ATK.</p>
+<h3 id="equipo-de-sobrecarga">Equipo de Sobrecarga</h3>
+<ul>
+<li>Klee</li>
+<li>Fischl</li>
+<li>Beidou</li>
+<li>Bennett</li>
+</ul>
+<p>Fischl y Beidou aplican Electro para que Klee desencadene explosiones de Sobrecarga. Sus ráfagas infligen daño fuera del campo mientras Klee está en el campo. Bennett es soporte flexible.</p>
+<h3 id="equipo-de-derretir">Equipo de Derretir</h3>
+<ul>
+<li>Klee</li>
+<li>Rosaria</li>
+<li>Diona</li>
+<li>Sucrose/Venti</li>
+</ul>
+<p>Personajes Cryo como Rosaria y Diona permiten que Klee derrita el daño Pyro. El control de multitudes Anemo agrupa a los enemigos para que brille el daño AoE de Klee.</p>
+<h2 id="prioridad-de-talento">Prioridad de Talento</h2>
+<p>Klee obtiene más al subir primero su Ráfaga Elemental, ya que es una fuente significativa de su daño. Aquí están las prioridades de sus talentos:</p>
+<ol>
+<li>Ráfaga Elemental</li>
+<li>Ataque Normal</li>
+<li>Habilidad Elemental</li>
+</ol>
+<h2 id="constelaciones">Constelaciones</h2>
+<p>Las constelaciones de Klee proporcionan aumentos de daño, pero no son completamente necesarias. Aquí están los efectos:</p>
+<p><strong>C1</strong> - La Habilidad Elemental gana una carga adicional.</p>
+<p><strong>C2</strong> - Disminuye DEF de oponentes en 23% durante 10s después de usar Ataques Cargados.</p>
+<p><strong>C4</strong> - Después de usar la Ráfaga Elemental, 2 chispas caerán alrededor de Klee durante 2s, infligiendo 31% del Daño de Chispas Saltarinas por golpe.</p>
+<p><strong>C6</strong> - Dentro de los 15s posteriores al final de la Ráfaga Elemental, los Ataques Cargados de Klee ganan un Bono de Daño igual a 2.2x su Maestría Elemental.</p>
+<h2 id="build-f2p--bajo-gasto">Build F2P / Bajo Gasto</h2>
+<p>Para jugadores sin las armas emblemáticas 5 estrellas de Klee, estas opciones de 4 estrellas funcionan bien:</p>
+<ul>
+<li><strong>Arma</strong>: La Viola, Perla Solar</li>
+<li><strong>Artefactos</strong>: 4pc Llama de Bruja Carmesí</li>
+<li><strong>Stats principales:</strong> Arena de ATK%, Copa Pyro DMG, Círculo CRIT</li>
+<li><strong>Substats:</strong> Tasa CRIT > Daño CRIT > ATK% > Maestría Elemental/Recarga de Energía</li>
+<li><strong>Compañeros</strong>: Xingqiu, Sucrose, Bennett</li>
+</ul>
+<p>Concéntrate en apilar una tonelada de ATK y CRIT a través de sub-estadísticas. Usa una arena ATK% hasta que obtengas suficiente CRIT de sub-estadísticas para cambiar a un círculo CRIT.</p>
+<h2 id="build-de-alta-inversión--ballena">Build de Alta Inversión / Ballena</h2>
+<p>Para los jugadores que quieren maximizar el potencial de Klee:</p>
+<ul>
+<li><strong>Arma</strong>: Plegaria Perdida a los Vientos Sagrados</li>
+<li><strong>Artefactos</strong>: 4pc Caminante Lava</li>
+<li><strong>Stats principales</strong>: Arena ATK%, Copa Pyro DMG, Círculo CRIT</li>
+<li><strong>Substats</strong>: Tasa CRIT > Daño CRIT > ATK%</li>
+<li><strong>Compañeros</strong>: Xingqiu, Albedo, Zhongli</li>
+</ul>
+<p>Caminante Lava superará a Llama de Bruja Carmesí en equipos donde Klee pueda aplicar Pyro constantemente. La reducción de resistencia y el escudo de Zhongli impulsan el daño de Klee inmensamente.</p>
+<h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<h3 id="cuál-es-la-combinación-óptima-para-klee">¿Cuál es la combinación óptima para Klee?</h3>
+<p>La combinación de mayor daño de Klee es:</p>
+<ol>
+<li>Aplicar Pyro con Ataques Normales</li>
+<li>Usar Habilidad Elemental dos veces</li>
+<li>Cambiar a Xingqiu para aplicar Hydro</li>
+<li>Cambiar de nuevo a Klee y usar Ráfaga Elemental</li>
+<li>Entrelazar 1-2 Ataques Normales entre Ataques Cargados para activar Vaporizar</li>
+</ol>
+<p>Esta combinación te permite comenzar la aplicación de Pyro, preparar las minas Jumpy Dumpty y luego Vaporizar los poderosos Ataques Cargados de Klee dentro del campo de Ráfaga Elemental.</p>
+<h3 id="qué-estadísticas-debo-priorizar-para-klee">¿Qué estadísticas debo priorizar para Klee?</h3>
+<p>Concéntrate en desarrollar Tasa CRIT a alrededor del 50-60% de sub-estadísticas, luego apila la mayor cantidad de Daño CRIT, ATK% y Daño Pyro posible. Un poco de Recarga de Energía también es bueno para el tiempo de uso de ráfaga.</p>
+<h3 id="plegaria-perdida-o-atlas-del-cielo-es-mejor-para-klee">¿Plegaria Perdida o Atlas del Cielo es mejor para Klee?</h3>
+<p>Se considera que Plegaria Perdida es mejor debido al bono de daño acumulativo. Sin embargo, Atlas del Cielo tiene un rendimiento muy cercano, así que usa cualquiera que tenga mejores sub-estadísticas.</p>
+<h3 id="debo-optar-por-4pc-llama-de-bruja-carmesí-o-caminante-lava-en-klee">¿Debo optar por 4pc Llama de Bruja Carmesí o Caminante Lava en Klee?</h3>
+<p>Se recomienda generalmente 4pc Llama de Bruja Carmesí por el bonus de Vaporizar. Sin embargo, 4pc Caminante Lava puede superarlo en equipos donde Klee aplica Pyro consistente, como con Xingqiu.</p>
+<h3 id="vale-la-pena-klee-c2">¿Vale la pena Klee C2?</h3>
+<p>Klee C2 es un buen impulso pero no cambia el juego. La reducción de DEF ayuda a infligir más daño pero no es necesaria. Mejor ahorra para otras constelaciones o personajes importantes.</p>
+<h3 id="qué-talento-debo-coronar-primero-en-klee">¿Qué talento debo coronar primero en Klee?</h3>
+<p>La Ráfaga Elemental de Klee gana más de ser coronada primero, ya que constituye una parte significativa de su daño. Después de eso, coronar sus Ataques Normales también proporciona un buen impulso.</p>
+<h2 id="conclusión">Conclusión</h2>
+<p>Klee es uno de los personajes DPS más explosivamente poderosos cuando se juega correctamente. Desarrollar el equipo y conjunto de artefactos adecuados para ella, junto con dominar las cancelaciones de animación en su combo, te permitirá liberar todo su potencial explosivo. Klee proporciona algunos de los daños individuales y AoE Pyro más altos en Genshin Impact cuando está bien desarrollada.</p>
+        </article>
+
+        <hr><section>
+                <h2>Entradas relacionadas</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/es/builds/guia-xingqiu/"><img loading="lazy" class="block my-[0]" src="/images/builds/xingqiu-build.webp" alt="Imagen de Xingqiu"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-xingqiu/">Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        13 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Hydro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <a id="scroll-top" href="#tabla-de-contenidos" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+        <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+        </svg>
+    </a>
+
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/es/privacy">Política de privacidad</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contacto</a>
+</footer>
+	</body></html>
