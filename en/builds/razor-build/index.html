@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="en">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/en/builds/razor-build/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Razor Build Genshin Impact: The Ultimate Guide to Building the Best Razor - Builds Genshin</title>
+		<meta name="title" content="Razor Build Genshin Impact: The Ultimate Guide to Building the Best Razor - Builds Genshin">
+		<meta name="description" content="The ultimate Razor build guide for Genshin Impact. The best weapons, artifacts, teams and tips to maximize Razor's DMG and build the most powerful physical DPS.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Razor Build Genshin Impact: The Ultimate Guide to Building the Best Razor - Builds Genshin">
+		<meta property="og:description" content="The ultimate Razor build guide for Genshin Impact. The best weapons, artifacts, teams and tips to maximize Razor's DMG and build the most powerful physical DPS.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/en/builds/razor-build/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-19T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Razor Build Genshin Impact: The Ultimate Guide to Building the Best Razor - Builds Genshin">
+		<meta property="twitter:description" content="The ultimate Razor build guide for Genshin Impact. The best weapons, artifacts, teams and tips to maximize Razor's DMG and build the most powerful physical DPS.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/en/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/en/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/en/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/en/">Home</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			
+    <section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Razor Build Genshin Impact: The Ultimate Guide to Building the Best Razor
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-19T00:00:00.000Z">Updated <b>7/19/2023</b> by <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/razor-build.webp" alt="Razor image">
+        <article>
+            <h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#razors-strengths-and-playstyle">Razor’s Strengths and Playstyle</a></li>
+<li><a href="#best-weapons-for-razor">Best Weapons for Razor</a></li>
+<li><a href="#best-artifacts-for-razor">Best Artifacts for Razor</a></li>
+<li><a href="#best-team-compositions-for-razor">Best Team Compositions for Razor</a></li>
+<li><a href="#razor-gameplay-tips-and-combat-guide">Razor Gameplay Tips and Combat Guide</a></li>
+<li><a href="#razor-builds-summary">Razor Builds Summary</a></li>
+<li><a href="#razor-builds-frequently-asked-questions">Razor Builds Frequently Asked Questions</a></li>
+<li><a href="#conclusions">Conclusions</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Razor is one of the most popular and powerful Electro DPS characters in Genshin Impact. His fast attacks, high burst damage potential, and easy-to-execute playstyle make him a great choice for players of all skill levels.</p>
+<p>In this comprehensive guide, we will cover everything you need to know to build the best Razor in Genshin Impact. From artifacts and weapons to party compositions and combat rotations, this is the ultimate resource for maximizing Razor’s damage output.</p>
+<p>Whether you just pulled Razor and want to get started building him, or you’re a veteran looking to refine your Razor build, you’ll find plenty of tips and strategies here. Let’s dive in and electrify your Genshin Impact experience with an unstoppable Razor build!</p>
+<h2 id="razors-strengths-and-playstyle">Razor’s Strengths and Playstyle</h2>
+<p>Before we get into specific builds, let’s first understand <strong>Razor’s key strengths and playstyle</strong>:</p>
+<ul>
+<li>
+<p><strong>Physical Damage Carry:</strong> Razor excels at dealing fast physical damage via his normal and charged attacks. He relies on physical DMG for the bulk of his damage.</p>
+</li>
+<li>
+<p><strong>Self-Sufficient:</strong> Razor can generate his own Superconduct with his elemental skill to reduce physical RES on enemies. His burst also makes him immune to interruption.</p>
+</li>
+<li>
+<p><strong>Beginner Friendly:</strong> Simple but high-damaging attack combos and no reliance on reactions makes Razor a great choice for new players.</p>
+</li>
+<li>
+<p><strong>Frontline Fighter:</strong> Razor wants to stay on the field dealing damage with basic attacks. Swap supports in and out while Razor goes to town.</p>
+</li>
+<li>
+<p><strong>Lone Wolf Playstyle:</strong> Razor’s kit encourages you to keep him on the field to maximize damage. Quick swapping is not optimal for Razor.</p>
+</li>
+</ul>
+<p>With this context in mind, let’s look at how to maximize Razor’s potential through weapons, artifacts, party, and strategy.</p>
+<h2 id="best-weapons-for-razor">Best Weapons for Razor</h2>
+<p>Choosing the right weapon can greatly boost Razor’s damage output. Here are the top weapons for Razor:</p>
+<h3 id="wolfs-gravestone-5-star">Wolf’s Gravestone (5-star)</h3>
+<p><img src="/images/weapons/greatswords/Wolf&#x27;s_Gravestone.webp" alt="Wolf&#x27;s Gravestone Image"></p>
+<p>The best-in-slot for Razor. It increases ATK and gives a huge ATK buff when damaging enemies with low HP. Its passive synergizes perfectly with Razor’s burst mode.</p>
+<h3 id="the-unforged-5-star">The Unforged (5-star)</h3>
+<p><img src="/images/weapons/greatswords/The_Unforged.webp" alt="The Unforged Image"></p>
+<p>Gives a large ATK buff and increased DMG against enemies with shields. A great option if you lack Wolf’s Gravestone.</p>
+<h3 id="serpent-spine-4-star">Serpent Spine (4-star)</h3>
+<p><img src="/images/weapons/greatswords/Serpent_Spine.webp" alt="Serpent Spine Image"></p>
+<p>Excellent crit rate substat and damage buff that increases the longer Razor stays on field attacking. Must avoid taking damage to maintain max stacks.</p>
+<h3 id="prototype-archaic-4-star">Prototype Archaic (4-star)</h3>
+<p><img src="/images/weapons/greatswords/Prototype_Archaic.webp" alt="Prototype Archaic Image"></p>
+<p>A craftable option with ATK% substat. Its AoE burst effect works well with Razor’s fast attacking speed.</p>
+<h3 id="blackcliff-slasher-4-star">Blackcliff Slasher (4-star)</h3>
+<p><img src="/images/weapons/greatswords/Blackcliff_Slasher.webp" alt="Blackcliff Slasher Image"></p>
+<p>Good free-to-play choice with crit DMG substat. Requires executing low HP enemies to activate its ATK buff.</p>
+<h3 id="snow-tombed-starsilver-4-star">Snow-Tombed Starsilver (4-star)</h3>
+<p><img src="/images/weapons/greatswords/Snow-Tombed_Starsilver.webp" alt="Snow-Tombed Starsilver Image"></p>
+<p>Craftable claymore that boosts physical DMG. Good for pure physical builds but doesn’t buff Razor’s electro damage.</p>
+<p>Aim for a 5-star weapon if possible. For 4-stars, Serpent Spine is best if you can avoid getting hit. Otherwise Prototype Archaic is a solid choice.</p>
+<h2 id="best-artifacts-for-razor">Best Artifacts for Razor</h2>
+<p>Razor’s best artifact sets maximize his physical damage output:</p>
+<h3 id="pale-flame-4pc">Pale Flame (4pc)</h3>
+<p><img src="/images/artifacts/Pale.webp" alt="Pale Flame Image"></p>
+<p>The best set for physical Razor. Increases physical DMG and ATK. At max stacks the 2pc bonus also applies an even larger physical DMG buff.</p>
+<h3 id="bloodstained-chivalry-2pc--pale-flame-2pc">Bloodstained Chivalry (2pc) + Pale Flame (2pc)</h3>
+<p><img src="/images/artifacts/Chivalry_plus_Pale.webp" alt="Bloodstained Chivalry and Pale Flame Image"></p>
+<p>Very close second option that’s easier to farm. You still get a physical DMG bonus and ATK% increase.</p>
+<h3 id="gladiators-finale-2pc--bloodstained-chivalry-2pc">Gladiator’s Finale (2pc) + Bloodstained Chivalry (2pc)</h3>
+<p><img src="/images/artifacts/Gladiator_plus_Chivalry.webp" alt="Gladiator&#x27;s Finale and Bloodstained Chivalry Image"></p>
+<p>Decent alternative to the above. Gives ATK% and physical DMG.</p>
+<p>For main stats prioritize:</p>
+<ul>
+<li><strong>Sands:</strong> ATK%</li>
+<li><strong>Goblet:</strong> Physical DMG Bonus</li>
+<li><strong>Circlet:</strong> Crit Rate or DMG</li>
+</ul>
+<p>Substats to look for:</p>
+<ul>
+<li>Crit rate/DMG</li>
+<li>ATK%</li>
+<li>Energy recharge</li>
+<li>Elemental Mastery</li>
+</ul>
+<p>Build Razor with 25% crit rate minimum to consistently trigger Superconduct. Elemental Mastery is good for boosting Superconduct damage.</p>
+<h2 id="best-team-compositions-for-razor">Best Team Compositions for Razor</h2>
+<p>Razor’s best teammates provide crucial support effects without stealing field time from our main DPS:</p>
+<h3 id="core-team">Core Team</h3>
+<ul>
+<li><strong>Razor:</strong> Main DPS</li>
+<li><strong>Cryo Support:</strong> Kaeya, Rosaria, Diona. Procs Superconduct to reduce physical RES.</li>
+<li><strong>Sub DPS/Buffer:</strong> Fischl, <a href="/en/builds/xingqiu-build/">Xingqiu</a>, Beidou. Off-field damage and utility.</li>
+<li><strong>Healer:</strong> Bennett, Diona. Healing and buffs/shielding.</li>
+</ul>
+<h3 id="ideal-team-composition-1">Ideal Team Composition 1</h3>
+<ul>
+<li><strong>Razor</strong> - Main DPS</li>
+<li><strong>Kaeya</strong> - Cryo Support for Superconduct</li>
+<li><strong>Fischl</strong> - Off-field electro DMG and energy battery</li>
+<li><strong>Bennett</strong> - Healing, ATK buffs, and pyro resonance</li>
+</ul>
+<h3 id="ideal-team-composition-2">Ideal Team Composition 2</h3>
+<ul>
+<li><strong>Razor</strong> - Main DPS</li>
+<li><strong>Diona</strong> - Cryo Support, healing, and shields</li>
+<li><strong>Xingqiu</strong> - Hydro sub DPS, damage reduction</li>
+<li><a href="/en/builds/zhongli-build/"><strong>Zhongli</strong></a> - Shields, resistance shred, geo resonance</li>
+</ul>
+<p>Flex spots can be filled by an Anemo character like Venti for crowd control and Viridescent Venerer shred, or Albedo for geo resonance and off-field damage.</p>
+<h2 id="razor-gameplay-tips-and-combat-guide">Razor Gameplay Tips and Combat Guide</h2>
+<p>Here are some key tips to maximize Razor’s potential in combat:</p>
+<h3 id="normal-attack-combos">Normal Attack Combos</h3>
+<ul>
+<li>Use full normal attack string for maximum damage. End with hold E for big damage.</li>
+<li>Dash cancel earlier parts of combo to weave in more attacks faster.</li>
+<li>Jump cancel the final hit to immediately begin a new attack chain.</li>
+</ul>
+<h3 id="skill-and-burst-usage">Skill and Burst Usage</h3>
+<ul>
+<li>Use E press to apply electro before Q burst for Superconduct.</li>
+<li>Cast Q immediately when energy is full to maximize uptime.</li>
+<li>Weave in E press during Q duration for resist shred and electro energy.</li>
+<li>Use E hold for I-frames or to end burst combo with big damage.</li>
+</ul>
+<h3 id="combat-rotations">Combat Rotations</h3>
+<ol>
+<li>Apply cryo aura for Superconduct</li>
+<li>E press > Q Burst > Normal attack combo</li>
+<li>Rotate supports: Apply buffs/debuffs, use skills/bursts</li>
+<li>Swap back to Razor and repeat</li>
+</ol>
+<h3 id="advanced-combos">Advanced Combos</h3>
+<ul>
+<li>E press > Q > E hold > Normal combo > E press</li>
+<li>Dash cancel between attacks to animation cancel</li>
+<li>Jump cancel final attack in chain to reset combo faster</li>
+</ul>
+<h3 id="razor-solo-carry-playstyle">Razor Solo Carry Playstyle</h3>
+<ul>
+<li>Focus on keeping Razor on the field 90% of the time</li>
+<li>Maximize Razor’s burst and skill uptime</li>
+<li>Swap supports only briefly for cryo application, buffs/heals</li>
+<li>Fun “berserker” playstyle that showcases Razor’s lone wolf thematic</li>
+</ul>
+<p>Mastering these Razor gameplay fundamentals will let you unleash lethal physical DMG as a true electro wolf!</p>
+<h2 id="razor-builds-summary">Razor Builds Summary</h2>
+<p>In summary, the key components of a top-tier Razor build are:</p>
+<ul>
+<li><strong>Weapons:</strong> Wolf’s Gravestone > Serpent Spine > Prototype Archaic</li>
+<li><strong>Artifacts:</strong> Pale Flame > Bloodstained/Pale Flame</li>
+<li><strong>Team:</strong> Cryo support, off-field sub DPS, healer/buffer</li>
+<li><strong>Playstyle:</strong> Maximize field time, smart skill/burst cycling</li>
+</ul>
+<p>Invest in Razor’s normal/charged attack talents first and foremost. Level his skill/burst later to boost electro damage.</p>
+<p>Aim for 25% crit rate minimum and a 1:2 crit ratio for consistent damage. ATK%, physical DMG, and crit stats are ideal for Razor artifacts.</p>
+<h2 id="razor-builds-frequently-asked-questions">Razor Builds Frequently Asked Questions</h2>
+<p>Here are some common questions about building Razor:</p>
+<h3 id="should-i-go-for-4pc-pale-flame-or-2pc-bloodstained--2pc-pale-flame">Should I go for 4pc Pale Flame or 2pc Bloodstained + 2pc Pale Flame?</h3>
+<p><strong>4pc Pale Flame</strong> is Razor’s best set if you can proc and maintain the 4pc effect. But <strong>2pc Bloodstained + 2pc Pale Flame</strong> is much easier to farm and performs very closely.</p>
+<h3 id="what-talents-should-i-focus-on-leveling-up-first">What talents should I focus on leveling up first?</h3>
+<p>Prioritize <strong>normal attacks</strong> > <strong>elemental burst</strong> > <strong>elemental skill</strong>. Leveling normal attacks gives the biggest damage boost for physical Razor.</p>
+<h3 id="is-an-atk-or-physical-dmg-goblet-better-for-razor">Is an ATK or physical DMG goblet better for Razor?</h3>
+<p>Always use a <strong>physical DMG bonus goblet</strong>. Razor’s burst still benefits from the physical bonus. An electro goblet is only better in niche max-energy recharge builds.</p>
+<h3 id="should-i-use-4pc-gladiator-on-razor">Should I use 4pc Gladiator on Razor?</h3>
+<p><strong>4pc Gladiator is not optimal anymore</strong>. You will get more damage from 2pc Bloodstained + 2pc Pale Flame due to the 25% physical DMG bonus.</p>
+<h3 id="how-much-crit-rate-does-razor-need">How much crit rate does Razor need?</h3>
+<p>Aim for <strong>at least 25% crit rate</strong> to maintain Superconduct uptime. Then build additional crit DMG according to the standard 1:2 ratio.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>A powerful Razor build can carry you through much of Genshin Impact’s content. His simple yet hard-hitting playstyle is great for new players and veterans alike.</p>
+<p>Make him your primary DPS and watch those HP bars melt with proper Superconduct reactions and physical powerhouse attacks!</p>
+<p>With the tips and guides above, you now have everything you need to build, play, and master the lone wolf Razor. Let us know if you have any other questions in the comments below. And get ready to rock Teyvat with your new unstoppable Razor build!</p>
+        </article>
+
+        <hr><section>
+                <h2>Related Posts</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/en/builds/zhongli-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/Zhongli.webp" alt="Zhongli image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/zhongli-build/">Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-15T00:00:00.000Z">
+                                        Jul 15, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Geo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/en/builds/xingqiu-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/xingqiu-build.webp" alt="Xingqiu image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/xingqiu-build/">Ultimate Xingqiu Build Guide: Best Weapons, Artifacts and Team Comps</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        Jul 13, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Hydro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <a id="scroll-top" href="#table-of-contents" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+        <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+        </svg>
+    </a>
+
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/en/privacy">Privacy Policy</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contact</a>
+</footer>
+	</body></html>
