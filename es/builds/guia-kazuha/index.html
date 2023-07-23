@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="es">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/es/builds/guia-kazuha/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Guía definitiva de Kazuha: Las mejores armas, artefactos y equipos - Builds Genshin</title>
+		<meta name="title" content="Guía definitiva de Kazuha: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta name="description" content="La guía definitiva para buildear al mejor Kazuha en Genshin Impact. Armas, artefactos, equipos, rotaciones, constelaciones y más para maximizar a Kazuha.">
+
+		<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guías de personajes","item":"https://buildsgenshin.com/es/builds/"},{"@type":"ListItem","position":2,"name":"Kazuha Build"}]},{"@context":"https://schema.org","@type":"NewsArticle","headline":"Guía definitiva de Kazuha: Las mejores armas, artefactos y equipos","image":["https://buildsgenshin.com/images/builds/kazuha-build.webp"],"datePublished":"2023-07-23T00:00:00.000Z","dateModified":"2023-07-23T00:00:00.000Z","author":[{"@type":"Person","name":"Builds Genshin","url":"https://buildsgenshin.com/es/"}]}]</script>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Guía definitiva de Kazuha: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="og:description" content="La guía definitiva para buildear al mejor Kazuha en Genshin Impact. Armas, artefactos, equipos, rotaciones, constelaciones y más para maximizar a Kazuha.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/es/builds/guia-kazuha/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-23T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Guía definitiva de Kazuha: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="twitter:description" content="La guía definitiva para buildear al mejor Kazuha en Genshin Impact. Armas, artefactos, equipos, rotaciones, constelaciones y más para maximizar a Kazuha.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/es/">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/es/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/es/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/es/">Inicio</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			<section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Guía definitiva de Kazuha: Las mejores armas, artefactos y equipos
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-23T00:00:00.000Z">Actualizado <b>23/7/2023</b> por <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/kazuha-build.webp" alt="Kazuha image">
+        <article>
+            <h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ul>
+<li><a href="#el-rol-y-estilo-de-juego-de-kazuha">El Rol y Estilo de Juego de Kazuha</a></li>
+<li><a href="#las-mejores-armas-para-kazuha">Las Mejores Armas para Kazuha</a></li>
+<li><a href="#los-mejores-artefactos-para-kazuha">Los Mejores Artefactos para Kazuha</a></li>
+<li><a href="#los-mejores-equipos-para-kazuha">Los Mejores Equipos para Kazuha</a></li>
+<li><a href="#la-mejor-rotaci%C3%B3n-y-combos">La Mejor Rotación y Combos</a></li>
+<li><a href="#gu%C3%ADa-detallada-de-talentos-y-habilidades">Guía Detallada de Talentos y Habilidades</a></li>
+<li><a href="#constelaciones-y-c%C3%B3mo-afectan-las-builds">Constelaciones y Cómo Afectan las Builds</a></li>
+<li><a href="#vale-la-pena-el-c6-de-kazuha">¿Vale la Pena el C6 de Kazuha?</a></li>
+<li><a href="#vale-la-pena-invocar-a-kazuha">¿Vale la Pena Invocar a Kazuha?</a></li>
+<li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
+</ul>
+<h2 id="introducción">Introducción</h2>
+<p>Kazuha es uno de los personajes Anemo más populares y poderosos en Genshin Impact. Como personaje 5 estrellas, Kazuha tiene increíbles capacidades de control de multitudes y aumento de daño elemental. Con la build correcta, Kazuha puede llevar a tu equipo de Genshin Impact a nuevas alturas.</p>
+<p>En esta guía completa, repasaremos todo lo que necesitas saber para construir al mejor Kazuha. Cubriremos armas, artefactos, equipos y rotaciones para maximizar el potencial de Kazuha. Ya seas un jugador nuevo o veterano, esta guía tiene consejos prácticos para hacer de tu Kazuha una fuerza a tener en cuenta en Teyvat.</p>
+<h2 id="el-rol-y-estilo-de-juego-de-kazuha">El Rol y Estilo de Juego de Kazuha</h2>
+<h3 id="kazuha-como-soporte-anemo-y-sub-dps">Kazuha como Soporte Anemo y Sub DPS</h3>
+<p>Kazuha llena el rol de soporte Anemo y sub DPS en la mayoría de los equipos. Su Habilidad Elemental y Ráfaga infunden con Hidro/Electro/Piro/Cryo y buffean el daño elemental de tu DPS principal de ese mismo tipo.</p>
+<p>Con el set Viridescent Venerer de 4 piezas, Kazuha puede constantemente arremolinar elementos para reducir la resistencia enemiga con el efecto de 4 piezas de VV. Esto amplifica significativamente el daño de tu DPS principal.</p>
+<p>Kazuha también puede contribuir un sólido daño Anemo personal durante la ventana de infusión de su Ráfaga. Con la inversión adecuada, puede actuar como un sub DPS mientras sigue buffeando a tu DPS principal.</p>
+<h3 id="el-estilo-de-juego-móvil-de-kazuha">El Estilo de Juego Móvil de Kazuha</h3>
+<p>Kazuha tiene un estilo de juego muy móvil gracias a su Habilidad Elemental, Midare Ranzan. Esta habilidad permite a Kazuha saltar en medio del aire después de esprintar y jalar enemigos antes de precipitarse con daño Anemo.</p>
+<p>Usar esta habilidad fluidamente permite a Kazuha esquivar ataques enemigos mientras prepara reacciones Swirl. Dominar el combo de doble salto y Ataque en Picada de Kazuha es clave para maximizar su daño y utilidad.</p>
+<h2 id="las-mejores-armas-para-kazuha">Las Mejores Armas para Kazuha</h2>
+<p>Kazuha tiene varias opciones de armas fuertes que complementan su kit. Aquí están las principales opciones:</p>
+<h3 id="freedom-sworn-5-estrellas">Freedom-Sworn (5 estrellas)</h3>
+<p><img src="/images/weapons/swords/Freedom-Sworn.webp" alt="Freedom Sworn Image"></p>
+<ul>
+<li>La arma firma de Kazuha. En refinamientos más altos, buffea la Maestría Elemental y el DMG de Ataque Normal/Cargado/en Picada.</li>
+<li>El pasivo buffea el ATK de los compañeros de equipo y activa buffs de su alto substat de EM. Arma de soporte excelente.</li>
+</ul>
+<h3 id="iron-sting-4-estrellas">Iron Sting (4 estrellas)</h3>
+<p><img src="/images/weapons/swords/Iron_Sting.webp" alt="Iron Sting Image"></p>
+<ul>
+<li>Da un enorme 165 de EM al máximo refinamiento, buffeando el DMG Swirl significativamente.</li>
+<li>ATK base bajo pero el pasivo aumenta aún más el DMG Elemental. La mejor opción 4 estrellas en general.</li>
+</ul>
+<h3 id="sacrificial-sword-4-estrellas">Sacrificial Sword (4 estrellas)</h3>
+<p><img src="/images/weapons/swords/Sacrificial_Sword.webp" alt="Sacrificial Sword Image"></p>
+<ul>
+<li>Tiene substat de Recarga de Energía para financiar la costosa Ráfaga de Kazuha.</li>
+<li>El pasivo ocasionalmente reinicia el enfriamiento de la habilidad para más procs de Swirl.</li>
+</ul>
+<h3 id="favonius-sword-4-estrellas">Favonius Sword (4 estrellas)</h3>
+<p><img src="/images/weapons/swords/Favonius_Sword.webp" alt="Favonius Sword Image"></p>
+<ul>
+<li>La alta Recarga de Energía hace que obtener la Ráfaga de Kazuha sea fácil.</li>
+<li>El pasivo genera partículas de energía para recargar aún más al equipo.</li>
+</ul>
+<h3 id="the-alley-flash-4-estrellas">The Alley Flash (4 estrellas)</h3>
+<p><img src="/images/weapons/swords/The_Alley_Flash.webp" alt="The Alley Flash Image"></p>
+<ul>
+<li>ATK y Tasa Crítica muy altos como vara estadística. Impulsa el daño en picada personal de Kazuha.</li>
+<li>Menos óptimo para una build pura de EM pero bueno para híbrido DPS.</li>
+</ul>
+<h2 id="los-mejores-artefactos-para-kazuha">Los Mejores Artefactos para Kazuha</h2>
+<p>Los mejores sets de artefactos de Kazuha maximizan su DMG Anemo y reacciones Swirl.</p>
+<h3 id="4-piezas-viridescent-venerer">4 piezas Viridescent Venerer</h3>
+<p><img src="/images/artifacts/viridescent.webp" alt="Viridescent Venerer Image"></p>
+<ul>
+<li>Reduce la resistencia enemiga al elemento Swirlado en 40%. Set esencial.</li>
+<li>Aumenta el DMG Swirl en 60%. Impulsa el corte de VV y el daño personal.</li>
+</ul>
+<h3 id="estadísticas-principales">Estadísticas Principales</h3>
+<ul>
+<li><strong>Arena:</strong> EM o ATK%</li>
+<li><strong>Copa:</strong> Daño Anemo Bonus</li>
+<li><strong>Círculo:</strong> EM o Crítico</li>
+</ul>
+<p>Prioriza EM en las tres ranuras para maximizar las reacciones Swirl. Alternativamente, una Arena ATK% y Círculo Crítico pueden impulsar el daño en picada personal de Kazuha a costa de buffear.</p>
+<h3 id="subestadísticas">Subestadísticas</h3>
+<p>EM > ER > ATK% > Crítico</p>
+<p>Apilar EM es ideal para soporte puro. 100-150% de ER garantiza tiempo de actividad Ráfaga. Una cierta inversión en Crítico mejora las capacidades de sub DPS de Kazuha sin quitarle su papel de buffeo.</p>
+<h2 id="los-mejores-equipos-para-kazuha">Los Mejores Equipos para Kazuha</h2>
+<p>Gracias a su utilidad flexible, Kazuha encaja en muchas composiciones de equipo de primer nivel:</p>
+<h3 id="equipos-congelar">Equipos Congelar</h3>
+<ul>
+<li>Ejemplo: Ganyu/Ayaka, aplicador Hydro, batería Cryo, Kazuha</li>
+<li>Kazuha constantemente arremolina Cryo para reducir RES Cryo con 4pc VV.</li>
+<li>Agrupar enemigos aumenta el daño AoE de Ganyu/Ayaka.</li>
+</ul>
+<h3 id="equipos-vaporizar">Equipos Vaporizar</h3>
+<ul>
+<li>Ejemplo: <a href="/es/builds/guia-yoimiya/">Yoimiya</a>, <a href="/es/builds/guia-xingqiu/">Xingqiu</a>, <a href="/es/builds/guia-zhongli/">Zhongli</a>, Kazuha</li>
+<li>Arremolina Hydro y buffea el daño Pyro de Yoimiya con VV.</li>
+<li>Agrupar mejora la habilidad de Yoimiya de Vaporizar múltiples enemigos.</li>
+</ul>
+<h3 id="equipos-electrocharged">Equipos Electrocharged</h3>
+<ul>
+<li>Ejemplo: Tartaglia, Fischl, Beidou, Kazuha</li>
+<li>Permite reacciones Electrocharged constantes y disemina Electro con Swirl.</li>
+<li>Reduce RES Electro con VV 4pc para amplificar aún más las reacciones.</li>
+</ul>
+<h3 id="equipos-mono-elementales">Equipos Mono Elementales</h3>
+<ul>
+<li>Ejemplo: Ayaka/Ganyu, Shenhe/Rosaria, Hydro, Kazuha</li>
+<li>Kazuha es la única fuente de cortes de RES VV en equipos congelar sin un segundo Anemo.</li>
+<li>Arremolinar el mismo elemento constantemente aumenta el daño mono Cryo.</li>
+</ul>
+<h3 id="equipos-soup">Equipos Soup</h3>
+<ul>
+<li>Ejemplo: Raiden, <a href="/es/builds/guia-bennett/">Bennett</a>, Xiangling, Kazuha</li>
+<li>Kazuha disemina y buffea el daño Pyro para reacciones Overloaded y Vaporize.</li>
+<li>Arremolina Electro para reducir RES Electro y buffear el daño de Raiden.</li>
+</ul>
+<h2 id="la-mejor-rotación-y-combos">La Mejor Rotación y Combos</h2>
+<p>Aquí está la rotación de combos estándar para maximizar el daño y los buffs de Kazuha:</p>
+<ol>
+<li>Aplica un elemento para Swirl con la Habilidad o Ráfaga de Kazuha (Hydro/Pyro/Electro/Cryo)</li>
+<li>Usa la Habilidad Elemental para absorber ese elemento y agrupar enemigos</li>
+<li>Cambia al DPS principal y usa Habilidades/Ráfagas dañinas</li>
+<li>Cambia de vuelta a Kazuha y usa la Ráfaga Elemental para Swirl elementos y buffear el daño del equipo</li>
+<li>Lanza en picada con Kazuha y continúa usando Habilidades fuera de enfriamiento</li>
+<li>Cuando la Ráfaga termina, repite la rotación</li>
+</ol>
+<p>Consejos clave:</p>
+<ul>
+<li>Intenta Swirl doble de elementos para cortes VV de ambos.</li>
+<li>Swirl elementos inmediatamente antes de cambiar al DPS para maximizar buffs.</li>
+<li>Enfoca Energía en Kazuha para llenar su Ráfaga fuera de enfriamiento.</li>
+</ul>
+<p>Con práctica, puedes entrelazar fluidamente las habilidades de Kazuha entre los combos de tu DPS principal para maximizar el tiempo de actividad Swirl y daño.</p>
+<h2 id="guía-detallada-de-talentos-y-habilidades">Guía Detallada de Talentos y Habilidades</h2>
+<p>Profundicemos en la optimización de cada una de las habilidades de combate de Kazuha:</p>
+<h3 id="ataque-normal-maple-leaf-slash">Ataque Normal: Maple Leaf Slash</h3>
+<ul>
+<li>Prioridad baja, sólo sube este talento si usas a Kazuha como DPS principal.</li>
+<li>De otra manera, déjalo en Nv. 1 y enfócate en Habilidad y Ráfaga.</li>
+</ul>
+<h3 id="habilidad-elemental-chihayaburu">Habilidad Elemental: Chihayaburu</h3>
+<ul>
+<li>Habilidad esencial que permite Swirls y control de multitudes.</li>
+<li>Súbela al menos a Nv. 8 para maximizar daño y fuerza de absorción.</li>
+</ul>
+<h3 id="ráfaga-elemental-kazuha-slash">Ráfaga Elemental: Kazuha Slash</h3>
+<ul>
+<li>Fuente clave de daño Swirl y buffs elementales.</li>
+<li>Maximízala a Nv. 10 para aumentar el DMG Swirl y la duración del buff.</li>
+</ul>
+<h3 id="pasivas">Pasivas</h3>
+<ul>
+<li>Las 3 pasivas son útiles:
+<ul>
+<li>Soul of Sword impulsa el EM de equipo después de Ráfaga.</li>
+<li>Poetics of Fuubutsu aumenta el DMG en Picada.</li>
+<li>Wayfarer’s Chant reembolsa Energía al Swirl.</li>
+</ul>
+</li>
+<li>Subelas todas al menos a Nv. 3.</li>
+</ul>
+<p>Prioriza subir Ráfaga, luego Habilidad, luego Normales al último. Obtén las 3 pasivas para impulsar la utilidad de equipo.</p>
+<h2 id="constelaciones-y-cómo-afectan-las-builds">Constelaciones y Cómo Afectan las Builds</h2>
+<p>Aquí hay un resumen de las constelaciones de Kazuha:</p>
+<p><strong>C1</strong>: Impulsa el daño de Habilidad y reduce el enfriamiento. Reembolsa Energía.</p>
+<ul>
+<li>Permite una build ofensiva sobre EM completo.</li>
+</ul>
+<p><strong>C2</strong>: Aumenta el DMG Ráfaga y Tasa Crítica.</p>
+<ul>
+<li>Mejora aún más una build de Kazuha sub DPS.</li>
+</ul>
+<p><strong>C3</strong>: Mejora los Niveles de Talento por 3.</p>
+<ul>
+<li>Ahorra recursos subiendo talentos.</li>
+</ul>
+<p><strong>C4</strong>: El DMG en Picada libera ondas de choque si se lanza en picada en el campo de Ráfaga.</p>
+<ul>
+<li>Mejora el DMG AoE sin cambiar builds.</li>
+</ul>
+<p><strong>C5</strong>: Aumenta el nivel de Ráfaga por 3.</p>
+<ul>
+<li>Ahorra recursos subiendo talentos.</li>
+</ul>
+<p><strong>C6</strong>: Bonificación de DMG elemental aumentada por 200 EM para compañeros al usar Ráfaga.</p>
+<ul>
+<li>Permite un poco de ER o Crítico en lugar de apilar puro EM.</li>
+</ul>
+<p>Las constelaciones principalmente buffean el daño en lugar de cambiar fundamentalmente las builds óptimas. Pero permiten una distribución de estadísticas más ofensiva mientras se mantiene la utilidad.</p>
+<h2 id="vale-la-pena-el-c6-de-kazuha">¿Vale la Pena el C6 de Kazuha?</h2>
+<p>El C6 de Kazuha es muy fuerte pero no obligatorio. Aquí un resumen:</p>
+<p><strong>Pros</strong></p>
+<ul>
+<li>El buff de 200 EM es enorme para amplificar reacciones.</li>
+<li>Abre flexibilidad de build para usar armas EM o DPS.</li>
+<li>Generalmente hace el poder de buffeo de Kazuha aún más increíble.</li>
+</ul>
+<p><strong>Contras</strong></p>
+<ul>
+<li>El Kazuha base C0 ya provee gran utilidad.</li>
+<li>Muy caro conseguir 6 copias de un personaje 5 estrellas.</li>
+<li>Puede sobreempoderar EM resultando en retornos decrecientes.</li>
+</ul>
+<p><strong>Veredicto</strong>: C6 hace a Kazuha más versátil y poderoso pero no es necesario para que sea excelente. Funciona excepcionalmente incluso en C0. Sólo ve por constelaciones si lo amas y quieres maximizar su potencial.</p>
+<h2 id="vale-la-pena-invocar-a-kazuha">¿Vale la Pena Invocar a Kazuha?</h2>
+<p>Kazuha entrega inmenso valor en la mayoría de equipos en Genshin Impact. Aquí un resumen de por qué vale la pena invocarlo:</p>
+<p><strong>Razones para Invocar a Kazuha</strong></p>
+<ul>
+<li>Soporte universal que encaja en incontables composiciones de equipo.</li>
+<li>Amplificación masiva de daño de Swirls y corte VV.</li>
+<li>Habilidad de control de multitudes muy fuerte yet flexible.</li>
+<li>Fácil de construir como buffer EM y habilitador Swirl.</li>
+<li>Tope alto de habilidad para combos y trucos avanzados.</li>
+<li>Kit a prueba de futuro que escala bien con el tiempo.</li>
+</ul>
+<p><strong>Razones para Saltarse a Kazuha</strong></p>
+<ul>
+<li>Ya tienes necesidades de control de multitudes cubiertas por Venti/Sucrose</li>
+<li>No necesitas otro soporte Anemo si tienes a Jean construida</li>
+<li>Ahorrando para un personaje DPS específico que quieres más</li>
+</ul>
+<p><strong>Veredicto</strong>: Kazuha es uno de los soportes más versátiles en el juego. Es un personaje muy seguro en el que invertir tanto para jugadores nuevos como endgame. A menos que ya tengas múltiples Anemos bien construidos, Kazuha vale mucho la pena invocarlo.</p>
+<h2 id="preguntas-frecuentes">Preguntas Frecuentes</h2>
+<h3 id="debo-usar-triples-estadísticas-principales-em-en-kazuha">¿Debo usar triples estadísticas principales EM en Kazuha?</h3>
+<p>Sí, triples estadísticas principales de EM maximizarán la capacidad de buffeo de Kazuha en la mayoría de situaciones. Algunas excepciones son:</p>
+<ul>
+<li>Usando un arma EM como Freedom Sworn, permitiendo un Círculot ATK% o Crítico.</li>
+<li>Jugando una composición hypercarry que no reacciona, así que construirías a Kazuha como un sub DPS híbrido.</li>
+</ul>
+<p>Pero en general, EM/EM/EM es ideal para maximizar el daño Swirl y buffear aliados óptimamente.</p>
+<h3 id="qué-prioridad-de-nivel-de-talento-para-kazuha">¿Qué prioridad de nivel de talento para Kazuha?</h3>
+<p>Prioriza subir Ráfaga primero, luego Habilidad. Deja el ataque normal con prioridad baja. Apunta a:</p>
+<ul>
+<li>Ataque Normal: Máx. Nv. 6 (sólo si DPS principal)</li>
+<li>Habilidad Elemental: Mínimo Nv. 8</li>
+<li>Ráfaga Elemental: Nv. 8-10</li>
+</ul>
+<p>Llevar Ráfaga a Nv. 8+ debería ser la máxima prioridad seguido por subir Habilidad. Algunas coronas pueden ir a Ráfaga una vez que otros talentos estén suficientemente subidos.</p>
+<h3 id="debo-invocar-freedom-sworn-o-ir-por-constelaciones">¿Debo invocar Freedom Sworn o ir por Constelaciones?</h3>
+<p>Depende de tus prioridades y arma actual. Algunas consideraciones:</p>
+<ul>
+<li><strong>Ya tienes un arma EM</strong>: Las constelaciones tendrán más impacto.</li>
+<li><strong>Necesitas un buen arma</strong>: Freedom Sworn es la mejor opción de soporte de Kazuha.</li>
+<li><strong>Quieres más daño</strong>: Las constelaciones buffean daño directamente.</li>
+<li><strong>Quieres más versatilidad</strong>: Freedom Sworn equilibra estadísticas.</li>
+</ul>
+<p>En general ambos proveen aumentos significativos así que elige basado en tus necesidades y metas a largo plazo con Kazuha.</p>
+<h3 id="qué-requerimientos-de-er-para-tiempo-de-actividad-ráfaga">¿Qué requerimientos de ER para tiempo de actividad Ráfaga?</h3>
+<p>Se recomienda 160-200% ER para activar Ráfaga cómodamente fuera de enfriamiento. Kazuha quiere su Ráfaga lista para habilitar Swirls y buffs. Fuentes incluyen:</p>
+<ul>
+<li>Arena con estadística principal ER</li>
+<li>Arma como Favonius o Sacrificial Sword</li>
+<li>Subestadísticas de ER y Energía plana en artefactos</li>
+<li>Soportes batería como Venti, Sucrose o Raiden</li>
+</ul>
+<p>Apunta a una base de 180% ER de subestadísticas y armas. Ajusta más alto o más bajo según sea necesario basado en la energía del equipo.</p>
+<h3 id="qué-tan-importante-es-el-c2-de-kazuha">¿Qué tan importante es el C2 de Kazuha?</h3>
+<p>El C2 es un buen aumento pero no crítico. Da:</p>
+<ul>
+<li>Buff de daño a sus Precipitados en el aire en Ráfaga.</li>
+<li>Buff de ATK de 200 EM para el equipo después de usar Ráfaga.</li>
+<li>10% Tasa Crítica por 8s después de usar Ráfaga.</li>
+</ul>
+<p>El aumento de daño en Precipitado ayuda su DPS personal, pero su buffeo ya es muy fuerte en C0. El buff de Tasa Crítica tampoco es muy impactante en una build full EM. Así que aunque es bueno tenerlo, C2 no es un cambio de juego.</p>
+<h2 id="conclusión">Conclusión</h2>
+<p>Kazuha es uno de los personajes más populares en Genshin Impact por buenas razones. Con la habilidad de buffear daño elemental, agrupar enemigos, y causar grandes reacciones Swirl, Kazuha encaja en muchas composiciones de equipo.</p>
+<p>Esta guía cubre armas óptimas, artefactos, roles de equipo, builds de talentos, rotaciones y constelaciones para maximizar completamente el desempeño de Kazuha. Ya sea construido full EM o DPS híbrido, Kazuha puede proveer un valor enorme para llevar tu cuenta al siguiente nivel.</p>
+<p>Con entendimiento del kit de Kazuha y cómo construirlo apropiadamente, ahora estás equipado para hacer de tu Kazuha una estrella en el Abismo Espiral y el mundo abierto. ¡Aquí está para planear graciosamente por Teyvat con nuestro poético samurái favorito!</p>
+        </article>
+
+        <hr><section>
+                <h2>Entradas relacionadas</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/es/builds/guia-yoimiya/"><img loading="lazy" class="block my-[0]" src="/images/builds/yoimiya-build.webp" alt="Yoimiya image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-yoimiya/">Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        13 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>DPS</code><code>Pyro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/es/builds/guia-zhongli/"><img loading="lazy" class="block my-[0]" src="/images/builds/Zhongli.webp" alt="Zhongli image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-zhongli/">Guía definitiva de Zhongli: Las mejores armas, artefactos y equipos</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-15T00:00:00.000Z">
+                                        15 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Geo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <a id="scroll-top" href="#tabla-de-contenidos" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+            <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+            </svg>
+        </a>
+    </section>
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/es/privacy">Política de privacidad</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contacto</a>
+</footer>
+	</body></html>
