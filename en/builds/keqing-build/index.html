@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="en">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/en/builds/keqing-build/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Ultimate Keqing Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin</title>
+		<meta name="title" content="Ultimate Keqing Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta name="description" content="The ultimate guide to build the best Keqing in Genshin Impact. Learn top weapons, artifacts, teams, constellations, and more to maximize Keqing's DPS potential.">
+
+		<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Character Builds","item":"https://buildsgenshin.com/en/builds/"},{"@type":"ListItem","position":2,"name":"Keqing Build"}]},{"@context":"https://schema.org","@type":"NewsArticle","headline":"Ultimate Keqing Build Guide: Best Weapons, Artifacts and Team Comps","image":["https://buildsgenshin.com/images/builds/keqing-build.webp"],"datePublished":"2023-07-24T00:00:00.000Z","dateModified":"2023-07-24T00:00:00.000Z","author":[{"@type":"Person","name":"Builds Genshin","url":"https://buildsgenshin.com/en/"}]}]</script>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Ultimate Keqing Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta property="og:description" content="The ultimate guide to build the best Keqing in Genshin Impact. Learn top weapons, artifacts, teams, constellations, and more to maximize Keqing's DPS potential.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/en/builds/keqing-build/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-24T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Ultimate Keqing Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta property="twitter:description" content="The ultimate guide to build the best Keqing in Genshin Impact. Learn top weapons, artifacts, teams, constellations, and more to maximize Keqing's DPS potential.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/en/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/en/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/en/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/en/">Home</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			<section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Ultimate Keqing Build Guide: Best Weapons, Artifacts and Team Comps
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-24T00:00:00.000Z">Updated <b>7/24/2023</b> by <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/keqing-build.webp" alt="Keqing image">
+        <article>
+            <h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#keqings-abilities-and-playstyle">Keqing’s Abilities and Playstyle</a></li>
+<li><a href="#best-weapons-for-keqing">Best Weapons for Keqing</a></li>
+<li><a href="#artifacts-for-keqing">Artifacts for Keqing</a></li>
+<li><a href="#best-teams-for-keqing">Best Teams for Keqing</a></li>
+<li><a href="#best-talent-priority-for-keqing">Best Talent Priority for Keqing</a></li>
+<li><a href="#keqings-constellations-and-ascension-passives">Keqing’s Constellations and Ascension Passives</a></li>
+<li><a href="#is-c6-keqing-worth-it">Is C6 Keqing Worth It?</a></li>
+<li><a href="#keqing-hidden-talents-passives-and-constellations-explained">Keqing Hidden Talents, Passives, and Constellations Explained</a></li>
+<li><a href="#optimal-combos-and-rotations-for-keqing">Optimal Combos and Rotations for Keqing</a></li>
+<li><a href="#how-to-play-keqing-in-quick-swap-teams">How to Play Keqing in Quick Swap Teams</a></li>
+<li><a href="#is-keqing-good">Is Keqing Good?</a></li>
+<li><a href="#keqing-build-guide-summary">Keqing Build Guide Summary</a></li>
+<li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Keqing is an agile sword-wielding character in Genshin Impact who deals Electro damage. As one of the top DPS characters in the game, building Keqing properly is key to maximizing her damage output. This comprehensive guide will provide everything you need to know to build the best Keqing for your playstyle.</p>
+<h2 id="keqings-abilities-and-playstyle">Keqing’s Abilities and Playstyle</h2>
+<h3 id="keqings-elemental-skill-and-burst">Keqing’s Elemental Skill and Burst</h3>
+<p>Keqing’s Elemental Skill, Stellar Restoration, allows her to blink to a nearby location and deal AoE Electro damage. Her Elemental Burst, Starward Sword, summons magical sword energy that strikes nearby enemies repeatedly with Electro damage.</p>
+<h3 id="quick-swaps-and-agile-combos">Quick Swaps and Agile Combos</h3>
+<p>With low cooldowns on her skills, Keqing excels at quick swap team comps where she can deal burst damage and swap out. She also shines in agile combat with her fast sword combos for continuous Electro reactions.</p>
+<h3 id="keqing-as-main-dps-or-sub-dpsburst-support">Keqing as Main DPS or Sub DPS/Burst Support</h3>
+<p>While Keqing can be an effective main on-field DPS, she also works well as a sub DPS or burst support. Her flexible kits lets her fill either role nicely.</p>
+<h2 id="best-weapons-for-keqing">Best Weapons for Keqing</h2>
+<p>Keqing’s best weapons boost her CRIT Rate, CRIT DMG, or Electro DMG Bonus. Here are top options for Main DPS and Sub DPS builds.</p>
+<h3 id="5-star-swords">5-Star Swords</h3>
+<h4 id="mistsplitter-reforged-best-in-slot">Mistsplitter Reforged (Best in Slot)</h4>
+<p><img src="/images/weapons/swords/Mistsplitter_Reforged.webp" alt="Mistsplitter Reforged Image"></p>
+<p>Mistsplitter’s CRIT DMG substat and damage bonuses make it Keqing’s best weapon. Its passive boosts Elemental DMG Bonus based on the number of buffs active.</p>
+<h4 id="primordial-jade-cutter">Primordial Jade Cutter</h4>
+<p><img src="/images/weapons/swords/Primordial_Jade_Cutter.webp" alt="Primordial Jade Cutter Image"></p>
+<p>Jade Cutter has a high CRIT Rate substat and boosts HP% and ATK%. The HP% scales well with Keqing’s passive talent that converts HP% to Electro DMG Bonus.</p>
+<h4 id="summit-shaper">Summit Shaper</h4>
+<p><img src="/images/weapons/swords/Summit_Shaper.webp" alt="Summit Shaper Image"></p>
+<p>Summit Shaper grants a stacking ATK% buff and high ATK. Good for electro Keqing builds.</p>
+<h4 id="skyward-blade">Skyward Blade</h4>
+<p><img src="/images/weapons/swords/Skyward_Blade.webp" alt="Skyward Blade Image"></p>
+<p>Skyward Blade has Energy Recharge to fund Keqing’s 80 energy cost burst. Its passive increases CRIT Rate after using an Elemental Burst.</p>
+<h3 id="4-star-swords">4-Star Swords</h3>
+<h4 id="the-black-sword">The Black Sword</h4>
+<p><img src="/images/weapons/swords/The_Black_Sword.webp" alt="The Black Sword Image"></p>
+<p>The Black Sword from the Battle Pass has CRIT Rate, Normal/Charged ATK DMG, and healing. It’s one of Keqing’s best 4-star options.</p>
+<h4 id="lions-roar">Lion’s Roar</h4>
+<p><img src="/images/weapons/swords/Lion&#x27;s_Roar.webp" alt="Lion&#x27;s Roar Image"></p>
+<p>Lion’s Roar boosts DMG against enemies affected by Pyro or Electro, perfect for optimizing Keqing’s Electro damage.</p>
+<h4 id="iron-sting">Iron Sting</h4>
+<p><img src="/images/weapons/swords/Iron_Sting.webp" alt="Iron Sting Image"></p>
+<p>Iron Sting can work on Electro Keqing, boosting Elemental Mastery for stronger reactions. However, it lacks offensive stats Keqing wants.</p>
+<h4 id="favonius-sword">Favonius Sword</h4>
+<p><img src="/images/weapons/swords/Favonius_Sword.webp" alt="Favonius Sword Image"></p>
+<p>Favonius Sword generates Energy particles to boost Keqing’s burst uptime. A good F2P choice if lacking Energy Recharge.</p>
+<h2 id="artifacts-for-keqing">Artifacts for Keqing</h2>
+<p>Keqing wants 2pc Thundering Fury + 2pc Glad/Shimenawa/Vermillion for electro builds, or 4pc Thundersoother for electro-focused teams. For physical, 4pc Pale Flame is best.</p>
+<h3 id="best-artifact-stats">Best Artifact Stats</h3>
+<p>Prioritize CRIT Rate, CRIT DMG, ATK%, and Electro/Physical DMG Bonus for Keqing. Some Energy Recharge helps her burst uptime as well.</p>
+<h3 id="strong-artifact-sets">Strong Artifact Sets</h3>
+<ul>
+<li>
+<p><strong>2pc Thundering Fury + 2pc Glad:</strong> Standard electro build. 15% Electro DMG Bonus.</p>
+</li>
+<li>
+<p><strong>4pc Thundersoother:</strong> For electro focused teams. 40% Electro DMG Bonus if enemies are affected by Electro.</p>
+</li>
+<li>
+<p><strong>4pc Pale Flame:</strong> For physical Keqing. 25% Physical DMG Bonus and 18% ATK.</p>
+</li>
+<li>
+<p><strong>2pc Thundering Fury/Glad + 2pc Shimenawa/Vermillion:</strong> Good offensive mixes.</p>
+</li>
+<li>
+<p><strong>2pc Thundering Fury + 2pc Noblesse:</strong> For sub DPS burst role. 20% Burst DMG Bonus.</p>
+</li>
+</ul>
+<h2 id="best-teams-for-keqing">Best Teams for Keqing</h2>
+<p>These teams maximize Keqing’s potential as on-field Electro DPS.</p>
+<h3 id="aggravate-keqing">Aggravate Keqing</h3>
+<ul>
+<li>Keqing - Main DPS</li>
+<li>Fischl - Off-field Electro applicator</li>
+<li>Anemo (<a href="/en/builds/kazuha-build/">Kazuha</a>/Sucrose) - Swirl Electro, VV shred</li>
+<li>Dendro (Collei/Traveler) - Trigger Aggravate</li>
+</ul>
+<p>Fischl enables constant Aggravate procs for major damage. VV Shred + Swirl boosts Aggravate damage further.</p>
+<h3 id="hyperbloom-keqing">Hyperbloom Keqing</h3>
+<ul>
+<li>Keqing - Main DPS</li>
+<li><a href="/en/builds/xingqiu-build/">Xingqiu</a> - Hydro applicator</li>
+<li>Dendro (Collei/Traveler) - Bloom triggers</li>
+<li>Anemo (Kazuha/Sucrose) - Swirl, VV shred</li>
+</ul>
+<p>Keqing triggers Blooms that explode with Hyperbloom. Xingqiu and Dendro keep Blooms proced. VV Shred enhances Hyperbloom damage.</p>
+<h3 id="electro-charged-keqing">Electro-Charged Keqing</h3>
+<ul>
+<li>Keqing - Main DPS</li>
+<li>Fischl - Off-field Electro</li>
+<li>Xingqiu - Hydro applicator</li>
+<li>Anemo (Kazuha/Sucrose) - Swirl, VV shred</li>
+</ul>
+<p>Keqing and Fischl rapidly inflict Electro for Xingqiu’s Hydro to react with. Kazuha/Sucrose boost Electro-Charged damage.</p>
+<h2 id="best-talent-priority-for-keqing">Best Talent Priority for Keqing</h2>
+<p>Level Keqing’s talents in this order for maximum gains:</p>
+<ol>
+<li>Normal Attack</li>
+<li>Elemental Burst</li>
+<li>Elemental Skill</li>
+</ol>
+<p>Crown her Normal Attack first to increase her regular combo and Charged Attack damage. Next, boost her burst since it offers huge AoE damage. Finally, level her skill last for minor damage and cooldown reduction gains.</p>
+<h2 id="keqings-constellations-and-ascension-passives">Keqing’s Constellations and Ascension Passives</h2>
+<p>Here are the benefits from unlocking Keqing’s constellations and ascending her:</p>
+<h3 id="constellations">Constellations</h3>
+<p><strong>C1</strong>: Boosts Charged Attack CRIT Rate and Energy Recharge</p>
+<p><strong>C2</strong>: Lowers Stellar Restoration CD and Energy Cost</p>
+<p><strong>C3</strong>: Increases Stellar Restoration levels by 3</p>
+<p><strong>C4</strong>: After using Starward Sword, Normal and Charged Attacks deal increased ATK as Electro DMG for 5s.</p>
+<p><strong>C5</strong>: Increases Starward Sword levels by 3</p>
+<p><strong>C6</strong>: Starward Sword resets the CD of Stellar Restoration and Energy Recharge is increased for 10s after.</p>
+<h3 id="ascension-passives">Ascension Passives</h3>
+<p><strong>1st</strong>: When unleashing elemental reactions, receives a 25% DMG Bonus for those reactions for 6s.</p>
+<p><strong>4th</strong>: Keqing’s Charged ATK Stamina cost is decreased by 50% and her final Normal Attack combo hit deals bonus ATK DMG.</p>
+<h2 id="is-c6-keqing-worth-it">Is C6 Keqing Worth It?</h2>
+<p>Keqing’s C6 can create amazing rotations where you can constantly cycle between her skill and burst. However, it is not mandatory for her to be strong. Lower cons like C1 already offer nice boosts through CRIT Rate. Unless you are a hardcore Keqing main, stopping at C2 or C4 is sufficient. Other characters likely bring more value per primo than going for C6 Keqing.</p>
+<h2 id="keqing-hidden-talents-passives-and-constellations-explained">Keqing Hidden Talents, Passives, and Constellations Explained</h2>
+<h3 id="c1-thunderclap-extend">C1: Thunderclap Extend</h3>
+<p>After unleashing a Charged ATK, Keqing’s CRIT Rate is increased by 15%. Lasts for 5s.</p>
+<p>This can result in nearly 100% CRIT Charged Attacks during her burst with proper artifacts. Also generates 1 Electro particle per Charged ATK, increasing Energy.</p>
+<h3 id="c2-keen-extender">C2: Keen Extender</h3>
+<p>Decreases the CD of Stellar Restoration by 2s.
+Decreases the Energy Cost to 30.</p>
+<p>More frequent blinks for mobility and damage. Cheaper cost makes reaching burst easier.</p>
+<h3 id="c4-thunderfist">C4: Thunderfist</h3>
+<p>After using Starward Sword, Normal and Charged ATK DMG is increased by 15%. This DMG is converted to Electro DMG. Lasts 5s.</p>
+<p>Gives Keqing’s normal attacks an Electro damage boost shortly after casting burst. Great synergy between skills.</p>
+<h3 id="a1-passive-thunderclap-slash">A1 Passive: Thunderclap Slash</h3>
+<p>When Keqing triggers an Electro-related Elemental Reaction, she receives a 25% Electro DMG Bonus for 6s.</p>
+<p>Rewards using reactions like Overload, Electro-Charged, Superconduct, etc.</p>
+<h3 id="a4-passive-aristocratic-dignity">A4 Passive: Aristocratic Dignity</h3>
+<p>Reduces Charged Attack Stamina cost by 50%.
+Last hit of Normal Attack combo deals bonus ATK as AoE Electro DMG.</p>
+<p>Enables more Charged Attack combos. Adds a small Electro explosion at the end of her Normal chain.</p>
+<h2 id="optimal-combos-and-rotations-for-keqing">Optimal Combos and Rotations for Keqing</h2>
+<p>Here are some of Keqing’s best combo sequences:</p>
+<ul>
+<li>
+<p><strong>Burst Combo</strong>: Cast Elemental Skill > Swap to supports to set up reactions > Swap back to Keqing > Cast Elemental Burst > Perform Charged Attack combo</p>
+</li>
+<li>
+<p><strong>Aggravate Combo</strong>: Apply Dendro > Cast Elemental Burst > Normal Attack until burst ends > Cast Elemental Skill > Charged Attack spam</p>
+</li>
+<li>
+<p><strong>Physical Combo</strong>: Cast Elemental Skill > Charged Attack spam until Stamina depleted > Swap to supports/battery > Swap back to Keqing > Repeat</p>
+</li>
+</ul>
+<p>Key tips:</p>
+<ul>
+<li>Weave in Normal Attacks between Charged Attacks to regenerate Stamina</li>
+<li>Animation cancel Charged Attacks by dashing/jumping to speed up combos</li>
+<li>Swap to supports like Fischl frequently to apply Electro for reactions</li>
+<li>Use Elemental Skill off cooldown for mobility and energy</li>
+</ul>
+<h2 id="how-to-play-keqing-in-quick-swap-teams">How to Play Keqing in Quick Swap Teams</h2>
+<p>In quick swap comps, Keqing takes on a sub DPS/burst support role:</p>
+<ul>
+<li>Build enough ER (120-140%) to burst off cooldown</li>
+<li>Swap to Keqing > Use Elemental Skill > Burst > Skill >Swap out</li>
+<li>Focus on 2-3 quick skill uses rather than extending time on field</li>
+<li>Level talent priority: Burst > Skill > Normal Attack</li>
+<li>Farm artifacts with offensive stats like CRIT, Electro DMG Bonus</li>
+<li>Use 4pc Noblesse or 2pc/2pc ATK sets if no one else is holding it</li>
+</ul>
+<p>Keqing provides huge burst damage every rotation before swapping out. Key is balancing offensive stats with enough ER to fund her high cost burst.</p>
+<h2 id="is-keqing-good">Is Keqing Good?</h2>
+<h3 id="keqings-strengths">Keqing’s Strengths</h3>
+<ul>
+<li>Extremely agile and fun melee playstyle</li>
+<li>Very strong single target DPS potential</li>
+<li>Low skill cooldowns enable quick, reactive combos</li>
+<li>Flexible as either on-field DPS or quick swap sub DPS</li>
+<li>Great traversal and exploration with Elemental Skill mobility</li>
+</ul>
+<h3 id="keqings-weaknesses">Keqing’s Weaknesses</h3>
+<ul>
+<li>Struggles against large groups of spread out enemies</li>
+<li>High burst cost can limit uptime without enough ER</li>
+<li>Lack of good artifact set options compared to other 5-stars</li>
+<li>Loses value in teams with characters that also want field time</li>
+<li>Fully unlocking potential requires heavy investment</li>
+</ul>
+<h3 id="verdict-viable-with-investment">Verdict: Viable with Investment</h3>
+<p>While demanding to build, Keqing rewards invested mains with very competitive personal damage in the current Dendro meta. Her agile playstyle also remains one of the most unique and enjoyable in the game.</p>
+<h2 id="keqing-build-guide-summary">Keqing Build Guide Summary</h2>
+<ul>
+<li>Stack ATK%, CRIT Rate, CRIT DMG, and Electro DMG Bonus for artifacts</li>
+<li>Use an Electro Goblet and CRIT Circlet</li>
+<li>Mistsplitter Reforged and Jade Cutter are her best 5-star weapons</li>
+<li>The Black Sword is her best 4-star option</li>
+<li>Prioritize leveling Normal Attack and Burst talent</li>
+<li>Play her in Aggravate teams with Dendro/Electro supports</li>
+<li>For Quick Swap use 4pc Noblesse, 2pc ATK sets, or 2pc/2pc mixes</li>
+<li>At C2 she unlocks her full potential</li>
+</ul>
+<p>Investing in Keqing is very rewarding. Follow this guide to build the lightning-fast Electro queen to her maximum potential!</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="what-artifacts-should-i-use-for-support-keqing">What artifacts should I use for support Keqing?</h3>
+<p>As a sub DPS or burst support, good artifact sets for Keqing include 2pc Thundering Fury + 2pc Noblesse for a balance of damage and buffing, 4pc Noblesse for team buffing, or 2pc Thundering Fury/Gladiator with 2pc Shimenawa/Vermillion for raw damage.</p>
+<h3 id="what-talent-should-i-crown-first-on-keqing">What talent should I crown first on Keqing?</h3>
+<p>Prioritize crowning Keqing’s Normal Attack talent first since it directly improves her Charged Attack and combo damage. After that, you can crown her Elemental Burst for the huge base damage and AoE it provides.</p>
+<h3 id="is-the-black-sword-or-lions-roar-better-for-keqing">Is the Black Sword or Lion’s Roar better for Keqing?</h3>
+<p>The Black Sword is generally the better option for main DPS Keqing because of its useful CRIT Rate substat and Normal Attack Damage bonus. However, against enemies affected by Electro, Lion’s Roar can out-damage Black Sword.</p>
+<h3 id="should-i-go-for-c2-keqing">Should I go for C2 Keqing?</h3>
+<p>Keqing’s C2 is a huge power spike, lowering the cost and cooldown of her Elemental Skill for improved mobility, energy regeneration, and skill damage. For dedicated Keqing mains, it’s a worthy constellation to pursue if you enjoy playing her.</p>
+<h3 id="is-keqing-a-good-f2p-option">Is Keqing a good F2P option?</h3>
+<p>Yes, Keqing is a very strong F2P option, especially with the addition of Dendro making Aggravate teams so strong. Keqing only needs F2P weapons like Iron Sting or Favonius Sword and artifacts like Thundering Fury to perform well.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Building the perfect Keqing to dominate enemies with high-speed sword slashes and Electro explosions takes dedication. With the right artifacts, weapons, and team composition tailored to her swift combat style, Keqing’s true potential is unlocked. Whether playing her as an on-field DPS dishing out rapid reactions or quick swap sub DPS to devastate with her Elemental Burst, following this guide will allow you to fully optimize Keqing’s capabilities. Have fun unleashing lighting fast judgment on the battlefield!</p>
+        </article>
+
+        <hr><section>
+                <h2>Related Posts</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/en/builds/kazuha-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/kazuha-build.webp" alt="Kazuha image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/kazuha-build/">Ultimate Kazuha Build Guide: Best Weapons, Artifacts and Team Comps</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-23T00:00:00.000Z">
+                                        Jul 23, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Anemo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/en/builds/xingqiu-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/xingqiu-build.webp" alt="Xingqiu image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/xingqiu-build/">Ultimate Xingqiu Build Guide: Best Weapons, Artifacts and Team Comps</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        Jul 13, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Hydro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <a id="scroll-top" href="#table-of-contents" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+            <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+            </svg>
+        </a>
+    </section>
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/en/privacy">Privacy Policy</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contact</a>
+</footer>
+	</body></html>
