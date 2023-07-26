@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="en">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/en/builds/fischl-build/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Ultimate Fischl Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin</title>
+		<meta name="title" content="Ultimate Fischl Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta name="description" content="The ultimate guide to build the best Fischl in Genshin Impact. Learn top weapons, artifacts, teams, constellations, and more to maximize Keqing's DPS potential.">
+
+		<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Character Builds","item":"https://buildsgenshin.com/en/builds/"},{"@type":"ListItem","position":2,"name":"Fischl Build"}]},{"@context":"https://schema.org","@type":"NewsArticle","headline":"Ultimate Fischl Build Guide: Best Weapons, Artifacts and Team Comps","image":["https://buildsgenshin.com/images/builds/fischl-build.webp"],"datePublished":"2023-07-25T00:00:00.000Z","dateModified":"2023-07-25T00:00:00.000Z","author":[{"@type":"Person","name":"Builds Genshin","url":"https://buildsgenshin.com/en/"}]}]</script>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Ultimate Fischl Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta property="og:description" content="The ultimate guide to build the best Fischl in Genshin Impact. Learn top weapons, artifacts, teams, constellations, and more to maximize Keqing's DPS potential.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/en/builds/fischl-build/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-25T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Ultimate Fischl Build Guide: Best Weapons, Artifacts and Team Comps - Builds Genshin">
+		<meta property="twitter:description" content="The ultimate guide to build the best Fischl in Genshin Impact. Learn top weapons, artifacts, teams, constellations, and more to maximize Keqing's DPS potential.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/en/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/en/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/en/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/en/">Home</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			<section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Ultimate Fischl Build Guide: Best Weapons, Artifacts and Team Comps
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-25T00:00:00.000Z">Updated <b>7/25/2023</b> by <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/fischl-build.webp" alt="Fischl image">
+        <article>
+            <h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#an-introduction-to-fischls-kit">An Introduction to Fischl’s Kit</a></li>
+<li><a href="#best-weapons-for-fischl">Best Weapons for Fischl</a></li>
+<li><a href="#best-artifacts-for-fischl">Best Artifacts for Fischl</a></li>
+<li><a href="#best-fischl-talent-build-order">Best Fischl Talent Build Order</a></li>
+<li><a href="#best-fischl-team-compositions">Best Fischl Team Compositions</a></li>
+<li><a href="#fischls-strengths-and-weaknesses">Fischl’s Strengths and Weaknesses</a></li>
+<li><a href="#is-c6-fischl-worth-it">Is C6 Fischl Worth It?</a></li>
+<li><a href="#fischl-build-faqs">Fischl Build FAQs</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+<p>Fischl is one of the most versatile and powerful Electro characters in Genshin Impact. With the right artifacts, weapons, and party composition, Fischl can unleash devastating Electro damage as a main DPS or provide excellent off-field Electro application and damage as a sub DPS. This comprehensive guide will walk you through the best weapons, artifacts, talents, and teams to maximize Fischl’s potential at all stages of the game.</p>
+<h2 id="an-introduction-to-fischls-kit">An Introduction to Fischl’s Kit</h2>
+<p>Fischl is a 4-star bow user added in Version 1.0 who utilizes Electro damage and raven summons to dominate on the battlefield. Here’s a quick overview of her abilities:</p>
+<h3 id="normal-attack-bolts-of-downfall">Normal Attack: Bolts of Downfall</h3>
+<p>Fischl’s normal attacks are fast bow shots that deal Physical damage. At higher talent levels, charged aimed shots deal significantly higher damage.</p>
+<h3 id="elemental-skill-nightrider">Elemental Skill: Nightrider</h3>
+<p>Summons Oz, Fischl’s raven familiar that attacks nearby opponents with Electro damage. Oz remains on the field while Fischl is off-field, allowing her to deal excellent off-field damage.</p>
+<h3 id="elemental-burst-midnight-phantasmagoria">Elemental Burst: Midnight Phantasmagoria</h3>
+<p>Summons a magical Ravenfield that deals continuous Electro damage to opponents within its AoE. This ability re-summons Oz if he is not already present.</p>
+<h3 id="passives">Passives</h3>
+<ul>
+<li><strong>Undying Admiration:</strong> Extends Oz’s duration.</li>
+<li><strong>Gaze of the Deep:</strong> Oz attacks with Fischl when she triggers reactions.</li>
+<li><strong>Evernight Raven:</strong> Decreases Nightrider CD and Energy cost.</li>
+</ul>
+<p>With the right build, Fischl can maximize Oz’s Electro application for reactions or boost her personal Electro damage to take on a main DPS role.</p>
+<h2 id="best-weapons-for-fischl">Best Weapons for Fischl</h2>
+<p>Fischl can utilize a wide variety of bows effectively. Here are some of the best weapons to consider:</p>
+<h3 id="5-star-bows">5-Star Bows</h3>
+<h4 id="skyward-harp">Skyward Harp</h4>
+<p><img src="/images/weapons/bows/Skyward_Harp.webp" alt="Skyward Harp Image"></p>
+<p>Crit Rate substat and increased CRIT DMG makes this Fischl’s best-in-slot for main DPS.</p>
+<h4 id="polar-star">Polar Star</h4>
+<p><img src="/images/weapons/bows/Polar_Star.webp" alt="Polar Star Image"></p>
+<p>Excellent for snapshotting the ATK buff on Oz. Very strong for both main DPS and sub DPS.</p>
+<h4 id="thundering-pulse">Thundering Pulse</h4>
+<p><img src="/images/weapons/bows/Thundering_Pulse.webp" alt="Thundering Pulse Image"></p>
+<p>ATK% substat with increased Normal/Charged Attack DMG is great for On-field Fischl.</p>
+<h3 id="4-star-bows">4-Star Bows</h3>
+<h4 id="alley-hunter">Alley Hunter</h4>
+<p><img src="/images/weapons/bows/Alley_Hunter.webp" alt="Alley Hunter Image"></p>
+<p>High ATK and increased Elemental Mastery after skill casts. Great for Reaction Fischl.</p>
+<h4 id="the-stringless">The Stringless</h4>
+<p><img src="/images/weapons/bows/The_Stringless.webp" alt="The Stringless Image"></p>
+<p>Boosts Elemental Skill and Burst damage significantly. BiS for off-field sub DPS Fischl.</p>
+<h4 id="mouuns-moon">Mouun’s Moon</h4>
+<p><img src="/images/weapons/bows/Mouun&#x27;s_Moon.webp" alt="Mouun&#x27;s Moon Image"></p>
+<p>High ATK and Energy Recharge for consistent bursts.</p>
+<h4 id="favonius-warbow">Favonius Warbow</h4>
+<p><img src="/images/weapons/bows/Favonius_Warbow.webp" alt="Favonius Warbow Image"></p>
+<p>Generates Energy for the team. Good budget option.</p>
+<p>For F2P or low spenders, <strong>The Stringless</strong> and <strong>Alley Hunter</strong> are her best 4-star options.</p>
+<h2 id="best-artifacts-for-fischl">Best Artifacts for Fischl</h2>
+<p>Fischl can utilize both 2-piece ATK% bonuses or 4-piece damage bonuses depending on her role.</p>
+<h3 id="main-dps-artifacts">Main DPS Artifacts</h3>
+<ul>
+<li><strong>2-Piece Glad + 2-Piece Thundering Fury:</strong> Best option to maximize Fischl’s personal damage.</li>
+<li><strong>4-Piece Thundersoother:</strong> Situational, but strong in Electro-only teams.</li>
+</ul>
+<h3 id="supportsub-dps-artifacts">Support/Sub DPS Artifacts</h3>
+<ul>
+<li><strong>2-Piece Glad/Shimenawa + 2-Piece Thunderfury/Gambler:</strong> Standard well-rounded build.</li>
+<li><strong>4-Piece Tenacity:</strong> Provides team-wide ATK buff. Great in multi-reaction teams.</li>
+<li><strong>4-Piece Noblesse:</strong> Burst support option for buffing team damage.</li>
+</ul>
+<h3 id="best-stats-to-prioritize">Best Stats to Prioritize</h3>
+<p>For main stats focus on:</p>
+<ul>
+<li><strong>Sands:</strong> ATK% or Electro DMG% Goblet</li>
+<li><strong>Goblet:</strong> Electro DMG%</li>
+<li><strong>Circlet:</strong> CRIT Rate or DMG Circlet</li>
+</ul>
+<p>For substats focus on:</p>
+<ul>
+<li>CRIT Rate/DMG</li>
+<li>ATK%</li>
+<li>Energy Recharge</li>
+</ul>
+<p>Elemental Mastery is good to have in Reaction focused teams.</p>
+<h2 id="best-fischl-talent-build-order">Best Fischl Talent Build Order</h2>
+<p>Here are the recommended talent levels for Fischl based on her role:</p>
+<h3 id="main-dps">Main DPS</h3>
+<p>Prioritize leveling Normal Attacks > Elemental Skill > Elemental Burst</p>
+<h3 id="sub-dpssupport">Sub DPS/Support</h3>
+<p>Prioritize Elemental Skill > Elemental Burst > Normal Attacks</p>
+<p>Crowning her Elemental Skill is highly recommended to maximize Oz’s damage.</p>
+<h2 id="best-fischl-team-compositions">Best Fischl Team Compositions</h2>
+<p>Thanks to Oz, Fischl fits flexibly into a wide variety of team archetypes. Here are some top comps for her:</p>
+<h3 id="electro-dps-carry">Electro DPS Carry</h3>
+<ul>
+<li><strong>Fischl Main DPS</strong></li>
+<li>Beidou/Yae Miko for Electro Resonance</li>
+<li>Anemo unit (Sucrose/Venti/<a href="/en/builds/kazuha-build/">Kazuha</a>) for Swirl/VV</li>
+<li>Flex spot (<a href="/en/builds/zhongli-build/">Zhongli</a> or <a href="/en/builds/bennett-build/">Bennett</a> recommended)</li>
+</ul>
+<p>Stacks Electro damage for major DPS. Swirls amplify Electro reactions.</p>
+<h3 id="aggravate-trigger">Aggravate Trigger</h3>
+<ul>
+<li><strong>Fischl Sub DPS</strong></li>
+<li>Dendro Applicator (Traveler/Collei/DMC)</li>
+<li>Anemo unit (Sucrose/Jean/Heizou)</li>
+<li>Flex spot (Zhongli/Diona or hydro)</li>
+</ul>
+<p>Fischl’s Oz enables frequent Aggravate triggers for major damage.</p>
+<h3 id="superconduct-enabler">Superconduct Enabler</h3>
+<ul>
+<li><strong>Fischl Sub DPS</strong></li>
+<li>Main Cryo DPS (Ayaka/Ganyu/<a href="/en/builds/eula-build/">Eula</a>)</li>
+<li>Anemo support (Venti/Sucrose/Kazuha)</li>
+<li>Flex (Zhongli/Diona or Bennett)</li>
+</ul>
+<p>Fischl enables Superconduct to amplify Physical damage.</p>
+<h3 id="overload-enabler">Overload Enabler</h3>
+<ul>
+<li><strong>Fischl Sub DPS</strong></li>
+<li>Pyro DPS (<a href="/en/builds/yoimiya-build/">Yoimiya</a>/Diluc/<a href="/en/builds/klee-build/">Klee</a>)</li>
+<li>Hydro/Pyro supports</li>
+<li>Anemo CC (Kazuha/Sucrose)</li>
+</ul>
+<p>Fischl enables Overload for Pyro DPS while providing off-field electro damage.</p>
+<h2 id="fischls-strengths-and-weaknesses">Fischl’s Strengths and Weaknesses</h2>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Powerful off-field Electro DPS</li>
+<li>Flexible team roles and comps</li>
+<li>High Electro uptime for reactions</li>
+<li>Low burst cost (useful in energy-restricted teams)</li>
+</ul>
+<p><strong>Weaknesses:</strong></p>
+<ul>
+<li>Long Skill CD (mitigated by C6 and passive)</li>
+<li>Overload knockback can be disruptive</li>
+<li>Struggles against Electro-immune/resistant enemies</li>
+</ul>
+<p>Proper team building and rotations can help overcome Fischl’s disadvantages. Her strengths make her one of the top sub DPS picks in the game.</p>
+<h2 id="is-c6-fischl-worth-it">Is C6 Fischl Worth It?</h2>
+<p>Fischl’s C6 constellation Oz becomes hermit causes Oz to strike nearby opponents when Fischl attacks, essentially doubling her damage. This makes C6 extremely strong for on-field DPS Fischl allowing her to machine gun Electro arrows at a ridiculous pace.</p>
+<p>However, C6 does not affect Oz’s personal damage, only adding extra hits from Fischl’s attacks. So while nice, it is not absolutely essential for off-field sub DPS Fischl.</p>
+<h2 id="fischl-build-faqs">Fischl Build FAQs</h2>
+<h3 id="what-artifacts-for-support-fischl">What artifacts for support Fischl?</h3>
+<p>2-Piece ATK + 2-Piece Thundering Fury or 4-piece Tenacity are great for support Fischl. Stringless is her best support weapon.</p>
+<h3 id="what-artifacts-for-dps-fischl">What artifacts for DPS Fischl?</h3>
+<p>2-Piece Glad + 2-Piece Thundering Fury or 4-piece Thundersoother for electro-focused teams. Skyward Harp or Thundering Pulse are best DPS weapons.</p>
+<h3 id="whats-the-best-f2p-weapon-for-fischl">What’s the best F2P weapon for Fischl?</h3>
+<p>The Craftable Bow Prototype Crescent is Fischl’s best F2P weapon option. Its high ATK and passive proc work well.</p>
+<h3 id="does-fischl-work-in-bloomhyperbloom-teams">Does Fischl work in Bloom/Hyperbloom teams?</h3>
+<p>Yes, Fischl is an excellent off-field Electro applicator for triggering Hyperbloom reactions. She can enable big Bloom damage.</p>
+<h3 id="what-bow-for-support-fischl-with-tenacity">What bow for Support Fischl with Tenacity?</h3>
+<p>Favonius or Sacrificial Bows allow Fischl to burst off cooldown to maintain 100% Tenacity uptime. The Stringless also works well.</p>
+<h3 id="what-main-stats-for-fischl-artifacts">What main stats for Fischl artifacts?</h3>
+<p>ATK/Electro/Crit for DPS build. ATK/Electro/ER or EM for reaction focused builds.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With the right build, Fischl is one of the strongest sub DPS supports that can also take on the main DPS role comfortably. Her versatility in enabling reactions and providing sustained off-field Electro damage is invaluable for a variety of team comps.</p>
+<p>Investing in her best weapons, artifacts, and talent levels will let you get the most out of Prinzessin der Verurteilung!</p>
+        </article>
+
+        <hr><section>
+                <h2>Related Posts</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/en/builds/yoimiya-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/yoimiya-build.webp" alt="Yoimiya image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/yoimiya-build/">Yoimiya Build Guide: Maximize Damage for Genshin&#39;s Best Pyro Archer</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        Jul 13, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>DPS</code><code>Pyro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/en/builds/zhongli-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/Zhongli.webp" alt="Zhongli image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/zhongli-build/">Ultimate Zhongli Build Guide: Best Weapons, Artifacts and Teams</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-15T00:00:00.000Z">
+                                        Jul 15, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Geo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <a id="scroll-top" href="#table-of-contents" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+            <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+            </svg>
+        </a>
+    </section>
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/en/privacy">Privacy Policy</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contact</a>
+</footer>
+	</body></html>
