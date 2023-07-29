@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="es">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/es/builds/guia-sucrose/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Guía definitiva de Sucrose: Las mejores armas, artefactos y equipos - Builds Genshin</title>
+		<meta name="title" content="Guía definitiva de Sucrose: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta name="description" content="La guía definitiva para buildear al mejor Sucrose en Genshin Impact. Armas, artefactos, equipos, rotaciones, constelaciones y más para maximizar a Sucrose.">
+
+		<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guías de personajes","item":"https://buildsgenshin.com/es/builds/"},{"@type":"ListItem","position":2,"name":"Sucrose Build"}]},{"@context":"https://schema.org","@type":"NewsArticle","headline":"Guía definitiva de Sucrose: Las mejores armas, artefactos y equipos","image":["https://buildsgenshin.com/images/builds/sucrose-build.webp"],"datePublished":"2023-07-29T00:00:00.000Z","dateModified":"2023-07-29T00:00:00.000Z","author":[{"@type":"Person","name":"Builds Genshin","url":"https://buildsgenshin.com/es/"}]}]</script>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Guía definitiva de Sucrose: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="og:description" content="La guía definitiva para buildear al mejor Sucrose en Genshin Impact. Armas, artefactos, equipos, rotaciones, constelaciones y más para maximizar a Sucrose.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/es/builds/guia-sucrose/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-29T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Guía definitiva de Sucrose: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="twitter:description" content="La guía definitiva para buildear al mejor Sucrose en Genshin Impact. Armas, artefactos, equipos, rotaciones, constelaciones y más para maximizar a Sucrose.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/es/">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/es/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/es/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/es/">Inicio</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			<section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Guía definitiva de Sucrose: Las mejores armas, artefactos y equipos
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-29T00:00:00.000Z">Actualizado <b>29/7/2023</b> por <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/sucrose-build.webp" alt="Sucrose image">
+        <article>
+            <h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ul>
+<li><a href="#habilidades-y-habilidades-de-sucrose">Habilidades y habilidades de Sucrose</a></li>
+<li><a href="#builds-de-sucrose">Builds de Sucrose</a></li>
+<li><a href="#los-mejores-equipos-para-sucrose">Los mejores equipos para Sucrose</a></li>
+<li><a href="#constelaciones-de-sucrose">Constelaciones de Sucrose</a></li>
+<li><a href="#talentos-de-sucrose">Talentos de Sucrose</a></li>
+<li><a href="#build-f2plow-spender-para-sucrose">Build F2P/Low Spender para Sucrose</a></li>
+<li><a href="#consejos-de-juego-de-sucrose">Consejos de juego de Sucrose</a></li>
+<li><a href="#preguntas-frecuentes-sobre-builds-de-sucrose">Preguntas frecuentes</a></li>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
+</ul>
+<h2 id="introducción">Introducción</h2>
+<p>Sucrose es un personaje Anemo en Genshin Impact que puede proporcionar un excelente control de multitudes y buffs de maestría elemental para tu equipo. Con el build correcto, Sucrose puede aumentar significativamente el daño de tu equipo mientras agrupa a los enemigos. Esta guía completa cubrirá todo lo que necesitas saber para construir la mejor Sucrose en Genshin Impact.</p>
+<h2 id="habilidades-y-habilidades-de-sucrose">Habilidades y habilidades de Sucrose</h2>
+<p>Para entender cómo construir a Sucrose, primero necesitamos comprender su kit. Aquí están sus habilidades y habilidades clave:</p>
+<h3 id="ataque-normal-alquimia-didáctica">Ataque normal: Alquimia didáctica</h3>
+<p>Los ataques normales de Sucrose golpean a los enemigos con su libro, infligiendo daño Anemo. En niveles de talento más altos, su cuarto golpe provoca una explosión de daño adicional.</p>
+<h3 id="habilidad-elemental-creación-de-anemohipóstasis-estable---6308">Habilidad elemental: Creación de anemohipóstasis estable - 6308</h3>
+<p>Sucrose crea un pequeño espíritu Anemo que provoca a los enemigos y causa daño Anemo. Cuando el espíritu explota, inflige daño adicional AoE Anemo. Los golpes tienen la posibilidad de generar partículas de energía.</p>
+<h3 id="explosión-elemental-creación-prohibida---isómero-75--tipo-ii">Explosión elemental: Creación prohibida - Isómero 75 / Tipo II</h3>
+<p>Sucrose invoca un homúnculo Anemo que genera un gran túnel de viento, atrayendo a los enemigos y infligiendo daño Anemo over time en AoE. El homúnculo sigue a tu personaje activo mientras el túnel está activo.</p>
+<h3 id="pasiva-1-mollis-favonius">Pasiva 1: Mollis Favonius</h3>
+<p>Cuando Sucrose desencadena una reacción Swirl, todos los miembros del equipo (excepto Sucrose) obtienen 50 de maestría elemental durante 8 s.</p>
+<h3 id="pasiva-2-invención-estable">Pasiva 2: Invención estable</h3>
+<p>Sucrose obtiene el 20% de su Maestría Elemental como ATK adicional.</p>
+<h3 id="pasiva-3-experimenta-cautelosos">Pasiva 3: Experimenta cautelosos</h3>
+<p>Cuando Sucrose elabora Materiales de Talento de Personaje, tiene un 10% de probabilidad de reembolsar una parte de los materiales de elaboración utilizados.</p>
+<h2 id="builds-de-sucrose">Builds de Sucrose</h2>
+<p>Ahora que entendemos el kit de Sucrose, aquí hay algunas construcciones recomendadas para ella:</p>
+<h3 id="build-de-apoyo-em">Build de Apoyo EM</h3>
+<p>Este build se centra en maximizar la Maestría Elemental de Sucrose para impulsar su potencial de daño Swirl y buff.</p>
+<h4 id="armas">Armas</h4>
+<ul>
+<li>
+<p><strong>Fragmentos de sacrificio (mejor)</strong>: las estadísticas de EM y la capacidad de restablecer el enfriamiento de habilidades se adaptan perfectamente a Sucrose.</p>
+</li>
+<li>
+<p>Guía mágica: opción sólida F2P para más EM.</p>
+</li>
+<li>
+<p>Mappa Mare: proporciona una sub-estadística EM y un bono de daño.</p>
+</li>
+</ul>
+<h4 id="artefactos">Artefactos</h4>
+<ul>
+<li>
+<p>Conjunto de 4 piezas Viridescent Venerer</p>
+<ul>
+<li><strong>Arena:</strong> Maestría elemental</li>
+<li><strong>Goblet:</strong> Maestría elemental</li>
+<li><strong>Círculo:</strong> Maestría elemental</li>
+</ul>
+</li>
+</ul>
+<p>Apunta a tanta EM como sea posible en las sub-estadísticas. Un poco de recarga de energía también es bueno.</p>
+<h4 id="rol-en-el-equipo">Rol en el equipo</h4>
+<ul>
+<li>Aplicar reducción de resistencia VV con Swirl</li>
+<li>Buff de maestría elemental del grupo</li>
+<li>Agrupar enemigos</li>
+</ul>
+<h3 id="híbrido-dpssoporte">Híbrido DPS/Soporte</h3>
+<p>Este build otorga a Sucrose más poder ofensivo mientras aún proporciona utilidad.</p>
+<h4 id="armas-1">Armas</h4>
+<ul>
+<li>Skyward Atlas (mejor)</li>
+<li>Oración perdida a los vientos sagrados</li>
+<li>El Widsith</li>
+<li>Perla solar</li>
+</ul>
+<h4 id="artefactos-1">Artefactos</h4>
+<ul>
+<li>2pc Viridescent Venerer + 2pc Wanderer’s Troupe
+<ul>
+<li><strong>Arena:</strong> ATK% o EM</li>
+<li><strong>Goblet:</strong> Daño Anemo</li>
+<li><strong>Círculo:</strong> Tasa de crítico/DMG</li>
+</ul>
+</li>
+</ul>
+<p>Prioriza ATK%, daño Anemo, Crítico y EM en las sub-estadísticas. Un poco de recarga de energía también es bueno.</p>
+<h4 id="rol-en-el-equipo-1">Rol en el equipo</h4>
+<ul>
+<li>Infligir daño Swirl</li>
+<li>Control de multitudes</li>
+<li>Buffeo de maestría elemental</li>
+</ul>
+<h3 id="dps-anemo">DPS Anemo</h3>
+<p>Se enfoca únicamente en maximizar el daño Anemo de Sucrose. Requiere una gran inversión.</p>
+<h4 id="armas-2">Armas</h4>
+<ul>
+<li>Skyward Atlas (mejor)</li>
+<li>Oración perdida a los vientos sagrados</li>
+<li>Perla solar</li>
+</ul>
+<h4 id="artefactos-2">Artefactos</h4>
+<ul>
+<li>2pc Viridescent Venerer + 2pc Glad/Shimenawa</li>
+<li><strong>Arena:</strong> ATK%</li>
+<li><strong>Goblet:</strong> Daño Anemo</li>
+<li><strong>Círculo:</strong> Tasa de crítico/DMG</li>
+</ul>
+<p>Prioriza ATK%, daño Anemo, Crítico en las sub-estadísticas. Un poco de EM también es bueno.</p>
+<h4 id="rol-en-el-equipo-2">Rol en el equipo</h4>
+<ul>
+<li>DPS Anemo principal en campo</li>
+<li>Daño Swirl</li>
+</ul>
+<h2 id="los-mejores-equipos-para-sucrose">Los mejores equipos para Sucrose</h2>
+<p>Sucrose funciona bien en las siguientes composiciones de equipo:</p>
+<h3 id="composición-de-sucrose-taser">Composición de Sucrose Taser</h3>
+<ul>
+<li>Sucrose</li>
+<li><a href="/es/builds/guia-fischl/">Fischl</a></li>
+<li>Beidou</li>
+<li><a href="/es/builds/guia-xingqiu/">Xingqiu</a></li>
+</ul>
+<p>Este equipo se centra en desencadenar reacciones electro-cargadas con Swirl de Sucrose. Gran potencial de daño AoE.</p>
+<h3 id="equipos-de-congelación">Equipos de congelación</h3>
+<ul>
+<li>Sucrose</li>
+<li>Aplicador hidro (Mona, Kokomi)</li>
+<li>DPS Cryo (Ayaka, Ganyu)</li>
+<li>Soporte Cryo (Diona, Rosaria)</li>
+</ul>
+<p>Sucrose agrupa a los enemigos y aumenta el EM del equipo en los equipos de congelación.</p>
+<h3 id="equipos-vapemelt">Equipos Vape/Melt</h3>
+<ul>
+<li>Sucrose</li>
+<li>Xiangling</li>
+<li>DPS Pyro (<a href="/es/builds/guia-yoimiya/">Yoimiya</a> , Diluc)</li>
+<li>Aplicador hidro (Xingqiu, <a href="/es/builds/guia-yelan/">Yelan</a> )</li>
+</ul>
+<p>Sucrose agrupa a los enemigos para daño AoE pyro y proporciona buff de EM.</p>
+<h3 id="equipos-electro-charged">Equipos Electro-Charged</h3>
+<ul>
+<li>Sucrose</li>
+<li>DPS Electro (<a href="/es/builds/guia-keqing/">Keqing</a>, <a href="/es/builds/guia-razor/">Razor</a>)</li>
+<li>Aplicador hidro (Xingqiu, Kokomi)</li>
+<li>Espacio flexible</li>
+</ul>
+<p>Procs electro-cargados constantes. Sucrose aumenta el daño de reacción con buffs de EM.</p>
+<h2 id="constelaciones-de-sucrose">Constelaciones de Sucrose</h2>
+<p>Aquí hay algunas notas sobre las constelaciones de Sucrose:</p>
+<ul>
+<li><strong>C1:</strong> Aumento significativo del daño de Habilidad y regeneración de energía. Su mejor constelación temprana.</li>
+<li><strong>C2:</strong> Extensión decente del control de multitudes en Explosión.</li>
+<li><strong>C3:</strong> Buen aumento del buff EM.</li>
+<li><strong>C4:</strong> Ligera reducción de RES Anemo.</li>
+<li><strong>C5:</strong> Agrega carga adicional de Ráfaga.</li>
+<li><strong>C6:</strong> Gran impulso para el daño Swirl y de Reacción Transformativa.</li>
+</ul>
+<p>Prioriza obtener C1 primero si es posible. C3 y C6 también proporcionan aumentos de tamaño considerable.</p>
+<h2 id="talentos-de-sucrose">Talentos de Sucrose</h2>
+<p>Aquí están las prioridades de talento para Sucrose de apoyo:</p>
+<ul>
+<li>Habilidad elemental = Ráfaga elemental> Ataque normal</li>
+</ul>
+<p>Prioriza subir de nivel Habilidad y Ráfaga primero. Nivel de ataques normales más tarde si hay recursos adicionales disponibles.</p>
+<p>Para Sucrose DPS:</p>
+<ul>
+<li>Ataque normal = Habilidad elemental = Ráfaga elemental</li>
+</ul>
+<p>Nivel todas las tres habilidades por igual.</p>
+<h2 id="build-f2plow-spender-para-sucrose">Build F2P/Low Spender para Sucrose</h2>
+<p>Aquí hay una build presupuestaria para jugadores de bajo gasto:</p>
+<h3 id="armas-3">Armas</h3>
+<ul>
+<li>Fragmentos de sacrificio (EM y reinicio de habilidad)</li>
+<li>Mappa Mare (EM y daño)</li>
+<li>Guía mágica (puro EM)</li>
+</ul>
+<h3 id="artefactos-3">Artefactos</h3>
+<ul>
+<li>Conjunto de 4 piezas Instructor para buff de EM</li>
+<li>Conjunto de 4 piezas Exilio para recarga de energía</li>
+</ul>
+<p>Prioriza las estadísticas principales de EM. Las sub-estadísticas pueden ser ER, EM, ATK%, Crítico.</p>
+<h3 id="equipos">Equipos</h3>
+<ul>
+<li>Equipo Sucrose Taser con Fischl, Beidou, Xingqiu</li>
+<li>Equipo de congelación con Kaeya, Rosaria, Barbara</li>
+</ul>
+<h2 id="consejos-de-juego-de-sucrose">Consejos de juego de Sucrose</h2>
+<p>Aquí hay algunos consejos para maximizar el rendimiento de Sucrose:</p>
+<ul>
+<li>Swirl elementos aplicados por tu DPS para reducción VV y buffs EM.</li>
+<li>Usa la habilidad para agrupar enemigos y luego cambia a DPS.</li>
+<li>Mantén la Ráfaga activa tanto como sea posible para los buffs EM.</li>
+<li>Los reinicios de Fragmentos de Sacrificio ayudan a la generación de energía.</li>
+<li>Nivel de talentos de acuerdo a las necesidades del equipo.</li>
+<li>Enfócate en EM temprano, luego construye estadísticas ofensivas más tarde.</li>
+<li>La resonancia Anemo proporciona energía adicional.</li>
+</ul>
+<h2 id="preguntas-frecuentes-sobre-builds-de-sucrose">Preguntas frecuentes sobre builds de Sucrose</h2>
+<h3 id="cuál-es-el-mejor-arma-para-sucrose">¿Cuál es el mejor arma para Sucrose?</h3>
+<p>El mejor arma para Sucrose es Fragmentos de Sacrificio. Sus estadísticas de EM y la capacidad de reiniciar su habilidad E se adaptan perfectamente a su kit. Otras buenas opciones son Mappa Mare, Guía Mágica y Skyward Atlas.</p>
+<h3 id="qué-artefactos-debo-usar-para-sucrose">¿Qué artefactos debo usar para Sucrose?</h3>
+<p>Para Sucrose de apoyo, usa 4pc Viridescent Venerer con estadísticas principales de EM. Para DPS, usa 2pc VV + 2pc Glad/Wanderer con ATK%, daño Anemo y Crítico.</p>
+<h3 id="debo-enfocarme-en-em-o-atk-para-sucrose">¿Debo enfocarme en EM o ATK% para Sucrose?</h3>
+<p>EM es generalmente mejor para buffear el daño de reacción. Los builds de ATK% pueden funcionar para más poder ofensivo, pero requieren más inversión. Elige según las necesidades de tu equipo.</p>
+<h3 id="qué-talento-debo-priorizar-para-sucrose">¿Qué talento debo priorizar para Sucrose?</h3>
+<p>Para apoyo, prioriza E > Q > AA. Para DPS, nivela AA = E = Q por igual. Su habilidad E es importante para el daño y la energía.</p>
+<h3 id="cuáles-son-los-mejores-equipos-para-sucrose">¿Cuáles son los mejores equipos para Sucrose?</h3>
+<p>Grandes equipos son los de taser con Fischl/Beidou/Xingqiu, de congelación con hidro + cryo, de vaporización/fusión con Xiangling, y de electro-cargado con hidro + electro.</p>
+<h3 id="vale-la-pena-c1-sucrose">¿Vale la pena C1 Sucrose?</h3>
+<p>Sí, C1 es un gran aumento para Sucrose. Aumenta significativamente el daño de su habilidad y proporciona más energía. Su mejor constelación temprana.</p>
+<h3 id="es-viable-sucrose-como-dps-principal">¿Es viable Sucrose como DPS principal?</h3>
+<p>Puede funcionar como DPS principal pero requiere una gran inversión. Usualmente es mejor utilizarla como soporte habilitador. El build de DPS Anemo es costoso.</p>
+<h3 id="qué-opciones-f2p-funcionan-para-sucrose">¿Qué opciones F2P funcionan para Sucrose?</h3>
+<p>Para armas, Fragmentos de Sacrificio, Mappa Mare y Guía Mágica son excelentes opciones F2P. Los sets de artefactos pueden ser 4pc Instructor o 4pc Exilio con EM en estadísticas principales.</p>
+<h3 id="qué-consejos-de-juego-debo-seguir-con-sucrose">¿Qué consejos de juego debo seguir con Sucrose?</h3>
+<p>Swirlear elementos para buffs/reducción, usar E para agrupar enemigos, mantener Q activa, utilizar reinicios de Sac Frags, subir talentos según rol, enfocarse primero en EM luego en ATK%/Crítico.</p>
+<h3 id="es-buena-sucrose">¿Es buena Sucrose?</h3>
+<p>¡Sí! Con el build correcto, Sucrose es una facilitadora increíble para equipos de reacción. Su control de multitudes, buffs de EM, reducción de VV y daño Swirl proporcionan enormes aumentos. Es top tier cuando está invertida adecuadamente.</p>
+<h2 id="conclusión">Conclusión</h2>
+<p>Sucrose es una excelente facilitadora para equipos enfocados en reacciones cuando se construye adecuadamente. Su control de multitudes, buffs de Maestría Elemental y reducción de resistencia de Viridescent Venerer proporcionan enormes aumentos de daño. Invierta en sus talentos y equipo, y ella lo recompensará con grandes números. Con esta guía, ahora tienes todos los conocimientos para crear los mejores builds para Sucrose en Genshin Impact.</p>
+        </article>
+
+        <hr><section>
+                <h2>Entradas relacionadas</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/es/builds/guia-yoimiya/"><img loading="lazy" class="block my-[0]" src="/images/builds/yoimiya-build.webp" alt="Yoimiya image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-yoimiya/">Guía de Yoimiya: Maximiza el daño de la mejor arquera Pyro de Genshin</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        13 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>DPS</code><code>Pyro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/es/builds/guia-xingqiu/"><img loading="lazy" class="block my-[0]" src="/images/builds/xingqiu-build.webp" alt="Xingqiu image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-xingqiu/">Guía definitiva de Xingqiu: Las mejores armas, artefactos y equipos</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        13 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Hydro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <a id="scroll-top" href="#tabla-de-contenidos" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+            <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+            </svg>
+        </a>
+    </section>
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/es/privacy">Política de privacidad</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contacto</a>
+</footer>
+	</body></html>
