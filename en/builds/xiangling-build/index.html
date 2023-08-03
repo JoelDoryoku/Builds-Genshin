@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="en">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/en/builds/xiangling-build/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Xiangling Build Guide: Maximize Damage for Genshin&#39;s Best Pyro Archer - Builds Genshin</title>
+		<meta name="title" content="Xiangling Build Guide: Maximize Damage for Genshin's Best Pyro Archer - Builds Genshin">
+		<meta name="description" content="Comprehensive Xiangling Build guide in Genshin Impact, covering weapons, artifacts, teams and tips to maximize her DPS as the game's premier Pyro bow user.">
+
+		<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Character Builds","item":"https://buildsgenshin.com/en/builds/"},{"@type":"ListItem","position":2,"name":"Xiangling Build"}]},{"@context":"https://schema.org","@type":"NewsArticle","headline":"Xiangling Build Guide: Maximize Damage for Genshin's Best Pyro Archer","image":["https://buildsgenshin.com/images/builds/xiangling-build.webp"],"datePublished":"2023-07-13T00:00:00.000Z","dateModified":"2023-07-13T00:00:00.000Z","author":[{"@type":"Person","name":"Builds Genshin","url":"https://buildsgenshin.com/en/"}]}]</script>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Xiangling Build Guide: Maximize Damage for Genshin's Best Pyro Archer - Builds Genshin">
+		<meta property="og:description" content="Comprehensive Xiangling Build guide in Genshin Impact, covering weapons, artifacts, teams and tips to maximize her DPS as the game's premier Pyro bow user.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/en/builds/xiangling-build/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-13T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Xiangling Build Guide: Maximize Damage for Genshin's Best Pyro Archer - Builds Genshin">
+		<meta property="twitter:description" content="Comprehensive Xiangling Build guide in Genshin Impact, covering weapons, artifacts, teams and tips to maximize her DPS as the game's premier Pyro bow user.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/en/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/en/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/en/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/en/">Home</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/en/builds/">Character Builds</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link show" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			<section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Xiangling Build Guide: Maximize Damage for Genshin&#39;s Best Pyro Archer
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-13T00:00:00.000Z">Updated <b>7/13/2023</b> by <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/xiangling-build.webp" alt="Xiangling image">
+        <article>
+            <h2 id="introduction">Introduction</h2>
+<p>Xiangling is one of the best Pyro damage-dealers in Genshin Impact. As a 4-star character, she is accessible to most players and can dish out immense amounts of Pyro damage when properly built. This comprehensive guide will take you through everything you need to know to build the best Xiangling in Genshin Impact.</p>
+<h2 id="xianglings-skills-and-abilities">Xiangling’s Skills and Abilities</h2>
+<p>To understand how to build Xiangling, we first need to understand her skillset and what she brings to your team composition.</p>
+<h3 id="elemental-skill---guoba-attack">Elemental Skill - Guoba Attack</h3>
+<p>Xiangling’s Elemental Skill, <strong>Guoba Attack</strong>, summons her Pyro slime companion Guoba. Guoba breathes fire in the direction Xiangling aims him in, dealing AoE Pyro damage.</p>
+<p>At Ascension 1, Guoba leaves a <strong>Pepper</strong> that grants the active character ATK Bonus for 10s.</p>
+<p>At Ascension 4, Guoba’s attacks decrease opponent’s Pyro RES by 10% for 12s.</p>
+<h3 id="elemental-burst---pyronado">Elemental Burst - Pyronado</h3>
+<p>Xiangling’s Elemental Burst, <strong>Pyronado</strong>, calls down a Pyronado that deals continuous AoE Pyro damage.</p>
+<p>Pyronado snapshots Xiangling’s stats when initially cast, meaning any buffs active at the time of casting will apply for Pyronado’s full duration.</p>
+<p>With Ascension 4, Pyronado increases Xiangling’s own Pyro DMG Bonus by 15% for the skill’s duration.</p>
+<h3 id="passive-talents">Passive Talents</h3>
+<p>Xiangling’s passive talents provide some utility:</p>
+<ul>
+<li><strong>Oil Meets Fire</strong> gives a 12% chance of refunding a Chili used when crafting a dish that requires Chilis as an ingredient.</li>
+<li><strong>Chef De Cuisine</strong> increases Movement SPD by 10% and decreases Sprint Stamina consumption by 15% when out on an expedition in Liyue.</li>
+<li><strong>Combat Mastery</strong> increases Xiangling’s ATK by 20% for 12s after her Elemental Skill deals damage.</li>
+</ul>
+<h2 id="what-makes-xiangling-a-top-dps">What Makes Xiangling a Top DPS?</h2>
+<p>Xiangling has some unique advantages that make her one of the top Pyro DPS characters in the game:</p>
+<ul>
+<li>As a 4-star character, she is very accessible compared to 5-star DPS options.</li>
+<li>She has no Internal Cooldown (ICD) on her Pyronado bursts, allowing her to consistently apply Pyro aura for reactions.</li>
+<li>Pyronado has a very long duration (14s) and snapshots buffs on cast.</li>
+<li>Her Ascension 4 talent gives her own DMG bonus while Pyronado is active.</li>
+</ul>
+<p>With the right team and build, Xiangling can enable some of the strongest reaction combos in the game like Vaporize and Melt while outputting huge personal damage from her Pyronado.</p>
+<h2 id="best-weapons-for-xiangling">Best Weapons for Xiangling</h2>
+<p>These are the best weapons to maximize Xiangling’s Pyro DPS potential:</p>
+<h3 id="5-star-weapons">5-Star Weapons</h3>
+<ul>
+<li><strong>Staff of Homa</strong> - Universally best option, giving Crit Rate and a DMG bonus under 50% HP.</li>
+<li><strong>Primordial Jade Winged-Spear</strong> - Gives high Crit Rate and consistent ATK buffs.</li>
+<li><strong>Skyward Spine</strong> - Has Energy Recharge and increases DMG from normal attacks.</li>
+</ul>
+<h3 id="4-star-weapons">4-Star Weapons</h3>
+<ul>
+<li><strong>The Catch</strong> - Excellent choice from fishing, with Energy Recharge and DMG/CRIT buffs.</li>
+<li><strong>Deathmatch</strong> - Battle Pass weapon that provides good Crit Rate.</li>
+<li><strong>Dragon’s Bane</strong> - Increases DMG against enemies affected by Pyro.</li>
+<li><strong>Favonius Lance</strong> - Helps battery the team with its Energy Recharge.</li>
+</ul>
+<p>For 4-star options, <strong>The Catch</strong> is generally the best choice for boosting Xiangling’s Pyro damage thanks to its DMG buff and Energy Recharge.</p>
+<h3 id="3-star-weapons">3-Star Weapons</h3>
+<ul>
+<li><strong>Black Tassel</strong> - Provides HP for stronger shields if using Xiangling as a shield bot.</li>
+<li><strong>Halberd</strong> - Gives ATK% substat.</li>
+<li><strong>White Tassel</strong> - Boosts normal attack and Crit Rate.</li>
+</ul>
+<h2 id="best-artifacts-for-xiangling">Best Artifacts for Xiangling</h2>
+<p>Xiangling’s best artifact sets are all about increasing her Pyro damage.</p>
+<h3 id="4-piece-crimson-witch-of-flames">4-Piece Crimson Witch of Flames</h3>
+<p>This should be the default artifact set due to the 4-piece bonus:</p>
+<ul>
+<li>(2) Piece: +15% Pyro DMG Bonus</li>
+<li>(4) Piece: Increases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using an Elemental Skill increases 2-Piece Set effects by 50% for 10s. Max 3 stacks.</li>
+</ul>
+<p>Pyronado can consistently proc the 4-piece effect due to its low cooldown. This gives a huge 37.5% Pyro DMG Bonus at max stacks.</p>
+<h3 id="2-piece-crimson-witch--2-piece-noblesse-oblige">2-Piece Crimson Witch + 2-Piece Noblesse Oblige</h3>
+<p>If struggling to farm a good 4-piece CW set, combining 2-piece CW with 2-piece Noblesse Oblige can work well:</p>
+<ul>
+<li>(2) Piece NO: +20% Elemental Burst DMG Bonus</li>
+</ul>
+<p>This maintains the 2-piece CW Pyro DMG Bonus while buffing Pyronado damage specifically.</p>
+<h3 id="2-piece-crimson-witch--2-piece-tenacity-of-the-millelith">2-Piece Crimson Witch + 2-Piece Tenacity of the Millelith</h3>
+<p>For pure support builds, Tenacity of the Millelith can boost team damage:</p>
+<ul>
+<li>(2) Piece ToM: 20% increased HP</li>
+<li>(4) Piece ToM: When an Elemental Skill hits an opponent, the ATK of all nearby party members is increased by 20% and their Shield Strength is increased by 30% for 3s. This effect can be triggered once every 0.5s and can stack up to 4 times.</li>
+</ul>
+<p>The ToM 4-piece effect triggers from Guoba’s attacks, buffing your on-field DPS.</p>
+<h3 id="main-stats">Main Stats</h3>
+<p>For main stats, prioritize:</p>
+<ul>
+<li>Sands: Elemental Mastery or ATK%</li>
+<li>Goblet: Pyro DMG Bonus</li>
+<li>Circlet: Crit Rate or Crit DMG</li>
+</ul>
+<p>Elemental Mastery Sands can enable big reactions. Otherwise, ATK% is a safe option.</p>
+<h2 id="best-teams-for-xiangling">Best Teams for Xiangling</h2>
+<p>Xiangling truly shines in team comps that enable her to trigger reactions with Pyronado:</p>
+<h3 id="vaporize-team">Vaporize Team</h3>
+<ul>
+<li>Core: Xiangling + Xingqiu</li>
+<li>Flex Spots: Bennett, Sucrose, Kazuha etc.</li>
+</ul>
+<p>This powerful combo relies on Xingqiu’s rainswords to apply Hydro for Xiangling to Vaporize. Extremely high damage potential.</p>
+<h3 id="melt-team">Melt Team</h3>
+<ul>
+<li>Core: Xiangling + Cryo (Ganyu, Rosaria, Kaeya etc.)</li>
+<li>Flex Spots: Bennett, Zhongli, Anemo characters etc.</li>
+</ul>
+<p>Focuses on melting Xiangling’s Pyro attacks with Cryo characters. Less popular than Vaporize but can still deal big numbers.</p>
+<h3 id="overloaded-team">Overloaded Team</h3>
+<ul>
+<li>Core: Xiangling + Electro (Fischl, Beidou, Raiden etc.)</li>
+<li>Flex Spots: Bennett, Anemo, shielder etc.</li>
+</ul>
+<p>Spam Overloaded reactions by combining Xiangling’s Pyro with an off-field Electro applicator. Excels at AoE damage.</p>
+<h3 id="soup-team">Soup Team</h3>
+<ul>
+<li>Core: Xiangling + Childe</li>
+<li>Flex Spots: Bennett, Sucrose/Kazuha etc.</li>
+</ul>
+<p>Also known as “International Team”. Abusable AoE Hydro application from Childe’s melee stance enables constant Vaporize+Overload reactions.</p>
+<h3 id="who-to-slot-in-4th-position">Who to Slot in 4th Position</h3>
+<p>Some top options for 4th team members:</p>
+<ul>
+<li>Bennett: Pyro resonance, healing, ATK buffs</li>
+<li>Anemo (Sucrose, Kazuha): Crowd control, VV shred, EM buffs</li>
+<li>Zhongli: Best shielder, resistance shred with shield</li>
+<li>Albedo: Geo resonance, off-field damage</li>
+<li>Fischl: Electro aura application for Overloaded</li>
+<li>Xingqiu: Hydro aura for Vaporize</li>
+</ul>
+<p>Build your team to maximize Pyro reactions and buff Xiangling’s damage.</p>
+<h2 id="xiangling-constellations">Xiangling Constellations</h2>
+<p>Getting more constellations for Xiangling can significantly increase her power:</p>
+<ul>
+<li>C1: Increases Pyronado duration by 3s.</li>
+<li>C2: Decreases the Chili consumption by 20% when crafting dishes.</li>
+<li>C3: Increases Guoba Attack level by 3.</li>
+<li>C4: When Guoba Attack hits an enemy, it spawns an additional Pepper.</li>
+<li>C5: Increases Pyronado level by 3.</li>
+<li>C6: Increases melt and vaporize damage by 15%.</li>
+</ul>
+<p>Her C4 and C6 constellations give particularly strong boosts for vaporize/melt comps.</p>
+<h2 id="how-to-play-xiangling">How to Play Xiangling</h2>
+<p>Here are some tips to maximize Xiangling’s potential in combat:</p>
+<ul>
+<li>Cast Pyronado just before swapping Xiangling out to snapshot buffs.</li>
+<li>Use Guoba and swap to apply Pyro aura for reactions.</li>
+<li>Funnel energy particles to Xiangling to fuel her 80 energy Burst cost.</li>
+<li>Swirl Pyro with an Anemo character to reduce enemy RES with VV set.</li>
+<li>Utilize reactions like Vaporize or Overloaded for big damage numbers.</li>
+<li>Keep Pyronado on the field as much as possible for continuous DMG.</li>
+<li>Use Xiangling’s Combat Mastery passive and snapshot it into her Pyronado.</li>
+</ul>
+<p>Proper energy management and combo execution is key to success with Xiangling teams.</p>
+<h2 id="is-xiangling-worth-investing-in">Is Xiangling Worth Investing In?</h2>
+<p>Xiangling is absolutely worth building and investing resources into, for several reasons:</p>
+<ul>
+<li>As a 4-star character, she is one of the most accessible top-tier damage dealers.</li>
+<li>Her Pyronado enables consistent and powerful vaporize/melt reactions.</li>
+<li>She fits easily into many team archetypes and comps.</li>
+<li>Her damage scales very well with investment and good artifacts.</li>
+<li>At C4 and C6, she gets major boosts to her potential.</li>
+<li>She remains relevant even in end-game Spiral Abyss content.</li>
+</ul>
+<p>For the low cost of building her up, Xiangling offers incredibly high returns and value to your account. She should be a priority character to invest in for any Genshin Impact player.</p>
+<h2 id="xiangling-build-faqs">Xiangling Build FAQs</h2>
+<h3 id="what-is-the-best-f2p-weapon-for-xiangling">What is the best F2P weapon for Xiangling?</h3>
+<p>The Catch from fishing is Xiangling’s best F2P weapon option. Its Energy Recharge and DMG/CRIT buffs synergize perfectly with her kit.</p>
+<h3 id="is-xiangling-good-as-a-main-dps">Is Xiangling good as a main DPS?</h3>
+<p>Yes, Xiangling can excel as a main on-field DPS in the right teams that enable her Pyronado to react. She shines most in quickswap teams rather than being a pure auto-attacker.</p>
+<h3 id="what-artifacts-for-support-xiangling">What artifacts for support Xiangling?</h3>
+<p>As a support, Xiangling can utilize 2-Piece Crimson Witch + 2-Piece Noblesse or 2-Piece Tenacity. Focus on ER, Pyro DMG, and Crit as main stats.</p>
+<h3 id="is-atk-or-em-better-for-xiangling">Is ATK or EM better for Xiangling?</h3>
+<p>EM is preferred in reaction focused teams to amplify vaporize/melt damage. But ATK% builds are more comfortable and work fine in overload teams.</p>
+<h3 id="what-talent-priority-for-xiangling">What talent priority for Xiangling?</h3>
+<p>Level Pyronado first, as it makes up the bulk of her damage. Guoba Attack can be leveled later for the extra utility it provides.</p>
+<h3 id="what-stats-to-focus-on-for-xiangling-artifacts">What stats to focus on for Xiangling artifacts?</h3>
+<p>Prioritize getting enough ER to burst off cooldown > Pyro DMG Bonus on goblet > Crit Rate/DMG on circlet > ATK% on sands/substats.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Xiangling is an exceptional and accessible Pyro DPS that any Genshin Impact player should invest in building. Her versatile skillset and powerful Pyronado deliver immense amounts of damage through elemental reactions.</p>
+<p>Equip her with The Catch or another Energy Recharge polearm, the Crimson Witch set, and team her up with Hydro and Cryo characters to enable vaporize and melt. With the right setup and playstyle, Xiangling will carry your Genshin Impact teams to success in the Spiral Abyss and beyond.</p>
+        </article>
+
+        <hr><section>
+                <h2>Related Posts</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/en/builds/xingqiu-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/xingqiu-build.webp" alt="Xingqiu image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/xingqiu-build/">Ultimate Xingqiu Build Guide: Best Weapons, Artifacts and Team Comps</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-13T00:00:00.000Z">
+                                        Jul 13, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Hydro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/en/builds/yun-jin-build/"><img loading="lazy" class="block my-[0]" src="/images/builds/yun-jin-build.webp" alt="Yun Jin image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/en/builds/yun-jin-build/">Yun Jin Build Guide: Unleash Her Support Potential in Genshin Impact</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-14T00:00:00.000Z">
+                                        Jul 14, 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Geo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <a id="scroll-top" href="#table-of-contents" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+            <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+            </svg>
+        </a>
+    </section>
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/en/privacy">Privacy Policy</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contact</a>
+</footer>
+	</body></html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html class="theme-doryoku" lang="es">
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952211887473601" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#f6f6f6">
+		<!-- <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262626" /> -->
+
+		<link rel="canonical" href="https://buildsgenshin.com/es/builds/guia-noelle/">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="sitemap" href="/sitemap-index.xml">
+
+		<!-- Primary Meta Tags -->
+		<title>Guía definitiva de Noelle: Las mejores armas, artefactos y equipos - Builds Genshin</title>
+		<meta name="title" content="Guía definitiva de Noelle: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta name="description" content="La guía definitiva de Genshin Impact para buildear a Noelle cubre sus mejores armas, artefactos, estadísticas, talentos, equipos y roles.">
+
+		<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guías de personajes","item":"https://buildsgenshin.com/es/builds/"},{"@type":"ListItem","position":2,"name":"Noelle Build"}]},{"@context":"https://schema.org","@type":"NewsArticle","headline":"Guía definitiva de Noelle: Las mejores armas, artefactos y equipos","image":["https://buildsgenshin.com/images/builds/noelle-build.webp"],"datePublished":"2023-07-30T00:00:00.000Z","dateModified":"2023-07-30T00:00:00.000Z","author":[{"@type":"Person","name":"Builds Genshin","url":"https://buildsgenshin.com/es/"}]}]</script>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:title" content="Guía definitiva de Noelle: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="og:description" content="La guía definitiva de Genshin Impact para buildear a Noelle cubre sus mejores armas, artefactos, estadísticas, talentos, equipos y roles.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://buildsgenshin.com/es/builds/guia-noelle/">
+		<meta property="article:author" content="Builds Genshin">
+		<meta property="article:published_time" content="2023-07-30T00:00:00.000Z">
+
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Guía definitiva de Noelle: Las mejores armas, artefactos y equipos - Builds Genshin">
+		<meta property="twitter:description" content="La guía definitiva de Genshin Impact para buildear a Noelle cubre sus mejores armas, artefactos, estadísticas, talentos, equipos y roles.">
+		<!-- <meta property="twitter:site" content="@yourtwitterhandle">
+		<meta property="twitter:creator" content="@yourtwitterhandle"> -->
+		<meta property="twitter:card" content="summary_large_image">
+
+		<!-- 
+    We don't want to use <link /> to load fonts from Google CDN 
+    but if you want to switch font this is the easiest way 
+    to check how your page will look with the new font.
+--><!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=block"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet"
+    />
+-->
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <link rel="preload" href="/fonts/space-grotesk-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+  <style>
+    /* space-grotesk-regular - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+    /* space-grotesk-700 - latin */
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+        url("/fonts/space-grotesk-v13-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("/fonts/space-grotesk-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+    }
+  </style>
+
+		<script>
+  // figure out user's preferred theme and set it as html class for tailwind before paint
+  (function () {
+    if (typeof window !== "undefined") {
+      const isSystemColorSchemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      
+      const storageTheme = localStorage.getItem("theme");
+      
+      if (!storageTheme && isSystemColorSchemeDark) {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else if (storageTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+        document.head.children.namedItem("theme-color").content = "#262626";
+      } else {
+        // we already server render light theme
+        document.head.children.namedItem("theme-color").content = "#f6f6f6";
+      }
+    }
+  })();
+</script>
+		
+  
+  
+
+  <link href="/fontawesome/css/fontawesome.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="/fontawesome/css/brands.bareminimum.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+	<link rel="stylesheet" href="/_astro/_...slug_.19bf767a.css" />
+<link rel="stylesheet" href="/_astro/index.7012b529.css" /><script type="module">const n=document.getElementById("mobile-menu"),o=document.getElementById("mobile-menu-open"),s=document.getElementById("mobile-menu-close");o?.addEventListener("mouseup",()=>{n?.classList.remove("hidden")});s?.addEventListener("mouseup",()=>{n?.classList.add("hidden")});const e=document.getElementById("mode-toggle"),m=localStorage.getItem("theme"),d=document.getElementById("mode-circle");m=="dark"&&(document.documentElement.classList.add("dark-theme"),d?.classList.add("dark"),e?.classList.add("bg-dark-btn"));e?.addEventListener("mouseup",function(){document.documentElement.classList.toggle("dark-theme"),d?.classList.toggle("dark"),e.classList.toggle("bg-dark-btn");let t="light";document.documentElement.classList.contains("dark-theme")&&(t="dark"),localStorage.setItem("theme",t)});
+</script></head>
+	<body>
+		<header class="flex items-center py-4 sticky top-0 left-0 bg-[#ffffff] shadow z-10">
+    <div class="flex justify-between items-center max-w-3xl w-full mx-auto px-6 sm:px-8">
+        <nav class="hidden md:inline w-full">
+            <section class="text-text-bold flex justify-between items-center">
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+                        <a class="unset animated-link" href="/es/">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                    </li>
+                </ul>
+                <a rel="nofollow" class="!bg-none" href="/es/">
+                    <img loading="lazy" id="logo-light" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                    <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+                </a>
+                <ul class="unset flex gap-4 [&>li]:p-0">
+                    <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="md:hidden flex justify-between w-full">
+    <button id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true" title="Open mobile menu"></i>
+        <span class="fa-sr-only">Open mobile menu</span>
+    </button>
+    <a rel="nofollow" class="!bg-none flex items-center mx-auto my-0" href="/es/">
+        <img loading="lazy" id="logo-light" class="" src="/logo.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+        <img loading="lazy" id="logo-dark" class="hidden" src="/logo_dark.svg" width="180px" height="19px" alt="Logo Builds Genshin">
+    </a>
+    <section id="mobile-menu" class="hidden fixed top-0 left-0 z-10 w-full h-full transition-transform bg-black/75 border-primary-blue">
+        <div class="bg-bg-body w-[75%] h-full drop-shadow-2xl">
+            <button id="mobile-menu-close" class="px-6 h-[5rem] text-lg xml-[1px]">
+                <i class="fa-solid fa-xmark" aria-hidden="true" title="Close mobile menu"></i>
+                <span class="fa-sr-only">Close mobile menu</span>
+            </button>
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+                    <a class="unset animated-link" href="/es/">Inicio</a>
+                </li>
+                <li>
+                    <a class="unset animated-link show" href="/es/builds/">Guías de personajes</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <ul class="unset flex flex-col text-text-bold gap-4 [&>li]:p-0 px-6">
+                <li>
+        <a class="unset animated-link" href="/en/">English</a>
+    </li><li>
+        <a class="unset animated-link show" href="/es/">Español</a>
+    </li>
+            </ul>
+        </div>
+    </section>
+</nav>
+    
+        <mode-toggle class="flex astro-ZHNJNODJ">
+    <button class="justify-self-end bg-black dark:bg-white ml-4 inline-flex h-6 w-11 items-center rounded-full astro-ZHNJNODJ" id="mode-toggle" role="switch" type="button" tabindex="0" aria-checked="false" data-headlessui-state="">
+            <span class="sr-only astro-ZHNJNODJ">Toggle dark mode</span>
+            <span id="mode-circle" class="inline-block h-4 w-4 rounded-full bg-gradient-to-tr translate-x-[.25rem] bg-[#ffde69] transition duration-300 astro-ZHNJNODJ">
+                <span class="absolute top-0 right-0 w-[10px] h-[10px] rounded-full bg-gray-700 scale-[0] astro-ZHNJNODJ"></span>
+            </span>
+    </button>
+</mode-toggle>
+    </div>
+</header>
+		<main class="max-w-3xl mx-auto min-h-[80dvh] pt-8 px-6 sm:px-8">
+			<section class="blog-post prose max-w-none prose-bubblegum">
+        <h1 class="m-0 mb-[0.25em]">
+            Guía definitiva de Noelle: Las mejores armas, artefactos y equipos
+        </h1>
+        <time class="block mb-[2em] text-text-muted" datetime="2023-07-30T00:00:00.000Z">Actualizado <b>30/7/2023</b> por <b>Builds Genshin</b></time>
+        <img loading="lazy" src="/images/builds/noelle-build.webp" alt="Noelle image">
+        <article>
+            <h2 id="tabla-de-contenidos">Tabla de Contenidos</h2>
+<ul>
+<li><a href="#habilidades-y-talentos-de-noelle">Habilidades y Talentos de Noelle</a></li>
+<li><a href="#las-mejores-armas-para-la-dps-noelle">Las Mejores Armas para la DPS Noelle</a></li>
+<li><a href="#los-mejores-artefactos-para-la-dps-noelle">Los Mejores Artefactos para la DPS Noelle</a></li>
+<li><a href="#los-mejores-equipos-para-la-dps-noelle">Los Mejores Equipos para la DPS Noelle</a></li>
+<li><a href="#resumen-del-build-de-noelle">Resumen del Build de Noelle</a></li>
+<li><a href="#constelaciones-de-noelle">Constelaciones de Noelle</a></li>
+<li><a href="#prioridades-de-talentohabilidad-de-noelle">Prioridades de Talento/Habilidad de Noelle</a></li>
+<li><a href="#c%C3%B3mo-jugar-optimamente-con-dps-noelle">Cómo Jugar Optimamente con DPS Noelle</a></li>
+<li><a href="#preguntas-frecuentes-del-build-de-noelle">Preguntas Frecuentes del Build de Noelle</a></li>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
+</ul>
+<h2 id="introducción">Introducción</h2>
+<p>Noelle es uno de los personajes más versátiles de Genshin Impact. Puede cumplir múltiples roles, desde tanquear golpes con su escudo hasta infligir un daño Geo masivo como DPS principal. Esta guía integral proporcionará todo lo que necesitas saber para construir la mejor DPS Noelle en Genshin Impact.</p>
+<p>Desde armas y artefactos hasta composiciones de equipo, esta guía de build de Noelle lo tiene todo. ¡Empecemos!</p>
+<h2 id="habilidades-y-talentos-de-noelle">Habilidades y Talentos de Noelle</h2>
+<p>Para entender cómo construir a Noelle como DPS principal, primero debemos repasar sus habilidades y talentos innatos.</p>
+<h3 id="tiempo-de-barrido-habilidad-elemental">Tiempo de Barrido (Habilidad Elemental)</h3>
+<p>La habilidad elemental de Noelle proporciona los siguientes efectos cuando se usa:</p>
+<ul>
+<li>Convierte los ataques normales y cargados de Noelle en daño Geo durante 12 s</li>
+<li>Otorga a Noelle un escudo absorbido del 400% de su DEF que dura 12 s</li>
+<li>Reduce el tiempo de recarga de Pechera en 3 s por cada oponente golpeado</li>
+</ul>
+<p>Esta habilidad es crucial ya que permite que Noelle inflija daño Geo con sus ataques normales. Subirla de nivel aumenta el daño.</p>
+<h3 id="pechera-explosión-elemental">Pechera (Explosión Elemental)</h3>
+<p>La explosión elemental de Noelle proporciona estos efectos:</p>
+<ul>
+<li>Otorga a Noelle la capacidad de infligir daño Geo de AoE con sus ataques normales y cargados durante 15 s</li>
+<li>Aumenta el ATK de Noelle en función de su DEF</li>
+<li>Convierte el daño de ataque en daño Geo que no puede ser anulado por efectos externos</li>
+<li>Extiende la duración de Tiempo de Barrido por 3 s</li>
+</ul>
+<p>Esta explosión desbloquea el potencial de DPS completo de Noelle al aumentar su ATK y permitir daño Geo AoE.</p>
+<h3 id="devoción-talento-pasivo">Devoción (Talento Pasivo)</h3>
+<p>El 1er talento pasivo de Noelle aumenta la DEF de Noelle en un 25% de su DEF cada 4 s cuando su PS cae por debajo del 30%.</p>
+<p>Esto proporciona un aumento de DEF significativo que es ideal para potenciar el ATK y la resistencia del escudo de Noelle.</p>
+<h2 id="las-mejores-armas-para-la-dps-noelle">Las Mejores Armas para la DPS Noelle</h2>
+<p>Elegir el arma adecuada es fundamental para desarrollar a Noelle como DPS principal. Aquí están las mejores armas de 4 y 5 estrellas para una build de DPS Noelle.</p>
+<h3 id="armas-de-4-estrellas">Armas de 4 Estrellas</h3>
+<h4 id="serpent-spine-pase-de-batalla">Serpent Spine (Pase de Batalla)</h4>
+<p><img src="/images/weapons/greatswords/Serpent_Spine.webp" alt="Serpent Spine Image"></p>
+<ul>
+<li>Subestadística de Tasa Crítica</li>
+<li>Gana acumulación de buff de DMG cada 4 s, máximo 5 acumulaciones</li>
+<li>Pierde 1 acumulación al ser golpeado, reduciendo el buff</li>
+</ul>
+<p>Esta es el mejor arma de 4 estrellas de Noelle debido a la tasa crítica alta y los buffs de daño. Solo ten cuidado de recibir golpes.</p>
+<h4 id="whiteblind-forjable">Whiteblind (Forjable)</h4>
+<p><img src="/images/weapons/greatswords/Whiteblind.webp" alt="Whiteblind Image"></p>
+<ul>
+<li>Subestadística de DEF%</li>
+<li>Gana acumulación de buff de ATK% y DEF% cada 4 s al atacar, máximo 4 acumulaciones</li>
+</ul>
+<p>Con la subestadística de DEF% y buffs acumulables, Whiteblind es una gran opción F2P para Noelle.</p>
+<h4 id="espadón-favonius">Espadón Favonius</h4>
+<p><img src="/images/weapons/greatswords/Favonius_Greatsword.webp" alt="Favonius Greatsword Image"></p>
+<ul>
+<li>Subestadística de Recarga de Energía</li>
+<li>Golpes CRIT generan partículas de energía</li>
+</ul>
+<p>La recarga de energía ayuda a Noelle a cargar su explosión más rápido. Bueno si falta energía.</p>
+<h3 id="armas-de-5-estrellas">Armas de 5 Estrellas</h3>
+<h4 id="rompedor-de-piedra-roja-firma">Rompedor de Piedra Roja (Firma)</h4>
+<p><img src="/images/weapons/greatswords/Redhorn_Stonethresher.webp" alt="Redhorn Stonethresher Image"></p>
+<ul>
+<li>Subestadística de DEF%</li>
+<li>Aumenta DEF y DMG de Ataque Normal/Cargado en base a DEF%</li>
+</ul>
+<p>Rompedor de Piedra Roja está hecho a medida para Noelle con escalado de daño DEF y enormes aumentos de DEF. Su mejor arma.</p>
+<h4 id="orgullo-celestial">Orgullo Celestial</h4>
+<p><img src="/images/weapons/greatswords/Skyward_Pride.webp" alt="Skyward Pride Image"></p>
+<ul>
+<li>Subestadística de Recarga de Energía</li>
+<li>Los golpes de Ataque Normal y Cargado aumentan la Vel ATK y crean cuchillas de vacío</li>
+</ul>
+<p>Orgullo Celestial resuelve los problemas de energía de Noelle mientras que proporciona sólidos aumentos de velocidad de ataque y daño.</p>
+<h4 id="cataclismo-de-lobo">Cataclismo de Lobo</h4>
+<p><img src="/images/weapons/greatswords/Wolf&#x27;s_Gravestone.webp" alt="Wolf&#x27;s Gravestone Image"></p>
+<ul>
+<li>Subestadística de ATK%</li>
+<li>Buff de ATK al derrotar enemigos</li>
+</ul>
+<p>Cataclismo de Lobo proporciona un enorme buff de ATK% y se sincroniza bien con la explosión de Noelle que convierte DEF en ATK.</p>
+<h2 id="los-mejores-artefactos-para-la-dps-noelle">Los Mejores Artefactos para la DPS Noelle</h2>
+<p>Para maximizar el daño de salida de Noelle, recomendamos los conjuntos de artefactos 2-Piezas Petra Arcaica + 2-Piezas Finalización de Gladiador.</p>
+<h3 id="2-piezas-petra-arcaica">2-Piezas Petra Arcaica</h3>
+<p><img src="/images/artifacts/Petra.webp" alt="Archaic Petra"></p>
+<ul>
+<li>Gana 15% de Bono de Daño Geo</li>
+</ul>
+<p>Este bono de conjunto aumenta el daño Geo de Noelle tanto de su habilidad como su explosión.</p>
+<h3 id="2-piezas-finalización-de-gladiador">2-Piezas Finalización de Gladiador</h3>
+<p><img src="/images/artifacts/Gladiator.webp" alt="Gladiator&#x27;s Finale"></p>
+<ul>
+<li>Gana 18% de ATK</li>
+</ul>
+<p>El buff de ATK de 2-piezas del 18% aumenta aún más el daño de Noelle.</p>
+<p>Para las estadísticas principales, prioriza:</p>
+<ul>
+<li>Arena del Eon - DEF%</li>
+<li>Copa - Bono de Daño Geo%</li>
+<li>Tiara - Tasa de CRIT% o Daño CRIT%</li>
+</ul>
+<p>El daño Geo, estadísticas críticas y DEF% son esenciales para escalar el daño de explosión de Noelle.</p>
+<p>Para subestadísticas, apunta a:</p>
+<ul>
+<li>Tasa Crítica/Daño Crítico</li>
+<li>DEF%</li>
+<li>ATK%</li>
+<li>Recarga de Energía</li>
+</ul>
+<p>Apilar estadísticas críticas aumenta el daño de Noelle, mientras que DEF% y ATK% mejoran la conversión de su habilidad. Un poco de RE se recomienda para cargar su explosión más rápido.</p>
+<h2 id="los-mejores-equipos-para-la-dps-noelle">Los Mejores Equipos para la DPS Noelle</h2>
+<p>Aquí hay algunas composiciones de equipo superiores que se sincronizan bien con una build de DPS Noelle principal en Genshin Impact.</p>
+<h3 id="equipo-de-resonancia-geo">Equipo de Resonancia Geo</h3>
+<ul>
+<li>Noelle (DPS Principal)</li>
+<li>Gorou (Buffer geo + curación)</li>
+<li>Albedo (Sub DPS geo fuera de campo)</li>
+<li><a href="/es/builds/guia-zhongli/">Zhongli</a>/<a href="/es/builds/guia-bennett/">Bennett</a> (Escudos/Buffs)</li>
+</ul>
+<p>Este equipo centrado en geo proporciona fuertes buffs de resonancia y sostiene las necesidades de energía de Noelle.</p>
+<h3 id="equipo-geo-puro">Equipo Geo Puro</h3>
+<ul>
+<li>Noelle (DPS Principal)</li>
+<li>Gorou (Buffer geo + curación)</li>
+<li>Albedo (Sub DPS geo fuera de campo)</li>
+<li><a href="/es/builds/guia-yun-jin/">Yun Jin</a> (Buffs de ataque normal)</li>
+</ul>
+<p>Maximizando compañeros geo para buffear los ataques normales y daño geo de Noelle durante su ventana de explosión.</p>
+<h3 id="equipo-geo--pyro">Equipo Geo + Pyro</h3>
+<ul>
+<li>Noelle (DPS Principal)</li>
+<li>Xiangling (Pyro fuera de campo)</li>
+<li>Bennett (Curación + Buffs de ATK)</li>
+<li>Yun Jin/Gorou (Buffs de ataque Normal/Geo)</li>
+</ul>
+<p>Las reacciones Sobrecarga de personajes piro como Xiangling quitan escudos geo enemigos rápidamente. Bennett proporciona curación y un gran buff de ATK.</p>
+<h2 id="resumen-del-build-de-noelle">Resumen del Build de Noelle</h2>
+<p>Resumamos los puntos clave para desarrollar a Noelle como tu DPS principal:</p>
+<ul>
+<li>Sube a Noelle al nivel 90 y maximiza su talento de ataque normal.</li>
+<li>Usa Espina de Serpiente o Rompedor de Piedra Roja como su arma. Whiteblind también funciona.</li>
+<li>Construye artefactos 2-Piezas Petra Arcaica y 2-Piezas Finalización de Gladiador. Prioriza DEF%, Daño Geo y CRIT.</li>
+<li>Juega con ella en equipos centrados en geo como Resonancia Geo o Equipos Geo Puros.</li>
+<li>Activa la explosión de Noelle para habilitar sus capacidades DPS.</li>
+</ul>
+<p>¡Este build transforma a Noelle en una DPS Geo de golpes fuertes y AoE perfecta para aplastar todo el contenido!</p>
+<h2 id="constelaciones-de-noelle">Constelaciones de Noelle</h2>
+<p>Las constelaciones de Noelle proporcionan algunos buenos aumentos pero no son absolutamente necesarias para una build DPS principal. Aquí hay un resumen rápido:</p>
+<p><strong>C1</strong> - Disminuye el CD de Tiempo de Barrido en un 20% y aumenta la Duración en un 40%. Buenas mejoras de calidad de vida.</p>
+<p><strong>C2</strong> - Cura a todos los miembros del equipo por 400% de la DEF de Noelle cada 2 s durante Pechera. Proporciona supervivencia.</p>
+<p><strong>C3</strong> - Aumenta el Nivel de Pechera en 3. Nivel de explosión 13 ayuda a su daño.</p>
+<p><strong>C4</strong> - Si el Ataque Normal de Noelle golpea al menos a 1 oponente, la DEF de Devoción se incrementa en un 50%. Mejor blindaje.</p>
+<p><strong>C5</strong> - Aumenta la DEF de Noelle en un 50% adicional de lo que proporciona Devoción. Gran buff de DEF.</p>
+<p><strong>C6</strong> - Activar Explosión otorga a Noelle 60% adicional de su DEF como ATK. ¡Enorme aumento de daño!</p>
+<p>Obtener C6 hace que Noelle golpee aún más fuerte pero C0 es suficiente para construirla como una DPS principal sólida.</p>
+<h2 id="prioridades-de-talentohabilidad-de-noelle">Prioridades de Talento/Habilidad de Noelle</h2>
+<p>Aquí está el orden de prioridad de nivel de talento recomendado para una DPS Noelle:</p>
+<p><strong>1ra Prioridad</strong> - Ataque Normal</p>
+<p>Subir el talento de ataque normal de Noelle aumenta el daño de su Ataque Cargado que es una fuente clave de DPS. Llévalo a Nivel 9 o 10 primero.</p>
+<p><strong>2da Prioridad</strong> - Explosión</p>
+<p>Subir Pechera refuerza el ATK obtenido en base a la DEF de Noelle. Importante para el daño.</p>
+<p><strong>3ra Prioridad</strong> - Habilidad</p>
+<p>Tiempo de Barrido permite que los ataques de Noelle inflijan daño Geo. Sube esto último después de normales y explosión.</p>
+<p>Para el juego temprano, recomiendo llevar el ataque normal de Noelle a 6 primero. Luego enfócate en subir el talento de su explosión para impulsar su daño durante su tiempo de actividad.</p>
+<h2 id="cómo-jugar-optimamente-con-dps-noelle">Cómo Jugar Optimamente con DPS Noelle</h2>
+<p>Aquí hay algunos consejos para maximizar el potencial de daño de Noelle en batalla:</p>
+<ul>
+<li>
+<p>Activa la explosión de Noelle siempre que sea posible para desbloquear su estado DPS. Manejar su tiempo de actividad es clave.</p>
+</li>
+<li>
+<p>Usa ataques normales y cargados durante su explosión. Prioriza poderosos ataques cargados.</p>
+</li>
+<li>
+<p>Cancela la animación de los ataques cargados de Noelle lanzándote inmediatamente después de golpear para ahorrar tiempo.</p>
+</li>
+<li>
+<p>Cambia a soportes como Gorou/Yun Jin para usar sus buffs antes de cambiar de nuevo a Noelle.</p>
+</li>
+<li>
+<p>Genera energía de Noelle usando su habilidad antes de explotar. Baterías de soporte como Fischl también pueden ayudar.</p>
+</li>
+<li>
+<p>Mantente cerca de los enemigos para acertar todos los golpes de sus ataques cargados rotativos AoE.</p>
+</li>
+<li>
+<p>Consigue una tasa de crítico de al menos 50% para mantener un tiempo de actividad alto en los golpes críticos de Noelle.</p>
+</li>
+</ul>
+<p>¡La rotación adecuada de explosión y soporte es vital para maximizar el potencial de Noelle como una pesada golpeadora DPS Geo!</p>
+<h2 id="preguntas-frecuentes-del-build-de-noelle">Preguntas Frecuentes del Build de Noelle</h2>
+<p>Aquí hay algunas preguntas frecuentes sobre cómo construir a Noelle como DPS principal:</p>
+<h3 id="se-requiere-c6-para-la-dps-noelle">¿Se requiere C6 para la DPS Noelle?</h3>
+<p>No, C6 es un buen extra pero no absolutamente necesario. Noelle aún puede infligir un DPS sólido en C0. Su C6 principalmente ahorra energía y proporciona un gran buff de DEF a ATK durante su explosión.</p>
+<h3 id="a-qué-valor-de-def-debería-apuntar">¿A qué valor de DEF debería apuntar?</h3>
+<p>Intenta llevar la DEF de Noelle a alrededor de 1400-1600+. Esto proporciona una buena conversión de ATK base durante su explosión mientras también fortalece su escudo. Equilibrar ambas estadísticas DEF y ofensivas es clave.</p>
+<h3 id="qué-es-mejor-para-noelle-serpent-spine-o-redhorn">¿Qué es mejor para Noelle, Serpent Spine o Redhorn?</h3>
+<p>Redhorn es el arma firma de Noelle y el BiS para DPS. Sin embargo, Serpent Spine se acerca en refinamientos altos. En definitiva, ambas armas funcionan excelente en Noelle. Elige la que tengas disponible.</p>
+<h3 id="debería-usar-una-copa-atk-o-geo-para-la-dps-noelle">¿Debería usar una copa ATK% o Geo para la DPS Noelle?</h3>
+<p>Siempre ve por una copa de Bono de Daño Geo. Convertir la DEF de Noelle en ATK hace que ATK% sea menos valioso. El Daño Geo% impulsa todo su daño de habilidad y explosión.</p>
+<h3 id="cuánta-recarga-de-energía-necesita-noelle">¿Cuánta Recarga de Energía necesita Noelle?</h3>
+<p>Apunta por alrededor de 120-130% de RE para explotar cómodamente fuera de enfriamiento. Noelle quiere algunas subestadísticas de RE para financiar su explosión de costo 80 de energía. Armas como Favonius pueden ayudar también.</p>
+<h2 id="conclusión">Conclusión</h2>
+<p>Desarrollar a Noelle como tu DPS principal desbloquea su enorme potencial de daño en Genshin Impact. Equiparla con armas de escalado de DEF como Serpent Spine o Redhorn permite que la DEF de Noelle se convierta en un ATK alto durante la ventana de su explosión.</p>
+<p>Utilizar soportes poderosos como Gorou, Albedo y Bennett impulsa el daño Geo de Noelle a nuevos niveles. Mantener un buen tiempo de actividad de explosión y realizar cancelaciones de animación permite a Noelle aplastar enemigos rápidamente.</p>
+<p>Con el build correcto, Noelle se transforma de una escudera impenetrable a una demoledora Geo de golpes fuertes, capaz de limpiar todo el contenido más difícil con facilidad.</p>
+        </article>
+
+        <hr><section>
+                <h2>Entradas relacionadas</h2>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                        <a rel="nofollow" href="/es/builds/guia-zhongli/"><img loading="lazy" class="block my-[0]" src="/images/builds/Zhongli.webp" alt="Zhongli image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-zhongli/">Guía definitiva de Zhongli: Las mejores armas, artefactos y equipos</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-15T00:00:00.000Z">
+                                        15 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Geo</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div>
+                        <a rel="nofollow" href="/es/builds/guia-bennett/"><img loading="lazy" class="block my-[0]" src="/images/builds/bennett-build.webp" alt="Bennett image"></a>
+                        <div class="mb-6">
+                            <div class="title my-2">
+                                <a class="related-post-link unset transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue font-bold" href="/es/builds/guia-bennett/">Guía definitiva de Bennett: Las mejores armas, artefactos y equipos</a>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-text-muted text-sm italic pt-1">
+                                    <time datetime="2023-07-22T00:00:00.000Z">
+                                        22 jul 2023
+                                    </time>
+                                </div>
+
+                                <div class="[&>code]:ml-2">
+                                    <code>Support</code><code>Pyro</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <a id="scroll-top" href="#tabla-de-contenidos" class="bg-[#222] right-10 left-auto p-[13px_11px_15px_11px] rounded fixed bottom-10 z-[5] text-center transition-all duration-300">
+            <svg class="w-[18px] fill-white" viewBox="0 0 492 287" xmlns="http://www.w3.org/2000/svg">
+                <path transform="translate(0 -.96)" d="m485.97 252.68-224.38-245.85c-4.2857-4.3102-9.9871-6.1367-15.585-5.8494-5.6186-0.28724-11.3 1.5392-15.586 5.8494l-224.4 245.85c-8.0384 8.0653-8.0384 21.159 0 29.225s21.081 8.0653 29.12 0l210.86-231.05 210.84 231.05c8.0384 8.0653 21.08 8.0653 29.119 0 8.0384-8.0645 8.0384-21.159 0-29.225z"></path>
+            </svg>
+        </a>
+    </section>
+		</main>
+		<footer class="flex justify-center items-center gap-4 shadow-[0_-1px_3px_0_rgba(0,0,0,0.1)]">
+    <a href="/es/privacy">Política de privacidad</a>
+    <a href="mailto:buildsgenshinwebsite@gmail.com">Contacto</a>
+</footer>
+	</body></html>
